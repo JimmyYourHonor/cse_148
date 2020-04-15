@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/simulation/modelsim
+vsdram_mm_interconnect_0
+!s110 1586471988
+!i10b 1
+!s100 `F6QGe8eo6o1LU=EI;lYX0
+Ik3BX[gZgC5>Ykf=T2K_<10
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1586207361
+8C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0.v
+FC:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0.v
+L0 9
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1586471988.000000
+!s107 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0.v|
+!s90 -reportprogress|300|C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0.v|-work|mm_interconnect_0|
+!i113 1
+o-work mm_interconnect_0
+tCvgOpt 0

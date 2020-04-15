@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/simulation/modelsim
+valtera_reset_controller
+Z1 !s110 1586471988
+!i10b 1
+!s100 z[H_hRO9gO=:^2E3_jWH03
+I0h;:M:f2mOc:aoOklK[Ek3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1586207361
+8C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v
+FC:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v
+L0 42
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1586471987.000000
+!s107 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v|-work|rst_controller|
+!i113 1
+Z5 o-work rst_controller
+Z6 tCvgOpt 0
+valtera_reset_synchronizer
+R1
+!i10b 1
+!s100 oWLYmSO[EOX[G0PgQhZ2=0
+IU0BjQZUGMPJYj:`1oZ:4T2
+R2
+R0
+R3
+8C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v
+FC:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v
+L0 24
+R4
+r1
+!s85 0
+31
+!s108 1586471988.000000
+!s107 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v|-work|rst_controller|
+!i113 1
+R5
+R6

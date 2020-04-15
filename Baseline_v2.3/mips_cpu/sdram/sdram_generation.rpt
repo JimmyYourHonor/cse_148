@@ -1,0 +1,175 @@
+Info: Starting: Create simulation model
+Info: qsys-generate C:\Users\jfujf\Desktop\cse_148\Baseline_v2.3\mips_cpu\sdram.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=C:\Users\jfujf\Desktop\cse_148\Baseline_v2.3\mips_cpu\sdram\simulation --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading mips_cpu/sdram.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 19.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge [altera_clock_bridge 19.1]
+Progress: Parameterizing module clock_bridge
+Progress: Adding d_cache_read [master_template 1.0]
+Progress: Parameterizing module d_cache_read
+Progress: Adding d_cache_write [master_template 1.0]
+Progress: Parameterizing module d_cache_write
+Progress: Adding i_cache_read [master_template 1.0]
+Progress: Parameterizing module i_cache_read
+Progress: Adding pll_0 [altera_pll 19.1]
+Progress: Parameterizing module pll_0
+Progress: Adding reset_bridge [altera_reset_bridge 19.1]
+Progress: Parameterizing module reset_bridge
+Progress: Adding reset_bridge_active_high [altera_reset_bridge 19.1]
+Progress: Parameterizing module reset_bridge_active_high
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 19.1]
+Progress: Parameterizing module sdram_controller
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sdram.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: sdram.pll_0: Able to implement PLL with user settings
+Info: sdram.sdram_controller: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: sdram: Generating sdram "sdram" for SIM_VERILOG
+Info: d_cache_read: "sdram" instantiated master_template "d_cache_read"
+Info: pll_0: Generating simgen model
+Info: pll_0: Info: ******************************************************************* Info: Running Quartus Prime Shell     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition     Info: Copyright (C) 2019  Intel Corporation. All rights reserved.     Info: Your use of Intel Corporation's design tools, logic functions      Info: and other software and tools, and any partner logic      Info: functions, and any output files from any of the foregoing      Info: (including device programming or simulation files), and any      Info: associated documentation or information are expressly subject      Info: to the terms and conditions of the Intel Program License      Info: Subscription Agreement, the Intel Quartus Prime License Agreement,     Info: the Intel FPGA IP License Agreement, or other applicable license     Info: agreement, including, without limitation, that your use is for     Info: the sole purpose of programming logic devices manufactured by     Info: Intel and sold by Intel or its authorized distributors.  Please     Info: refer to the applicable agreement for further details, at     Info: https://fpgasoftware.intel.com/eula.     Info: Processing started: Mon Apr 06 14:08:38 2020 Info: Command: quartus_sh -t run_simgen_cmd.tcl Info: ******************************************************************* Info: Running Quartus Prime Analysis & Synthesis     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition     Info: Copyright (C) 2019  Intel Corporation. All rights reserved.     Info: Your use of Intel Corporation's design tools, logic functions      Info: and other software and tools, and any partner logic      Info: functions, and any output files from any of the foregoing      Info: (including device programming or simulation files), and any      Info: associated documentation or information are expressly subject      Info: to the terms and conditions of the Intel Program License      Info: Subscription Agreement, the Intel Quartus Prime License Agreement,     Info: the Intel FPGA IP License Agreement, or other applicable license     Info: agreement, including, without limitation, that your use is for     Info: the sole purpose of programming logic devices manufactured by     Info: Intel and sold by Intel or its authorized distributors.  Please     Info: refer to the applicable agreement for further details, at     Info: https://fpgasoftware.intel.com/eula.     Info: Processing started: Mon Apr 06 14:08:39 2020 Info: Command: quartus_map sdram_pll_0.qpf --simgen --ini=disable_check_quartus_compatibility_qsys_only=on --simgen_parameter=CBX_HDL_LANGUAGE=VERILOG Info (20034): Auto device selection is not supported for Cyclone V device family. The default device, 5CGXFC7C7F23C8, is set. Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance. Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected Info (12021): Found 1 design units, including 1 entities, in source file sdram_pll_0.v     Info (12023): Found entity 1: sdram_pll_0 File: C:/Users/jfujf/AppData/Local/Temp/alt8358_3170169498180415632.dir/0005_pll_0_gen/sdram_pll_0.v Line: 2 Info (12127): Elaborating entity "sdram_pll_0" for the top level hierarchy Info (12128): Elaborating entity "altera_pll" for hierarchy "altera_pll:altera_pll_i" File: C:/Users/jfujf/AppData/Local/Temp/alt8358_3170169498180415632.dir/0005_pll_0_gen/sdram_pll_0.v Line: 88 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus Info (12130): Elaborated megafunction instantiation "altera_pll:altera_pll_i" File: C:/Users/jfujf/AppData/Local/Temp/alt8358_3170169498180415632.dir/0005_pll_0_gen/sdram_pll_0.v Line: 88 Info (12133): Instantiated megafunction "altera_pll:altera_pll_i" with the following parameter: File: C:/Users/jfujf/AppData/Local/Temp/alt8358_3170169498180415632.dir/0005_pll_0_gen/sdram_pll_0.v Line: 88     Info (12134): Parameter "fractional_vco_multiplier" = "false"     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"     Info (12134): Parameter "operation_mode" = "normal"     Info (12134): Parameter "number_of_clocks" = "2"     Info (12134): Parameter "output_clock_frequency0" = "100.000000 MHz"     Info (12134): Parameter "phase_shift0" = "0 ps"     Info (12134): Parameter "duty_cycle0" = "50"     Info (12134): Parameter "output_clock_frequency1" = "100.000000 MHz"     Info (12134): Parameter "phase_shift1" = "0 ps"     Info (12134): Parameter "duty_cycle1" = "50"     Info (12134): Parameter "output_clock_frequency2" = "0 MHz"     Info (12134): Parameter "phase_shift2" = "0 ps"     Info (12134): Parameter "duty_cycle2" = "50"     Info (12134): Parameter "output_clock_frequency3" = "0 MHz"     Info (12134): Parameter "phase_shift3" = "0 ps"     Info (12134): Parameter "duty_cycle3" = "50"     Info (12134): Parameter "output_clock_frequency4" = "0 MHz"     Info (12134): Parameter "phase_shift4" = "0 ps"     Info (12134): Parameter "duty_cycle4" = "50"     Info (12134): Parameter "output_clock_frequency5" = "0 MHz"     Info (12134): Parameter "phase_shift5" = "0 ps"     Info (12134): Parameter "duty_cycle5" = "50"     Info (12134): Parameter "output_clock_frequency6" = "0 MHz"     Info (12134): Parameter "phase_shift6" = "0 ps"     Info (12134): Parameter "duty_cycle6" = "50"     Info (12134): Parameter "output_clock_frequency7" = "0 MHz"     Info (12134): Parameter "phase_shift7" = "0 ps"     Info (12134): Parameter "duty_cycle7" = "50"     Info (12134): Parameter "output_clock_frequency8" = "0 MHz"     Info (12134): Parameter "phase_shift8" = "0 ps"     Info (12134): Parameter "duty_cycle8" = "50"     Info (12134): Parameter "output_clock_frequency9" = "0 MHz"     Info (12134): Parameter "phase_shift9" = "0 ps"     Info (12134): Parameter "duty_cycle9" = "50"     Info (12134): Parameter "output_clock_frequency10" = "0 MHz"     Info (12134): Parameter "phase_shift10" = "0 ps"     Info (12134): Parameter "duty_cycle10" = "50"     Info (12134): Parameter "output_clock_frequency11" = "0 MHz"     Info (12134): Parameter "phase_shift11" = "0 ps"     Info (12134): Parameter "duty_cycle11" = "50"     Info (12134): Parameter "output_clock_frequency12" = "0 MHz"     Info (12134): Parameter "phase_shift12" = "0 ps"     Info (12134): Parameter "duty_cycle12" = "50"     Info (12134): Parameter "output_clock_frequency13" = "0 MHz"     Info (12134): Parameter "phase_shift13" = "0 ps"     Info (12134): Parameter "duty_cycle13" = "50"     Info (12134): Parameter "output_clock_frequency14" = "0 MHz"     Info (12134): Parameter "phase_shift14" = "0 ps"     Info (12134): Parameter "duty_cycle14" = "50"     Info (12134): Parameter "output_clock_frequency15" = "0 MHz"     Info (12134): Parameter "phase_shift15" = "0 ps"     Info (12134): Parameter "duty_cycle15" = "50"     Info (12134): Parameter "output_clock_frequency16" = "0 MHz"     Info (12134): Parameter "phase_shift16" = "0 ps"     Info (12134): Parameter "duty_cycle16" = "50"     Info (12134): Parameter "output_clock_frequency17" = "0 MHz"     Info (12134): Parameter "phase_shift17" = "0 ps"     Info (12134): Parameter "duty_cycle17" = "50"     Info (12134): Parameter "pll_type" = "General"     Info (12134): Parameter "pll_subtype" = "General" Info (281010): Generating sgate simulator netlist using Simgen SIMGEN_PROGRESS Start of Model generation -- 0% complete SIMGEN_PROGRESS Phase 1 : Internal Objects created -- 25% complete SIMGEN_PROGRESS Phase 2 : Connections between internal objects made -- 60% complete SIMGEN_PROGRESS Phase 3 : Netlist generated -- 100% complete Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning     Info: Peak virtual memory: 4781 megabytes     Info: Processing ended: Mon Apr 06 14:09:03 2020     Info: Elapsed time: 00:00:24     Info: Total CPU time (on all processors): 00:00:02 Info (23030): Evaluation of Tcl script run_simgen_cmd.tcl was successful Info: Quartus Prime Shell was successful. 0 errors, 0 warnings     Info: Peak virtual memory: 4663 megabytes     Info: Processing ended: Mon Apr 06 14:09:03 2020     Info: Elapsed time: 00:00:25     Info: Total CPU time (on all processors): 00:00:04
+Info: pll_0: Simgen was successful
+Info: pll_0: "sdram" instantiated altera_pll "pll_0"
+Info: sdram_controller: Starting RTL generation for module 'sdram_sdram_controller'
+Info: sdram_controller:   Generation command is [exec C:/intelfpga_lite/19.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/19.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/19.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/19.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=sdram_sdram_controller --dir=C:/Users/jfujf/AppData/Local/Temp/alt8358_3170169498180415632.dir/0006_sdram_controller_gen/ --quartus_dir=C:/intelfpga_lite/19.1/quartus --verilog --config=C:/Users/jfujf/AppData/Local/Temp/alt8358_3170169498180415632.dir/0006_sdram_controller_gen//sdram_sdram_controller_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/jfujf/AppData/Local/Temp/alt8358_3170169498180415632.dir/0006_sdram_controller_gen/  ]
+Info: sdram_controller: Done RTL generation for module 'sdram_sdram_controller'
+Info: sdram_controller: "sdram" instantiated altera_avalon_new_sdram_controller "sdram_controller"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "sdram" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "sdram" instantiated altera_reset_controller "rst_controller"
+Info: d_cache_read_avalon_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "d_cache_read_avalon_master_translator"
+Info: sdram_controller_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "sdram_controller_s1_translator"
+Info: d_cache_read_avalon_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "d_cache_read_avalon_master_agent"
+Info: sdram_controller_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "sdram_controller_s1_agent"
+Info: sdram_controller_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "sdram_controller_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: sdram_controller_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "sdram_controller_s1_burst_adapter"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv
+Info: sdram_controller_s1_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "sdram_controller_s1_rsp_width_adapter"
+Info: Reusing file C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: sdram: Done "sdram" with 21 modules, 39 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:\Users\jfujf\Desktop\cse_148\Baseline_v2.3\mips_cpu\sdram\sdram.spd --output-directory=C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\jfujf\Desktop\cse_148\Baseline_v2.3\mips_cpu\sdram\sdram.spd --output-directory=C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	20 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\jfujf\Desktop\cse_148\Baseline_v2.3\mips_cpu\sdram.qsys --block-symbol-file --output-directory=C:\Users\jfujf\Desktop\cse_148\Baseline_v2.3\mips_cpu\sdram --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading mips_cpu/sdram.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 19.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge [altera_clock_bridge 19.1]
+Progress: Parameterizing module clock_bridge
+Progress: Adding d_cache_read [master_template 1.0]
+Progress: Parameterizing module d_cache_read
+Progress: Adding d_cache_write [master_template 1.0]
+Progress: Parameterizing module d_cache_write
+Progress: Adding i_cache_read [master_template 1.0]
+Progress: Parameterizing module i_cache_read
+Progress: Adding pll_0 [altera_pll 19.1]
+Progress: Parameterizing module pll_0
+Progress: Adding reset_bridge [altera_reset_bridge 19.1]
+Progress: Parameterizing module reset_bridge
+Progress: Adding reset_bridge_active_high [altera_reset_bridge 19.1]
+Progress: Parameterizing module reset_bridge_active_high
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 19.1]
+Progress: Parameterizing module sdram_controller
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sdram.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: sdram.pll_0: Able to implement PLL with user settings
+Info: sdram.sdram_controller: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\jfujf\Desktop\cse_148\Baseline_v2.3\mips_cpu\sdram.qsys --synthesis=VERILOG --output-directory=C:\Users\jfujf\Desktop\cse_148\Baseline_v2.3\mips_cpu\sdram\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading mips_cpu/sdram.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 19.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge [altera_clock_bridge 19.1]
+Progress: Parameterizing module clock_bridge
+Progress: Adding d_cache_read [master_template 1.0]
+Progress: Parameterizing module d_cache_read
+Progress: Adding d_cache_write [master_template 1.0]
+Progress: Parameterizing module d_cache_write
+Progress: Adding i_cache_read [master_template 1.0]
+Progress: Parameterizing module i_cache_read
+Progress: Adding pll_0 [altera_pll 19.1]
+Progress: Parameterizing module pll_0
+Progress: Adding reset_bridge [altera_reset_bridge 19.1]
+Progress: Parameterizing module reset_bridge
+Progress: Adding reset_bridge_active_high [altera_reset_bridge 19.1]
+Progress: Parameterizing module reset_bridge_active_high
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 19.1]
+Progress: Parameterizing module sdram_controller
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sdram.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: sdram.pll_0: Able to implement PLL with user settings
+Info: sdram.sdram_controller: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: sdram: Generating sdram "sdram" for QUARTUS_SYNTH
+Info: d_cache_read: "sdram" instantiated master_template "d_cache_read"
+Info: pll_0: "sdram" instantiated altera_pll "pll_0"
+Info: sdram_controller: Starting RTL generation for module 'sdram_sdram_controller'
+Info: sdram_controller:   Generation command is [exec C:/intelfpga_lite/19.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/19.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/19.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/19.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/19.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=sdram_sdram_controller --dir=C:/Users/jfujf/AppData/Local/Temp/alt8358_3170169498180415632.dir/0024_sdram_controller_gen/ --quartus_dir=C:/intelfpga_lite/19.1/quartus --verilog --config=C:/Users/jfujf/AppData/Local/Temp/alt8358_3170169498180415632.dir/0024_sdram_controller_gen//sdram_sdram_controller_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram_controller: Done RTL generation for module 'sdram_sdram_controller'
+Info: sdram_controller: "sdram" instantiated altera_avalon_new_sdram_controller "sdram_controller"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "sdram" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "sdram" instantiated altera_reset_controller "rst_controller"
+Info: d_cache_read_avalon_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "d_cache_read_avalon_master_translator"
+Info: sdram_controller_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "sdram_controller_s1_translator"
+Info: d_cache_read_avalon_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "d_cache_read_avalon_master_agent"
+Info: sdram_controller_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "sdram_controller_s1_agent"
+Info: sdram_controller_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "sdram_controller_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: sdram_controller_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "sdram_controller_s1_burst_adapter"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: sdram_controller_s1_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "sdram_controller_s1_rsp_width_adapter"
+Info: Reusing file C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: sdram: Done "sdram" with 21 modules, 40 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

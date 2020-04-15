@@ -1,0 +1,32 @@
+
+WORK > DEFAULT
+DEFAULT:                               ./libraries/work/                                 
+work:                                  ./libraries/work/                                 
+error_adapter_0:                       ./libraries/error_adapter_0/                      
+avalon_st_adapter:                     ./libraries/avalon_st_adapter/                    
+sdram_controller_s1_rsp_width_adapter: ./libraries/sdram_controller_s1_rsp_width_adapter/
+rsp_mux:                               ./libraries/rsp_mux/                              
+rsp_demux:                             ./libraries/rsp_demux/                            
+cmd_mux:                               ./libraries/cmd_mux/                              
+cmd_demux:                             ./libraries/cmd_demux/                            
+sdram_controller_s1_burst_adapter:     ./libraries/sdram_controller_s1_burst_adapter/    
+router_003:                            ./libraries/router_003/                           
+router:                                ./libraries/router/                               
+sdram_controller_s1_agent_rsp_fifo:    ./libraries/sdram_controller_s1_agent_rsp_fifo/   
+sdram_controller_s1_agent:             ./libraries/sdram_controller_s1_agent/            
+d_cache_read_avalon_master_agent:      ./libraries/d_cache_read_avalon_master_agent/     
+sdram_controller_s1_translator:        ./libraries/sdram_controller_s1_translator/       
+d_cache_read_avalon_master_translator: ./libraries/d_cache_read_avalon_master_translator/
+rst_controller:                        ./libraries/rst_controller/                       
+mm_interconnect_0:                     ./libraries/mm_interconnect_0/                    
+sdram_controller:                      ./libraries/sdram_controller/                     
+pll_0:                                 ./libraries/pll_0/                                
+d_cache_read:                          ./libraries/d_cache_read/                         
+altera_ver:                            ./libraries/altera_ver/                           
+lpm_ver:                               ./libraries/lpm_ver/                              
+sgate_ver:                             ./libraries/sgate_ver/                            
+altera_mf_ver:                         ./libraries/altera_mf_ver/                        
+altera_lnsim_ver:                      ./libraries/altera_lnsim_ver/                     
+cyclonev_ver:                          ./libraries/cyclonev_ver/                         
+cyclonev_hssi_ver:                     ./libraries/cyclonev_hssi_ver/                    
+cyclonev_pcie_hip_ver:                 ./libraries/cyclonev_pcie_hip_ver/                

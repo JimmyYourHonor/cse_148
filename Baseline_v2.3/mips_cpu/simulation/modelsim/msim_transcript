@@ -1,0 +1,1781 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do mips_cpu_run_msim_rtl_systemverilog.do
+# if ![file isdirectory mips_cpu_iputf_libs] {
+# 	file mkdir mips_cpu_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+# vlib mips_cpu_iputf_libs/error_adapter_0
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/error_adapter_0".
+# vmap error_adapter_0 ./mips_cpu_iputf_libs/error_adapter_0
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap error_adapter_0 ./mips_cpu_iputf_libs/error_adapter_0 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/avalon_st_adapter
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/avalon_st_adapter".
+# vmap avalon_st_adapter ./mips_cpu_iputf_libs/avalon_st_adapter
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap avalon_st_adapter ./mips_cpu_iputf_libs/avalon_st_adapter 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/sdram_controller_s1_rsp_width_adapter
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/sdram_controller_s1_rsp_width_adapter".
+# vmap sdram_controller_s1_rsp_width_adapter ./mips_cpu_iputf_libs/sdram_controller_s1_rsp_width_adapter
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap sdram_controller_s1_rsp_width_adapter ./mips_cpu_iputf_libs/sdram_controller_s1_rsp_width_adapter 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/rsp_mux
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/rsp_mux".
+# vmap rsp_mux ./mips_cpu_iputf_libs/rsp_mux
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap rsp_mux ./mips_cpu_iputf_libs/rsp_mux 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/rsp_demux
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/rsp_demux".
+# vmap rsp_demux ./mips_cpu_iputf_libs/rsp_demux
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap rsp_demux ./mips_cpu_iputf_libs/rsp_demux 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/cmd_mux
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/cmd_mux".
+# vmap cmd_mux ./mips_cpu_iputf_libs/cmd_mux
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap cmd_mux ./mips_cpu_iputf_libs/cmd_mux 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/cmd_demux
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/cmd_demux".
+# vmap cmd_demux ./mips_cpu_iputf_libs/cmd_demux
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap cmd_demux ./mips_cpu_iputf_libs/cmd_demux 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/sdram_controller_s1_burst_adapter
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/sdram_controller_s1_burst_adapter".
+# vmap sdram_controller_s1_burst_adapter ./mips_cpu_iputf_libs/sdram_controller_s1_burst_adapter
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap sdram_controller_s1_burst_adapter ./mips_cpu_iputf_libs/sdram_controller_s1_burst_adapter 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/router_003
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/router_003".
+# vmap router_003 ./mips_cpu_iputf_libs/router_003
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap router_003 ./mips_cpu_iputf_libs/router_003 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/router
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/router".
+# vmap router ./mips_cpu_iputf_libs/router
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap router ./mips_cpu_iputf_libs/router 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/sdram_controller_s1_agent_rsp_fifo
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/sdram_controller_s1_agent_rsp_fifo".
+# vmap sdram_controller_s1_agent_rsp_fifo ./mips_cpu_iputf_libs/sdram_controller_s1_agent_rsp_fifo
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap sdram_controller_s1_agent_rsp_fifo ./mips_cpu_iputf_libs/sdram_controller_s1_agent_rsp_fifo 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/sdram_controller_s1_agent
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/sdram_controller_s1_agent".
+# vmap sdram_controller_s1_agent ./mips_cpu_iputf_libs/sdram_controller_s1_agent
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap sdram_controller_s1_agent ./mips_cpu_iputf_libs/sdram_controller_s1_agent 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/d_cache_read_avalon_master_agent
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/d_cache_read_avalon_master_agent".
+# vmap d_cache_read_avalon_master_agent ./mips_cpu_iputf_libs/d_cache_read_avalon_master_agent
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap d_cache_read_avalon_master_agent ./mips_cpu_iputf_libs/d_cache_read_avalon_master_agent 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/sdram_controller_s1_translator
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/sdram_controller_s1_translator".
+# vmap sdram_controller_s1_translator ./mips_cpu_iputf_libs/sdram_controller_s1_translator
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap sdram_controller_s1_translator ./mips_cpu_iputf_libs/sdram_controller_s1_translator 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/d_cache_read_avalon_master_translator
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/d_cache_read_avalon_master_translator".
+# vmap d_cache_read_avalon_master_translator ./mips_cpu_iputf_libs/d_cache_read_avalon_master_translator
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap d_cache_read_avalon_master_translator ./mips_cpu_iputf_libs/d_cache_read_avalon_master_translator 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/rst_controller
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/rst_controller".
+# vmap rst_controller ./mips_cpu_iputf_libs/rst_controller
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap rst_controller ./mips_cpu_iputf_libs/rst_controller 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/mm_interconnect_0
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/mm_interconnect_0".
+# vmap mm_interconnect_0 ./mips_cpu_iputf_libs/mm_interconnect_0
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap mm_interconnect_0 ./mips_cpu_iputf_libs/mm_interconnect_0 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/sdram_controller
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/sdram_controller".
+# vmap sdram_controller ./mips_cpu_iputf_libs/sdram_controller
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap sdram_controller ./mips_cpu_iputf_libs/sdram_controller 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/pll_0
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/pll_0".
+# vmap pll_0 ./mips_cpu_iputf_libs/pll_0
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap pll_0 ./mips_cpu_iputf_libs/pll_0 
+# Modifying modelsim.ini
+# vlib mips_cpu_iputf_libs/d_cache_read
+# ** Warning: (vlib-34) Library already exists at "mips_cpu_iputf_libs/d_cache_read".
+# vmap d_cache_read ./mips_cpu_iputf_libs/d_cache_read
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap d_cache_read ./mips_cpu_iputf_libs/d_cache_read 
+# Modifying modelsim.ini
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv" -work error_adapter_0                      
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:39 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv -work error_adapter_0 
+# -- Compiling module sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# End time: 15:39:39 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter.v"                  -work avalon_st_adapter                    
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:39 on Apr 09,2020
+# vlog -reportprogress 300 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter.v -work avalon_st_adapter 
+# -- Compiling module sdram_mm_interconnect_0_avalon_st_adapter
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_avalon_st_adapter
+# End time: 15:39:39 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv"                               -work sdram_controller_s1_rsp_width_adapter
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:39 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv -work sdram_controller_s1_rsp_width_adapter 
+# -- Compiling module altera_merlin_width_adapter
+# 
+# Top level modules:
+# 	altera_merlin_width_adapter
+# End time: 15:39:40 on Apr 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv"                           -work sdram_controller_s1_rsp_width_adapter
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:40 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv -work sdram_controller_s1_rsp_width_adapter 
+# -- Compiling module altera_merlin_address_alignment
+# 
+# Top level modules:
+# 	altera_merlin_address_alignment
+# End time: 15:39:40 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv"                          -work sdram_controller_s1_rsp_width_adapter
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:40 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv -work sdram_controller_s1_rsp_width_adapter 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 15:39:40 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_mux.sv"                           -work rsp_mux                              
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:40 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_mux.sv -work rsp_mux 
+# -- Compiling module sdram_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_rsp_mux
+# End time: 15:39:40 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv"                                  -work rsp_mux                              
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:40 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv -work rsp_mux 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 15:39:40 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_demux.sv"                         -work rsp_demux                            
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:41 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_demux.sv -work rsp_demux 
+# -- Compiling module sdram_mm_interconnect_0_rsp_demux
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_rsp_demux
+# End time: 15:39:41 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_mux.sv"                           -work cmd_mux                              
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:41 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_mux.sv -work cmd_mux 
+# -- Compiling module sdram_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_cmd_mux
+# End time: 15:39:41 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv"                                  -work cmd_mux                              
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:41 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv -work cmd_mux 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 15:39:41 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_demux.sv"                         -work cmd_demux                            
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:42 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_demux.sv -work cmd_demux 
+# -- Compiling module sdram_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_cmd_demux
+# End time: 15:39:42 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter.sv"                               -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:42 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_merlin_burst_adapter
+# 
+# Top level modules:
+# 	altera_merlin_burst_adapter
+# End time: 15:39:42 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_uncmpr.sv"                        -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:42 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_uncmpr.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_merlin_burst_adapter_uncompressed_only
+# 
+# Top level modules:
+# 	altera_merlin_burst_adapter_uncompressed_only
+# End time: 15:39:42 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_13_1.sv"                          -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:42 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_13_1.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_merlin_burst_adapter_burstwrap_increment
+# -- Compiling module altera_merlin_burst_adapter_adder
+# -- Compiling module altera_merlin_burst_adapter_subtractor
+# -- Compiling module altera_merlin_burst_adapter_min
+# -- Compiling module altera_merlin_burst_adapter_13_1
+# 
+# Top level modules:
+# 	altera_merlin_burst_adapter_13_1
+# End time: 15:39:42 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv"                           -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:43 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_merlin_burst_adapter_new
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(500): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(501): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(502): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(503): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(504): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(505): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(506): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(507): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(508): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(509): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(511): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(512): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(513): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(514): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(515): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(516): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(517): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(518): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(519): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(520): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(521): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(522): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(523): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(526): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(527): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(614): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(615): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(616): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(617): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(618): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(619): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(620): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(621): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(622): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(623): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(624): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(625): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(746): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(762): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(860): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(861): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(862): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(863): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(864): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(865): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(866): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(867): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(900): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(901): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(902): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(903): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(940): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(942): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(945): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(947): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1040): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1041): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1042): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1043): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1044): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1045): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1046): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1047): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1048): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1049): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1084): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1085): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1086): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1087): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1088): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1089): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1104): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1106): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1206): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1207): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1208): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1209): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1210): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1211): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1212): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1213): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1214): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1215): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1216): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1256): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1257): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1258): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1259): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1260): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1261): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1291): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(1294): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# Top level modules:
+# 	altera_merlin_burst_adapter_new
+# End time: 15:39:44 on Apr 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 92
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv"                               -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:44 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_incr_burst_converter
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(266): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(268): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(283): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(285): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# Top level modules:
+# 	altera_incr_burst_converter
+# End time: 15:39:44 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_wrap_burst_converter.sv"                               -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:44 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_wrap_burst_converter.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_wrap_burst_converter
+# 
+# Top level modules:
+# 	altera_wrap_burst_converter
+# End time: 15:39:44 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv"                            -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:45 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_default_burst_converter
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv(102): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# Top level modules:
+# 	altera_default_burst_converter
+# End time: 15:39:45 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv"                           -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:45 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_merlin_address_alignment
+# 
+# Top level modules:
+# 	altera_merlin_address_alignment
+# End time: 15:39:45 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_stage.sv"                           -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:45 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_stage.sv -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_avalon_st_pipeline_stage
+# 
+# Top level modules:
+# 	altera_avalon_st_pipeline_stage
+# End time: 15:39:45 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_base.v"                             -work sdram_controller_s1_burst_adapter    
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:45 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_base.v -work sdram_controller_s1_burst_adapter 
+# -- Compiling module altera_avalon_st_pipeline_base
+# 
+# Top level modules:
+# 	altera_avalon_st_pipeline_base
+# End time: 15:39:46 on Apr 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router_003.sv"                        -work router_003                           
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:46 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router_003.sv -work router_003 
+# -- Compiling module sdram_mm_interconnect_0_router_003_default_decode
+# -- Compiling module sdram_mm_interconnect_0_router_003
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_router_003
+# End time: 15:39:46 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router.sv"                            -work router                               
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:46 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router.sv -work router 
+# -- Compiling module sdram_mm_interconnect_0_router_default_decode
+# -- Compiling module sdram_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0_router
+# End time: 15:39:46 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_sc_fifo.v"                                      -work sdram_controller_s1_agent_rsp_fifo   
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:46 on Apr 09,2020
+# vlog -reportprogress 300 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_sc_fifo.v -work sdram_controller_s1_agent_rsp_fifo 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 15:39:46 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv"                                 -work sdram_controller_s1_agent            
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:46 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv -work sdram_controller_s1_agent 
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 15:39:46 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv"                          -work sdram_controller_s1_agent            
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:47 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv -work sdram_controller_s1_agent 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 15:39:47 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_agent.sv"                                -work d_cache_read_avalon_master_agent     
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:47 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_agent.sv -work d_cache_read_avalon_master_agent 
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# End time: 15:39:47 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_translator.sv"                            -work sdram_controller_s1_translator       
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:47 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_translator.sv -work sdram_controller_s1_translator 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 15:39:47 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_translator.sv"                           -work d_cache_read_avalon_master_translator
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:47 on Apr 09,2020
+# vlog -reportprogress 300 -sv C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_translator.sv -work d_cache_read_avalon_master_translator 
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# End time: 15:39:47 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v"                                    -work rst_controller                       
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:47 on Apr 09,2020
+# vlog -reportprogress 300 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v -work rst_controller 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 15:39:48 on Apr 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v"                                  -work rst_controller                       
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:48 on Apr 09,2020
+# vlog -reportprogress 300 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v -work rst_controller 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 15:39:48 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0.v"                                    -work mm_interconnect_0                    
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:48 on Apr 09,2020
+# vlog -reportprogress 300 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0.v -work mm_interconnect_0 
+# -- Compiling module sdram_mm_interconnect_0
+# 
+# Top level modules:
+# 	sdram_mm_interconnect_0
+# End time: 15:39:48 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v"                                     -work sdram_controller                     
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:48 on Apr 09,2020
+# vlog -reportprogress 300 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v -work sdram_controller 
+# -- Compiling module sdram_sdram_controller_input_efifo_module
+# -- Compiling module sdram_sdram_controller
+# 
+# Top level modules:
+# 	sdram_sdram_controller
+# End time: 15:39:48 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v"                      -work sdram_controller                     
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:49 on Apr 09,2020
+# vlog -reportprogress 300 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v -work sdram_controller 
+# -- Compiling module sdram_sdram_controller_test_component_ram_module
+# -- Compiling module sdram_sdram_controller_test_component
+# 
+# Top level modules:
+# 	sdram_sdram_controller_test_component
+# End time: 15:39:49 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo"                                               -work pll_0                                
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:49 on Apr 09,2020
+# vlog -reportprogress 300 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo -work pll_0 
+# -- Compiling module sdram_pll_0
+# 
+# Top level modules:
+# 	sdram_pll_0
+# End time: 15:39:49 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v"                                              -work d_cache_read                         
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:49 on Apr 09,2020
+# vlog -reportprogress 300 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v -work d_cache_read 
+# -- Compiling module custom_master
+# 
+# Top level modules:
+# 	custom_master
+# End time: 15:39:49 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v"                                         -work d_cache_read                         
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:49 on Apr 09,2020
+# vlog -reportprogress 300 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v -work d_cache_read 
+# -- Compiling module burst_write_master
+# 
+# Top level modules:
+# 	burst_write_master
+# End time: 15:39:50 on Apr 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v"                                          -work d_cache_read                         
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:50 on Apr 09,2020
+# vlog -reportprogress 300 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v -work d_cache_read 
+# -- Compiling module burst_read_master
+# 
+# Top level modules:
+# 	burst_read_master
+# End time: 15:39:50 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v"                                               -work d_cache_read                         
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:50 on Apr 09,2020
+# vlog -reportprogress 300 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v -work d_cache_read 
+# -- Compiling module write_master
+# 
+# Top level modules:
+# 	write_master
+# End time: 15:39:50 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v"                                  -work d_cache_read                         
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:50 on Apr 09,2020
+# vlog -reportprogress 300 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v -work d_cache_read 
+# -- Compiling module latency_aware_read_master
+# 
+# Top level modules:
+# 	latency_aware_read_master
+# End time: 15:39:50 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v"                                                                                                            
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:50 on Apr 09,2020
+# vlog -reportprogress 300 C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v 
+# -- Compiling module sdram
+# 
+# Top level modules:
+# 	sdram
+# End time: 15:39:50 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:50 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv 
+# -- Compiling module cache_bank
+# -- Compiling module cache_bank_core
+# 
+# Top level modules:
+# 	cache_bank
+# End time: 15:39:50 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:51 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv 
+# -- Compiling package mips_core_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:39:51 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:51 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv 
+# -- Compiling package mips_cpu_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:39:51 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:51 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv 
+# -- Compiling package llsc_module_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling interface llsc_input_ifc
+# -- Compiling interface llsc_output_ifc
+# -- Compiling module llsc_module
+# 
+# Top level modules:
+# 	llsc_module
+# End time: 15:39:51 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:51 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv 
+# -- Compiling package mips_core_interfaces_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling interface load_pc_ifc
+# -- Compiling interface pc_ifc
+# -- Compiling interface cache_output_ifc
+# -- Compiling interface branch_decoded_ifc
+# -- Compiling interface alu_pass_through_ifc
+# -- Compiling interface branch_result_ifc
+# -- Compiling interface d_cache_pass_through_ifc
+# -- Compiling interface write_back_ifc
+# -- Compiling interface hazard_control_ifc
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:39:51 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/pass_done_interface.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:51 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/pass_done_interface.sv 
+# -- Compiling package pass_done_interface_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Compiling interface pass_done_ifc
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:39:51 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/memory_interfaces.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:51 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/memory_interfaces.sv 
+# -- Compiling package memory_interfaces_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Compiling interface mem_write_ifc
+# -- Compiling interface mem_read_ifc
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:39:52 on Apr 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:52 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv 
+# -- Compiling package i_cache_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module i_cache
+# 
+# Top level modules:
+# 	i_cache
+# End time: 15:39:52 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:52 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv 
+# -- Compiling package fetch_unit_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module fetch_unit
+# 
+# Top level modules:
+# 	fetch_unit
+# End time: 15:39:52 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:53 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/decoder.sv 
+# -- Compiling package decoder_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling interface decoder_output_ifc
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 15:39:53 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:53 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv 
+# -- Compiling package d_cache_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling interface d_cache_input_ifc
+# -- Compiling module d_cache
+# 
+# Top level modules:
+# 	d_cache
+# End time: 15:39:53 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:53 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv 
+# -- Compiling package branch_controller_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module branch_controller
+# -- Compiling module branch_predictor_always_not_taken
+# -- Compiling module branch_predictor_2bit
+# 
+# Top level modules:
+# 	branch_controller
+# 	branch_predictor_always_not_taken
+# End time: 15:39:53 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:53 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv 
+# -- Compiling package alu_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling interface alu_input_ifc
+# -- Compiling interface alu_output_ifc
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 15:39:53 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:53 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv 
+# -- Compiling package reg_file_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling interface reg_file_output_ifc
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 15:39:53 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:54 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv 
+# -- Compiling package pipeline_registers_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module pr_i2d
+# -- Compiling module pr_d2e
+# -- Compiling module pr_e2m
+# -- Compiling module pr_m2w
+# 
+# Top level modules:
+# 	pr_i2d
+# 	pr_d2e
+# 	pr_e2m
+# 	pr_m2w
+# End time: 15:39:54 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:54 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv 
+# -- Compiling package hazard_controller_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module hazard_controller
+# 
+# Top level modules:
+# 	hazard_controller
+# End time: 15:39:54 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:54 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv 
+# -- Compiling package glue_circuits_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module decode_stage_glue
+# -- Compiling module ex_stage_glue
+# -- Compiling module mem_stage_glue
+# 
+# Top level modules:
+# 	decode_stage_glue
+# 	ex_stage_glue
+# 	mem_stage_glue
+# End time: 15:39:54 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:54 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv 
+# -- Compiling package forward_unit_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module forward_unit
+# 
+# Top level modules:
+# 	forward_unit
+# End time: 15:39:54 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:54 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv 
+# -- Compiling package mips_core_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Importing package mips_core_pkg
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+# End time: 15:39:55 on Apr 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu {C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:55 on Apr 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu" C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv 
+# -- Compiling package mips_cpu_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Compiling module mips_cpu
+# 
+# Top level modules:
+# 	mips_cpu
+# End time: 15:39:55 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+do C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/fast_testbench.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:40:28 on Apr 09,2020
+# vlog -reportprogress 300 -work work ../../fast_testbench.sv 
+# -- Compiling package fast_testbench_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Compiling module fast_testbench
+# 
+# Top level modules:
+# 	fast_testbench
+# End time: 15:40:28 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:40:28 on Apr 09,2020
+# vlog -reportprogress 300 -work work ../../fast_sdram.sv 
+# -- Compiling package fast_sdram_sv_unit
+# -- Importing package mips_cpu_pkg
+# -- Compiling module fast_sdram
+# 
+# Top level modules:
+# 	fast_sdram
+# End time: 15:40:28 on Apr 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t ns -L altera_mf_ver fast_testbench 
+# Start time: 15:40:28 on Apr 09,2020
+# Loading sv_std.std
+# Loading work.mips_cpu_pkg
+# Loading work.fast_testbench_sv_unit
+# Loading work.fast_testbench
+# Loading work.memory_interfaces_sv_unit
+# Loading work.mem_read_ifc
+# Loading work.mem_write_ifc
+# Loading work.pass_done_interface_sv_unit
+# Loading work.pass_done_ifc
+# Loading work.mips_core_pkg
+# Loading work.mips_core_sv_unit
+# Loading work.mips_core
+# Loading work.mips_core_interfaces_sv_unit
+# Loading work.pc_ifc
+# Loading work.cache_output_ifc
+# Loading work.decoder_sv_unit
+# Loading work.decoder_output_ifc
+# Loading work.reg_file_sv_unit
+# Loading work.reg_file_output_ifc
+# Loading work.branch_decoded_ifc
+# Loading work.alu_sv_unit
+# Loading work.alu_input_ifc
+# Loading work.alu_pass_through_ifc
+# Loading work.alu_output_ifc
+# Loading work.llsc_module_sv_unit
+# Loading work.llsc_input_ifc
+# Loading work.branch_result_ifc
+# Loading work.d_cache_sv_unit
+# Loading work.d_cache_input_ifc
+# Loading work.d_cache_pass_through_ifc
+# Loading work.llsc_output_ifc
+# Loading work.write_back_ifc
+# Loading work.hazard_control_ifc
+# Loading work.load_pc_ifc
+# Loading work.fetch_unit_sv_unit
+# Loading work.fetch_unit
+# Loading work.i_cache_sv_unit
+# Loading work.i_cache
+# Loading work.cache_bank
+# Loading work.cache_bank_core
+# Loading work.pipeline_registers_sv_unit
+# Loading work.pr_i2d
+# Loading work.decoder
+# Loading work.reg_file
+# Loading work.forward_unit_sv_unit
+# Loading work.forward_unit
+# Loading work.glue_circuits_sv_unit
+# Loading work.decode_stage_glue
+# Loading work.pr_d2e
+# Loading work.alu
+# Loading work.llsc_module
+# Loading work.ex_stage_glue
+# Loading work.pr_e2m
+# Loading work.d_cache
+# Loading work.mem_stage_glue
+# Loading work.pr_m2w
+# Loading work.hazard_controller_sv_unit
+# Loading work.hazard_controller
+# Loading work.branch_controller_sv_unit
+# Loading work.branch_controller
+# Loading work.branch_predictor_2bit
+# Loading work.fast_sdram_sv_unit
+# Loading work.fast_sdram
+# Loading altera_mf_ver.scfifo
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# ** Warning: (vsim-3017) ../../fast_sdram.sv(66): [TFMPC] - Too few port connections. Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/iread_fifo File: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'usedw'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(66): [TFMPC] - Missing connection for port 'almost_empty'.
+# ** Warning: (vsim-3017) ../../fast_sdram.sv(88): [TFMPC] - Too few port connections. Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/dread_fifo File: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'usedw'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(88): [TFMPC] - Missing connection for port 'almost_empty'.
+# ** Warning: (vsim-3017) ../../fast_sdram.sv(110): [TFMPC] - Too few port connections. Expected 13, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /fast_testbench/FAST_SDRAM/dwrite_fifo File: /build/swbuild/SJ/nightly/17.1std/590/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'sclr'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'usedw'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'almost_full'.
+# ** Warning: (vsim-3722) ../../fast_sdram.sv(110): [TFMPC] - Missing connection for port 'almost_empty'.
+do C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/fast_wave.do
+run -all
+# ** Note: $stop    : ../../fast_testbench.sv(69)
+#    Time: 95 ns  Iteration: 1  Instance: /fast_testbench
+# Break in Module fast_testbench at ../../fast_testbench.sv line 69
+run
+run
+run
+run
+run
+run -all
+# fast_testbench.MIPS_CORE.ALU (              559295) PASS test 00000001
+# 
+# fast_testbench.MIPS_CORE.ALU (              811545) PASS test 00000002
+# 
+# fast_testbench.MIPS_CORE.ALU (             1136425) PASS test 00000003
+# 
+# fast_testbench.MIPS_CORE.ALU (             1694925) PASS test 00000004
+# 
+# fast_testbench.MIPS_CORE.ALU (             1841535) PASS test 00000005
+# 
+# fast_testbench.MIPS_CORE.ALU (             1928915) PASS test 00000006
+# 
+# fast_testbench.MIPS_CORE.ALU (             2221565) PASS test 00000007
+# 
+# fast_testbench.MIPS_CORE.ALU (             2383725) PASS test 00000008
+# 
+# fast_testbench.MIPS_CORE.ALU (             2576145) PASS test 00000009
+# 
+# fast_testbench.MIPS_CORE.ALU (             2986365) PASS test 0000000a
+# 
+# fast_testbench.MIPS_CORE.ALU (             3343745) PASS test 0000000b
+# 
+# fast_testbench.MIPS_CORE.ALU (             3405485) PASS test 0000000c
+# 
+# fast_testbench.MIPS_CORE.ALU (             3464225) PASS test 0000000d
+# 
+# fast_testbench.MIPS_CORE.ALU (             3932885) PASS test 0000000e
+# 
+# fast_testbench.MIPS_CORE.ALU (             4023665) PASS test 0000000f
+# 
+# fast_testbench.MIPS_CORE.ALU (             4249325) PASS test 00000010
+# 
+# fast_testbench.MIPS_CORE.ALU (             4353005) PASS test 00000011
+# 
+# fast_testbench.MIPS_CORE.ALU (             4394925) PASS test 00000012
+# 
+# fast_testbench.MIPS_CORE.ALU (             4704525) PASS test 00000013
+# 
+# fast_testbench.MIPS_CORE.ALU (             4774545) PASS test 00000014
+# 
+# fast_testbench.MIPS_CORE.ALU (             5046105) PASS test 00000015
+# 
+# fast_testbench.MIPS_CORE.ALU (             5600925) PASS test 00000016
+# 
+# fast_testbench.MIPS_CORE.ALU (             5666365) PASS test 00000017
+# 
+# fast_testbench.MIPS_CORE.ALU (             5695305) PASS test 00000018
+# 
+# fast_testbench.MIPS_CORE.ALU (             5954085) PASS test 00000019
+# 
+# fast_testbench.MIPS_CORE.ALU (             6629325) PASS test 0000001a
+# 
+# fast_testbench.MIPS_CORE.ALU (             7048605) PASS test 0000001b
+# 
+# fast_testbench.MIPS_CORE.ALU (             7086245) PASS test 0000001c
+# 
+# fast_testbench.MIPS_CORE.ALU (             8733505) PASS test 0000001d
+# 
+# fast_testbench.MIPS_CORE.ALU (             9268125) PASS test 0000001e
+# 
+# fast_testbench.MIPS_CORE.ALU (             9632365) PASS test 0000001f
+# 
+# fast_testbench.MIPS_CORE.ALU (             9835025) PASS test 00000020
+# 
+# fast_testbench.MIPS_CORE.ALU (             9893585) PASS test 00000021
+# 
+# fast_testbench.MIPS_CORE.ALU (            10495765) PASS test 00000022
+# 
+# fast_testbench.MIPS_CORE.ALU (            10610445) PASS test 00000023
+# 
+# fast_testbench.MIPS_CORE.ALU (            10744185) PASS test 00000024
+# 
+# fast_testbench.MIPS_CORE.ALU (            10828685) PASS test 00000025
+# 
+# fast_testbench.MIPS_CORE.ALU (            10892285) PASS test 00000026
+# 
+# fast_testbench.MIPS_CORE.ALU (            11018585) PASS test 00000027
+# 
+# fast_testbench.MIPS_CORE.ALU (            11243725) PASS test 00000028
+# 
+# fast_testbench.MIPS_CORE.ALU (            11256105) PASS test 00000029
+# 
+# fast_testbench.MIPS_CORE.ALU (            11409665) PASS test 0000002a
+# 
+# fast_testbench.MIPS_CORE.ALU (            11604505) PASS test 0000002b
+# 
+# fast_testbench.MIPS_CORE.ALU (            11673145) PASS test 0000002c
+# 
+# fast_testbench.MIPS_CORE.ALU (            11709965) PASS test 0000002d
+# 
+# fast_testbench.MIPS_CORE.ALU (            11808625) PASS test 0000002e
+# 
+# fast_testbench.MIPS_CORE.ALU (            12017445) PASS test 0000002f
+# 
+# fast_testbench.MIPS_CORE.ALU (            12743465) PASS test 00000030
+# 
+# fast_testbench.MIPS_CORE.ALU (            13694985) PASS test 00000031
+# 
+# fast_testbench.MIPS_CORE.ALU (            13931425) PASS test 00000032
+# 
+# fast_testbench.MIPS_CORE.ALU (            14416945) PASS test 00000033
+# 
+# fast_testbench.MIPS_CORE.ALU (            14654725) PASS test 00000034
+# 
+# fast_testbench.MIPS_CORE.ALU (            15387205) PASS test 00000035
+# 
+# fast_testbench.MIPS_CORE.ALU (            15993285) PASS test 00000036
+# 
+# fast_testbench.MIPS_CORE.ALU (            16740245) PASS test 00000037
+# 
+# fast_testbench.MIPS_CORE.ALU (            17049545) PASS test 00000038
+# 
+# fast_testbench.MIPS_CORE.ALU (            17099585) PASS test 00000039
+# 
+# fast_testbench.MIPS_CORE.ALU (            17186205) PASS test 0000003a
+# 
+# fast_testbench.MIPS_CORE.ALU (            17840025) PASS test 0000003b
+# 
+# fast_testbench.MIPS_CORE.ALU (            18245865) PASS test 0000003c
+# 
+# fast_testbench.MIPS_CORE.ALU (            18442665) PASS test 0000003d
+# 
+# fast_testbench.MIPS_CORE.ALU (            18639025) PASS test 0000003e
+# 
+# fast_testbench.MIPS_CORE.ALU (            18930225) PASS test 0000003f
+# 
+# fast_testbench.MIPS_CORE.ALU (            19368385) PASS test 00000040
+# 
+# fast_testbench.MIPS_CORE.ALU (            19520445) PASS test 00000041
+# 
+# fast_testbench.MIPS_CORE.ALU (            19549485) PASS test 00000042
+# 
+# fast_testbench.MIPS_CORE.ALU (            19795445) PASS test 00000043
+# 
+# fast_testbench.MIPS_CORE.ALU (            20375445) PASS test 00000044
+# 
+# fast_testbench.MIPS_CORE.ALU (            20403045) PASS test 00000045
+# 
+# fast_testbench.MIPS_CORE.ALU (            20688845) PASS test 00000046
+# 
+# fast_testbench.MIPS_CORE.ALU (            20753945) PASS test 00000047
+# 
+# fast_testbench.MIPS_CORE.ALU (            20985025) PASS test 00000048
+# 
+# fast_testbench.MIPS_CORE.ALU (            21115725) PASS test 00000049
+# 
+# fast_testbench.MIPS_CORE.ALU (            21466565) PASS test 0000004a
+# 
+# fast_testbench.MIPS_CORE.ALU (            21570445) PASS test 0000004b
+# 
+# fast_testbench.MIPS_CORE.ALU (            21669275) PASS test 0000004c
+# 
+# fast_testbench.MIPS_CORE.ALU (            21773985) PASS test 0000004d
+# 
+# fast_testbench.MIPS_CORE.ALU (            21827775) PASS test 0000004e
+# 
+# fast_testbench.MIPS_CORE.ALU (            21944485) PASS test 0000004f
+# 
+# fast_testbench.MIPS_CORE.ALU (            22135345) PASS test 00000050
+# 
+# fast_testbench.MIPS_CORE.ALU (            22175945) PASS test 00000051
+# 
+# fast_testbench.MIPS_CORE.ALU (            22311165) PASS test 00000052
+# 
+# fast_testbench.MIPS_CORE.ALU (            22405525) PASS test 00000053
+# 
+# fast_testbench.MIPS_CORE.ALU (            22471025) PASS test 00000054
+# 
+# fast_testbench.MIPS_CORE.ALU (            22511365) PASS test 00000055
+# 
+# fast_testbench.MIPS_CORE.ALU (            22709825) PASS test 00000056
+# 
+# fast_testbench.MIPS_CORE.ALU (            22892285) PASS test 00000057
+# 
+# fast_testbench.MIPS_CORE.ALU (            22956645) PASS test 00000058
+# 
+# fast_testbench.MIPS_CORE.ALU (            23330025) PASS test 00000059
+# 
+# fast_testbench.MIPS_CORE.ALU (            23358845) PASS test 0000005a
+# 
+# fast_testbench.MIPS_CORE.ALU (            23473485) PASS test 0000005b
+# 
+# fast_testbench.MIPS_CORE.ALU (            23555305) PASS test 0000005c
+# 
+# fast_testbench.MIPS_CORE.ALU (            23848595) PASS test 0000005d
+# 
+# fast_testbench.MIPS_CORE.ALU (            24105605) PASS test 0000005e
+# 
+# fast_testbench.MIPS_CORE.ALU (            24678985) PASS test 0000005f
+# 
+# fast_testbench.MIPS_CORE.ALU (            24882785) PASS test 00000060
+# 
+# fast_testbench.MIPS_CORE.ALU (            25145585) PASS test 00000061
+# 
+# fast_testbench.MIPS_CORE.ALU (            25247025) PASS test 00000062
+# 
+# fast_testbench.MIPS_CORE.ALU (            25456125) PASS test 00000063
+# 
+# fast_testbench.MIPS_CORE.ALU (            25736625) PASS test 00000064
+# 
+# fast_testbench.MIPS_CORE.ALU (            25800305) PASS test 00000065
+# 
+# fast_testbench.MIPS_CORE.ALU (            25862705) PASS test 00000066
+# 
+# fast_testbench.MIPS_CORE.ALU (            25998145) PASS test 00000067
+# 
+# fast_testbench.MIPS_CORE.ALU (            26053605) PASS test 00000068
+# 
+# fast_testbench.MIPS_CORE.ALU (            26179585) PASS test 00000069
+# 
+# fast_testbench.MIPS_CORE.ALU (            26935865) PASS test 0000006a
+# 
+# fast_testbench.MIPS_CORE.ALU (            27356805) PASS test 0000006b
+# 
+# fast_testbench.MIPS_CORE.ALU (            27410145) PASS test 0000006c
+# 
+# fast_testbench.MIPS_CORE.ALU (            27508685) PASS test 0000006d
+# 
+# fast_testbench.MIPS_CORE.ALU (            27778385) PASS test 0000006e
+# 
+# fast_testbench.MIPS_CORE.ALU (            28699585) PASS test 0000006f
+# 
+# fast_testbench.MIPS_CORE.ALU (            28851485) PASS test 00000070
+# 
+# fast_testbench.MIPS_CORE.ALU (            29075705) PASS test 00000071
+# 
+# fast_testbench.MIPS_CORE.ALU (            29329925) PASS test 00000072
+# 
+# fast_testbench.MIPS_CORE.ALU (            29358225) PASS test 00000073
+# 
+# fast_testbench.MIPS_CORE.ALU (            29649805) PASS test 00000074
+# 
+# fast_testbench.MIPS_CORE.ALU (            30136125) PASS test 00000075
+# 
+# fast_testbench.MIPS_CORE.ALU (            30186625) PASS test 00000076
+# 
+# fast_testbench.MIPS_CORE.ALU (            30550345) PASS test 00000077
+# 
+# fast_testbench.MIPS_CORE.ALU (            30712265) PASS test 00000078
+# 
+# fast_testbench.MIPS_CORE.ALU (            30754525) PASS test 00000079
+# 
+# fast_testbench.MIPS_CORE.ALU (            30927545) PASS test 0000007a
+# 
+# fast_testbench.MIPS_CORE.ALU (            30964715) PASS test 0000007b
+# 
+# fast_testbench.MIPS_CORE.ALU (            31003825) PASS test 0000007c
+# 
+# fast_testbench.MIPS_CORE.ALU (            31110565) PASS test 0000007d
+# 
+# fast_testbench.MIPS_CORE.ALU (            31157745) PASS test 0000007e
+# 
+# fast_testbench.MIPS_CORE.ALU (            31198145) PASS test 0000007f
+# 
+# fast_testbench.MIPS_CORE.ALU (            31278905) PASS test 00000080
+# 
+# fast_testbench.MIPS_CORE.ALU (            31584105) PASS test 00000081
+# 
+# fast_testbench.MIPS_CORE.ALU (            31920105) PASS test 00000082
+# 
+# fast_testbench.MIPS_CORE.ALU (            32010065) PASS test 00000083
+# 
+# fast_testbench.MIPS_CORE.ALU (            32158445) PASS test 00000084
+# 
+# fast_testbench.MIPS_CORE.ALU (            32312145) PASS test 00000085
+# 
+# fast_testbench.MIPS_CORE.ALU (            32448635) PASS test 00000086
+# 
+# fast_testbench.MIPS_CORE.ALU (            32485745) PASS test 00000087
+# 
+# fast_testbench.MIPS_CORE.ALU (            32519235) PASS test 00000088
+# 
+# fast_testbench.MIPS_CORE.ALU (            32619845) PASS test 00000089
+# 
+# fast_testbench.MIPS_CORE.ALU (            32638185) PASS test 0000008a
+# 
+# fast_testbench.MIPS_CORE.ALU (            32684655) PASS test 0000008b
+# 
+# fast_testbench.MIPS_CORE.ALU (            32933765) PASS test 0000008c
+# 
+# fast_testbench.MIPS_CORE.ALU (            32987265) PASS test 0000008d
+# 
+# fast_testbench.MIPS_CORE.ALU (            33290525) PASS test 0000008e
+# 
+# fast_testbench.MIPS_CORE.ALU (            33591825) PASS test 0000008f
+# 
+# fast_testbench.MIPS_CORE.ALU (            34303165) PASS test 00000090
+# 
+# fast_testbench.MIPS_CORE.ALU (            34331545) PASS test 00000091
+# 
+# fast_testbench.MIPS_CORE.ALU (            35123665) PASS test 00000092
+# 
+# fast_testbench.MIPS_CORE.ALU (            35259605) PASS test 00000093
+# 
+# fast_testbench.MIPS_CORE.ALU (            35299625) PASS test 00000094
+# 
+# fast_testbench.MIPS_CORE.ALU (            35348345) PASS test 00000095
+# 
+# fast_testbench.MIPS_CORE.ALU (            36179165) PASS test 00000096
+# 
+# fast_testbench.MIPS_CORE.ALU (            36463545) PASS test 00000097
+# 
+# fast_testbench.MIPS_CORE.ALU (            36646385) PASS test 00000098
+# 
+# fast_testbench.MIPS_CORE.ALU (            37202565) PASS test 00000099
+# 
+# fast_testbench.MIPS_CORE.ALU (            37418405) PASS test 0000009a
+# 
+# fast_testbench.MIPS_CORE.ALU (            37483385) PASS test 0000009b
+# 
+# fast_testbench.MIPS_CORE.ALU (            37671075) PASS test 0000009c
+# 
+# fast_testbench.MIPS_CORE.ALU (            37745565) PASS test 0000009d
+# 
+# fast_testbench.MIPS_CORE.ALU (            37902145) PASS test 0000009e
+# 
+# fast_testbench.MIPS_CORE.ALU (            37993325) PASS test 0000009f
+# 
+# fast_testbench.MIPS_CORE.ALU (            38052985) PASS test 000000a0
+# 
+# fast_testbench.MIPS_CORE.ALU (            38080025) PASS test 000000a1
+# 
+# fast_testbench.MIPS_CORE.ALU (            38360765) PASS test 000000a2
+# 
+# fast_testbench.MIPS_CORE.ALU (            38548765) PASS test 000000a3
+# 
+# fast_testbench.MIPS_CORE.ALU (            39011085) PASS test 000000a4
+# 
+# fast_testbench.MIPS_CORE.ALU (            39097725) PASS test 000000a5
+# 
+# fast_testbench.MIPS_CORE.ALU (            39176545) PASS test 000000a6
+# 
+# fast_testbench.MIPS_CORE.ALU (            39540785) PASS test 000000a7
+# 
+# fast_testbench.MIPS_CORE.ALU (            39589345) PASS test 000000a8
+# 
+# fast_testbench.MIPS_CORE.ALU (            39624295) PASS test 000000a9
+# 
+# fast_testbench.MIPS_CORE.ALU (            39649825) PASS test 000000aa
+# 
+# fast_testbench.MIPS_CORE.ALU (            39710165) PASS test 000000ab
+# 
+# fast_testbench.MIPS_CORE.ALU (            39773455) PASS test 000000ac
+# 
+# fast_testbench.MIPS_CORE.ALU (            39844145) PASS test 000000ad
+# 
+# fast_testbench.MIPS_CORE.ALU (            39864045) PASS test 000000ae
+# 
+# fast_testbench.MIPS_CORE.ALU (            40009325) PASS test 000000af
+# 
+# fast_testbench.MIPS_CORE.ALU (            40175605) PASS test 000000b0
+# 
+# fast_testbench.MIPS_CORE.ALU (            40618285) PASS test 000000b1
+# 
+# fast_testbench.MIPS_CORE.ALU (            40787245) PASS test 000000b2
+# 
+# fast_testbench.MIPS_CORE.ALU (            40942585) PASS test 000000b3
+# 
+# fast_testbench.MIPS_CORE.ALU (            40962825) PASS test 000000b4
+# 
+# fast_testbench.MIPS_CORE.ALU (            41036045) PASS test 000000b5
+# 
+# fast_testbench.MIPS_CORE.ALU (            41092925) PASS test 000000b6
+# 
+# fast_testbench.MIPS_CORE.ALU (            41160405) PASS test 000000b7
+# 
+# fast_testbench.MIPS_CORE.ALU (            41188465) PASS test 000000b8
+# 
+# fast_testbench.MIPS_CORE.ALU (            41225545) PASS test 000000b9
+# 
+# fast_testbench.MIPS_CORE.ALU (            41273045) PASS test 000000ba
+# 
+# fast_testbench.MIPS_CORE.ALU (            41609555) PASS test 000000bb
+# 
+# fast_testbench.MIPS_CORE.ALU (            41682055) PASS test 000000bc
+# 
+# fast_testbench.MIPS_CORE.ALU (            41758805) PASS test 000000bd
+# 
+# fast_testbench.MIPS_CORE.ALU (            42204885) PASS test 000000be
+# 
+# fast_testbench.MIPS_CORE.ALU (            42400025) PASS test 000000bf
+# 
+# fast_testbench.MIPS_CORE.ALU (            42673305) PASS test 000000c0
+# 
+# fast_testbench.MIPS_CORE.ALU (            42697025) PASS test 000000c1
+# 
+# fast_testbench.MIPS_CORE.ALU (            42759105) PASS test 000000c2
+# 
+# fast_testbench.MIPS_CORE.ALU (            42841785) PASS test 000000c3
+# 
+# fast_testbench.MIPS_CORE.ALU (            42991385) PASS test 000000c4
+# 
+# fast_testbench.MIPS_CORE.ALU (            43070665) PASS test 000000c5
+# 
+# fast_testbench.MIPS_CORE.ALU (            43253145) PASS test 000000c6
+# 
+# fast_testbench.MIPS_CORE.ALU (            43311645) PASS test 000000c7
+# 
+# fast_testbench.MIPS_CORE.ALU (            43505865) PASS test 000000c8
+# 
+# fast_testbench.MIPS_CORE.ALU (            44051935) PASS test 000000c9
+# 
+# fast_testbench.MIPS_CORE.ALU (            44224945) PASS test 000000ca
+# 
+# fast_testbench.MIPS_CORE.ALU (            44511345) PASS test 000000cb
+# 
+# fast_testbench.MIPS_CORE.ALU (            45311325) PASS test 000000cc
+# 
+# fast_testbench.MIPS_CORE.ALU (            45359885) PASS test 000000cd
+# 
+# fast_testbench.MIPS_CORE.ALU (            45395905) PASS test 000000ce
+# 
+# fast_testbench.MIPS_CORE.ALU (            45537045) PASS test 000000cf
+# 
+# fast_testbench.MIPS_CORE.ALU (            46286095) PASS test 000000d0
+# 
+# fast_testbench.MIPS_CORE.ALU (            46309565) PASS test 000000d1
+# 
+# fast_testbench.MIPS_CORE.ALU (            47002775) PASS test 000000d2
+# 
+# fast_testbench.MIPS_CORE.ALU (            47293325) PASS test 000000d3
+# 
+# fast_testbench.MIPS_CORE.ALU (            47609105) PASS test 000000d4
+# 
+# fast_testbench.MIPS_CORE.ALU (            47660385) PASS test 000000d5
+# 
+# fast_testbench.MIPS_CORE.ALU (            47902565) PASS test 000000d6
+# 
+# fast_testbench.MIPS_CORE.ALU (            47950945) PASS test 000000d7
+# 
+# fast_testbench.MIPS_CORE.ALU (            47969785) PASS test 000000d8
+# 
+# fast_testbench.MIPS_CORE.ALU (            48067905) PASS test 000000d9
+# 
+# fast_testbench.MIPS_CORE.ALU (            48107925) PASS test 000000da
+# 
+# fast_testbench.MIPS_CORE.ALU (            48142645) PASS test 000000db
+# 
+# fast_testbench.MIPS_CORE.ALU (            48286425) PASS test 000000dc
+# 
+# fast_testbench.MIPS_CORE.ALU (            48433865) PASS test 000000dd
+# 
+# fast_testbench.MIPS_CORE.ALU (            48573385) PASS test 000000de
+# 
+# fast_testbench.MIPS_CORE.ALU (            48665925) PASS test 000000df
+# 
+# fast_testbench.MIPS_CORE.ALU (            48994445) PASS test 000000e0
+# 
+# fast_testbench.MIPS_CORE.ALU (            49307975) PASS test 000000e1
+# 
+# fast_testbench.MIPS_CORE.ALU (            49386175) PASS test 000000e2
+# 
+# fast_testbench.MIPS_CORE.ALU (            49423305) PASS test 000000e3
+# 
+# fast_testbench.MIPS_CORE.ALU (            49476245) PASS test 000000e4
+# 
+# fast_testbench.MIPS_CORE.ALU (            49591565) PASS test 000000e5
+# 
+# fast_testbench.MIPS_CORE.ALU (            49633325) PASS test 000000e6
+# 
+# fast_testbench.MIPS_CORE.ALU (            49668605) PASS test 000000e7
+# 
+# fast_testbench.MIPS_CORE.ALU (            49847525) PASS test 000000e8
+# 
+# fast_testbench.MIPS_CORE.ALU (            49886985) PASS test 000000e9
+# 
+# fast_testbench.MIPS_CORE.ALU (            50048235) PASS test 000000ea
+# 
+# fast_testbench.MIPS_CORE.ALU (            50393045) PASS test 000000eb
+# 
+# fast_testbench.MIPS_CORE.ALU (            50445085) PASS test 000000ec
+# 
+# fast_testbench.MIPS_CORE.ALU (            50902025) PASS test 000000ed
+# 
+# fast_testbench.MIPS_CORE.ALU (            51185005) PASS test 000000ee
+# 
+# fast_testbench.MIPS_CORE.ALU (            51212425) PASS test 000000ef
+# 
+# fast_testbench.MIPS_CORE.ALU (            51428505) PASS test 000000f0
+# 
+# fast_testbench.MIPS_CORE.ALU (            51628185) PASS test 000000f1
+# 
+# fast_testbench.MIPS_CORE.ALU (            51770145) PASS test 000000f2
+# 
+# fast_testbench.MIPS_CORE.ALU (            52639385) PASS test 000000f3
+# 
+# fast_testbench.MIPS_CORE.ALU (            52876965) PASS test 000000f4
+# 
+# fast_testbench.MIPS_CORE.ALU (            52964115) PASS test 000000f5
+# 
+# fast_testbench.MIPS_CORE.ALU (            53007325) PASS test 000000f6
+# 
+# fast_testbench.MIPS_CORE.ALU (            53396105) PASS test 000000f7
+# 
+# fast_testbench.MIPS_CORE.ALU (            54149745) PASS test 000000f8
+# 
+# fast_testbench.MIPS_CORE.ALU (            54284105) PASS test 000000f9
+# 
+# fast_testbench.MIPS_CORE.ALU (            54332485) PASS test 000000fa
+# 
+# fast_testbench.MIPS_CORE.ALU (            54472465) PASS test 000000fb
+# 
+# fast_testbench.MIPS_CORE.ALU (            54540005) PASS test 000000fc
+# 
+# fast_testbench.MIPS_CORE.ALU (            54603585) PASS test 000000fd
+# 
+# fast_testbench.MIPS_CORE.ALU (            54876805) PASS test 000000fe
+# 
+# fast_testbench.MIPS_CORE.ALU (            55079485) PASS test 000000ff
+# 
+# fast_testbench.MIPS_CORE.ALU (            55197965) PASS test 00000100
+# 
+# fast_testbench.MIPS_CORE.ALU (            55477585) PASS test 00000101
+# 
+# fast_testbench.MIPS_CORE.ALU (            55685085) PASS test 00000102
+# 
+# fast_testbench.MIPS_CORE.ALU (            56266205) PASS test 00000103
+# 
+# fast_testbench.MIPS_CORE.ALU (            56508825) PASS test 00000104
+# 
+# fast_testbench.MIPS_CORE.ALU (            56810225) PASS test 00000105
+# 
+# fast_testbench.MIPS_CORE.ALU (            56889105) PASS test 00000106
+# 
+# fast_testbench.MIPS_CORE.ALU (            57002985) PASS test 00000107
+# 
+# fast_testbench.MIPS_CORE.ALU (            57027125) PASS test 00000108
+# 
+# fast_testbench.MIPS_CORE.ALU (            57367735) PASS test 00000109
+# 
+# fast_testbench.MIPS_CORE.ALU (            57434325) PASS test 0000010a
+# 
+# fast_testbench.MIPS_CORE.ALU (            57593545) PASS test 0000010b
+# 
+# fast_testbench.MIPS_CORE.ALU (            57791565) PASS test 0000010c
+# 
+# fast_testbench.MIPS_CORE.ALU (            57832125) PASS test 0000010d
+# 
+# fast_testbench.MIPS_CORE.ALU (            57898885) PASS test 0000010e
+# 
+# fast_testbench.MIPS_CORE.ALU (            57998105) PASS test 0000010f
+# 
+# fast_testbench.MIPS_CORE.ALU (            58152665) PASS test 00000110
+# 
+# fast_testbench.MIPS_CORE.ALU (            58188785) PASS test 00000111
+# 
+# fast_testbench.MIPS_CORE.ALU (            58389545) PASS test 00000112
+# 
+# fast_testbench.MIPS_CORE.ALU (            58509605) PASS test 00000113
+# 
+# fast_testbench.MIPS_CORE.ALU (            58567525) PASS test 00000114
+# 
+# fast_testbench.MIPS_CORE.ALU (            58682485) PASS test 00000115
+# 
+# fast_testbench.MIPS_CORE.ALU (            58776185) PASS test 00000116
+# 
+# fast_testbench.MIPS_CORE.ALU (            58877435) PASS test 00000117
+# 
+# fast_testbench.MIPS_CORE.ALU (            59211265) PASS test 00000118
+# 
+# fast_testbench.MIPS_CORE.ALU (            59339035) PASS test 00000119
+# 
+# fast_testbench.MIPS_CORE.ALU (            59556645) PASS test 0000011a
+# 
+# fast_testbench.MIPS_CORE.ALU (            59614265) PASS test 0000011b
+# 
+# fast_testbench.MIPS_CORE.ALU (            59888085) PASS test 0000011c
+# 
+# fast_testbench.MIPS_CORE.ALU (            59919105) PASS test 0000011d
+# 
+# fast_testbench.MIPS_CORE.ALU (            60480035) PASS test 0000011e
+# 
+# fast_testbench.MIPS_CORE.ALU (            60700415) PASS test 0000011f
+# 
+# fast_testbench.MIPS_CORE.ALU (            60723865) PASS test 00000120
+# 
+# fast_testbench.MIPS_CORE.ALU (            60861705) PASS test 00000121
+# 
+# fast_testbench.MIPS_CORE.ALU (            61272205) PASS test 00000122
+# 
+# fast_testbench.MIPS_CORE.ALU (            61552095) PASS test 00000123
+# 
+# fast_testbench.MIPS_CORE.ALU (            61722045) PASS test 00000124
+# 
+# fast_testbench.MIPS_CORE.ALU (            61911025) PASS test 00000125
+# 
+# fast_testbench.MIPS_CORE.ALU (            62261945) PASS test 00000126
+# 
+# fast_testbench.MIPS_CORE.ALU (            62895865) PASS test 00000127
+# 
+# fast_testbench.MIPS_CORE.ALU (            62984525) PASS test 00000128
+# 
+# fast_testbench.MIPS_CORE.ALU (            63031765) PASS test 00000129
+# 
+# fast_testbench.MIPS_CORE.ALU (            63354545) PASS test 0000012a
+# 
+# fast_testbench.MIPS_CORE.ALU (            64107685) PASS test 0000012b
+# 
+# fast_testbench.MIPS_CORE.ALU (            64732765) PASS test 0000012c
+# 
+# fast_testbench.MIPS_CORE.ALU (            65438965) PASS test 0000012d
+# 
+# fast_testbench.MIPS_CORE.ALU (            65675765) PASS test 0000012e
+# 
+# fast_testbench.MIPS_CORE.ALU (            66166635) PASS test 0000012f
+# 
+# fast_testbench.MIPS_CORE.ALU (            66387705) PASS test 00000130
+# 
+# fast_testbench.MIPS_CORE.ALU (            67316045) PASS test 00000131
+# 
+# fast_testbench.MIPS_CORE.ALU (            68063425) PASS test 00000132
+# 
+# fast_testbench.MIPS_CORE.ALU (            68258185) PASS test 00000133
+# 
+# fast_testbench.MIPS_CORE.ALU (            68356985) PASS test 00000134
+# 
+# fast_testbench.MIPS_CORE.ALU (            68392815) PASS test 00000135
+# 
+# fast_testbench.MIPS_CORE.ALU (            68449525) PASS test 00000136
+# 
+# fast_testbench.MIPS_CORE.ALU (            68628745) PASS test 00000137
+# 
+# fast_testbench.MIPS_CORE.ALU (            68781005) PASS test 00000138
+# 
+# fast_testbench.MIPS_CORE.ALU (            68792425) PASS test 00000139
+# 
+# fast_testbench.MIPS_CORE.ALU (            69005665) PASS test 0000013a
+# 
+# fast_testbench.MIPS_CORE.ALU (            69124505) PASS test 0000013b
+# 
+# fast_testbench.MIPS_CORE.ALU (            69186325) PASS test 0000013c
+# 
+# fast_testbench.MIPS_CORE.ALU (            69270225) PASS test 0000013d
+# 
+# fast_testbench.MIPS_CORE.ALU (            69396145) PASS test 0000013e
+# 
+# fast_testbench.MIPS_CORE.ALU (            69494875) PASS test 0000013f
+# 
+# fast_testbench.MIPS_CORE.ALU (            70015945) PASS test 00000140
+# 
+# fast_testbench.MIPS_CORE.ALU (            70074285) PASS test 00000141
+# 
+# fast_testbench.MIPS_CORE.ALU (            70263365) PASS test 00000142
+# 
+# fast_testbench.MIPS_CORE.ALU (            70600185) PASS test 00000143
+# 
+# fast_testbench.MIPS_CORE.ALU (            71063405) PASS test 00000144
+# 
+# fast_testbench.MIPS_CORE.ALU (            72694745) PASS test 00000145
+# 
+# fast_testbench.MIPS_CORE.ALU (            72733465) PASS test 00000146
+# 
+# fast_testbench.MIPS_CORE.ALU (            73136045) PASS test 00000147
+# 
+# fast_testbench.MIPS_CORE.ALU (            73827725) PASS test 00000148
+# 
+# fast_testbench.MIPS_CORE.ALU (            74078325) PASS test 00000149
+# 
+# fast_testbench.MIPS_CORE.ALU (            74103505) PASS test 0000014a
+# 
+# fast_testbench.MIPS_CORE.ALU (            74167105) PASS test 0000014b
+# 
+# fast_testbench.MIPS_CORE.ALU (            74700725) PASS test 0000014c
+# 
+# fast_testbench.MIPS_CORE.ALU (            74984605) PASS test 0000014d
+# 
+# fast_testbench.MIPS_CORE.ALU (            75064185) PASS test 0000014e
+# 
+# fast_testbench.MIPS_CORE.ALU (            75367205) PASS test 0000014f
+# 
+# fast_testbench.MIPS_CORE.ALU (            75405825) PASS test 00000150
+# 
+# fast_testbench.MIPS_CORE.ALU (            75495165) PASS test 00000151
+# 
+# fast_testbench.MIPS_CORE.ALU (            75711925) PASS test 00000152
+# 
+# fast_testbench.MIPS_CORE.ALU (            75805085) PASS test 00000153
+# 
+# fast_testbench.MIPS_CORE.ALU (            76268605) PASS test 00000154
+# 
+# fast_testbench.MIPS_CORE.ALU (            76326305) PASS test 00000155
+# 
+# fast_testbench.MIPS_CORE.ALU (            76387845) PASS test 00000156
+# 
+# fast_testbench.MIPS_CORE.ALU (            76718125) PASS test 00000157
+# 
+# fast_testbench.MIPS_CORE.ALU (            77083265) PASS test 00000158
+# 
+# fast_testbench.MIPS_CORE.ALU (            77260505) PASS test 00000159
+# 
+# fast_testbench.MIPS_CORE.ALU (            77393885) PASS test 0000015a
+# 
+# fast_testbench.MIPS_CORE.ALU (            77656265) PASS test 0000015b
+# 
+# fast_testbench.MIPS_CORE.ALU (            77732545) PASS test 0000015c
+# 
+# fast_testbench.MIPS_CORE.ALU (            77855425) PASS test 0000015d
+# 
+# fast_testbench.MIPS_CORE.ALU (            78346885) PASS test 0000015e
+# 
+# fast_testbench.MIPS_CORE.ALU (            78646865) PASS test 0000015f
+# 
+# fast_testbench.MIPS_CORE.ALU (            78881205) PASS test 00000160
+# 
+# fast_testbench.MIPS_CORE.ALU (            79192875) DONE test 00000160
+# 
+# ** Note: $stop    : ../../fast_testbench.sv(73)
+#    Time: 79192875 ns  Iteration: 5  Instance: /fast_testbench
+# Break in Module fast_testbench at ../../fast_testbench.sv line 73
+# End time: 15:53:27 on Apr 09,2020, Elapsed time: 0:12:59
+# Errors: 0, Warnings: 18

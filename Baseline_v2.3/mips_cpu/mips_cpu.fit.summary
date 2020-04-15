@@ -1,0 +1,20 @@
+Fitter Status : Successful - Thu Apr 09 15:37:42 2020
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : mips_cpu
+Top-level Entity Name : mips_cpu
+Family : Cyclone V
+Device : 5CSEMA5F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 2,482 / 32,070 ( 8 % )
+Total registers : 2610
+Total pins : 109 / 457 ( 24 % )
+Total virtual pins : 0
+Total block memory bits : 12,480 / 4,065,280 ( < 1 % )
+Total RAM Blocks : 14 / 397 ( 4 % )
+Total DSP Blocks : 0 / 87 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1 / 6 ( 17 % )
+Total DLLs : 0 / 4 ( 0 % )
