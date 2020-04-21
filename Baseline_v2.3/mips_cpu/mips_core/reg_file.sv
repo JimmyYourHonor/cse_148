@@ -34,15 +34,31 @@ module reg_file (
 	reg_file_output_ifc.out out
 );
 
-	logic [`DATA_WIDTH - 1 : 0] regs [32];
+	logic availability[64] = 1'b0;
 
-	assign out.rs_data = i_decoded.uses_rs ? regs[i_decoded.rs_addr] : '0;
-	assign out.rt_data = i_decoded.uses_rt ? regs[i_decoded.rt_addr] : '0;
+	// physical registers
+	logic [`DATA_WIDTH - 1 : 0] regs [64];
+
+	// mapping from virtual registers to physical registers
+	logic [5 : 0] map [32];
+
+	assign out.rs_data = i_decoded.uses_rs ? regs[map[i_decoded.rs_addr]] : '0;
+	assign out.rt_data = i_decoded.uses_rt ? regs[map[i_decoded.rt_addr]] : '0;
 
 	always_ff @(posedge clk) begin
 		if(i_wb.uses_rw)
 		begin
-			regs[i_wb.rw_addr] = i_wb.rw_data;
+			// recycle the old spot
+			availability[map[i_wb.rw_addr]] = 1'b0;
+			// find an empty spot in availability list
+			for (i = 0; i < 64; i++) begin
+				if (availability[i] == 1'b0) begin
+					availability[i] = 1'b1;
+					map[i_wb.rw_addr] = i;
+					break;
+				end
+			end
+			regs[map[i_wb.rw_addr]] = i_wb.rw_data;
 		end
 	end
 
