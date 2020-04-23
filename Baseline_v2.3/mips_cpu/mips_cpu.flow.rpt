@@ -1,5 +1,5 @@
 Flow report for mips_cpu
-Thu Apr 09 15:38:34 2020
+Thu Apr 23 13:39:51 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,25 +40,25 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Apr 09 15:37:43 2020       ;
+; Flow Status                     ; Successful - Thu Apr 23 13:39:50 2020       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; mips_cpu                                    ;
 ; Top-level Entity Name           ; mips_cpu                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 2,482 / 32,070 ( 8 % )                      ;
-; Total registers                 ; 2610                                        ;
-; Total pins                      ; 109 / 457 ( 24 % )                          ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 3703                                        ;
+; Total pins                      ; 109                                         ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 12,480 / 4,065,280 ( < 1 % )                ;
-; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
+; Total block memory bits         ; 12,480                                      ;
+; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
 ; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 1 / 6 ( 17 % )                              ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total PLLs                      ; 1                                           ;
+; Total DLLs                      ; 0                                           ;
 +---------------------------------+---------------------------------------------+
 
 
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/09/2020 15:29:51 ;
+; Start date & time ; 04/23/2020 13:38:55 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mips_cpu            ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                                                    ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589201.158647139030220                                                           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 10995770589203.158767433415740                                                           ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                                                                        ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)                                                          ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                       ; --            ; --          ; --             ;
@@ -138,35 +138,29 @@ refer to the applicable agreement for further details.
 +-------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:10     ; 1.0                     ; 4895 MB             ; 00:01:25                           ;
-; Fitter                    ; 00:05:59     ; 1.1                     ; 6629 MB             ; 00:08:28                           ;
-; TimeQuest Timing Analyzer ; 00:00:45     ; 1.5                     ; 5366 MB             ; 00:00:58                           ;
-; Total                     ; 00:07:54     ; --                      ; --                  ; 00:10:51                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:55     ; 2.2                     ; 4953 MB             ; 00:01:22                           ;
+; Total                ; 00:00:55     ; --                      ; --                  ; 00:01:22                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                         ;
-+---------------------------+------------------+------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-POTBJ1E  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; DESKTOP-POTBJ1E  ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-POTBJ1E  ; Windows 10 ; 10.0       ; x86_64         ;
-+---------------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-QE7KTEQ  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off mips_cpu -c mips_cpu
-quartus_fit --read_settings_files=on --write_settings_files=off mips_cpu -c mips_cpu
-quartus_sta mips_cpu -c mips_cpu
 
 
 

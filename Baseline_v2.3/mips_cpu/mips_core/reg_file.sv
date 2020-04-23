@@ -34,7 +34,7 @@ module reg_file (
 	reg_file_output_ifc.out out
 );
 
-	logic availability[64] = 1'b0;
+	logic availability [64];
 
 	// physical registers
 	logic [`DATA_WIDTH - 1 : 0] regs [64];
@@ -51,7 +51,7 @@ module reg_file (
 			// recycle the old spot
 			availability[map[i_wb.rw_addr]] = 1'b0;
 			// find an empty spot in availability list
-			for (i = 0; i < 64; i++) begin
+			for (int i = 0; i < 64; i = i+1) begin
 				if (availability[i] == 1'b0) begin
 					availability[i] = 1'b1;
 					map[i_wb.rw_addr] = i;

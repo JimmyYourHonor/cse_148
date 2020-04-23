@@ -1,5 +1,5 @@
 Fitter report for mips_cpu
-Thu Apr 09 15:37:43 2020
+Tue Apr 21 14:57:43 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Thu Apr 09 15:37:42 2020       ;
+; Fitter Status                   ; Successful - Tue Apr 21 14:57:43 2020       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; mips_cpu                                    ;
 ; Top-level Entity Name           ; mips_cpu                                    ;
@@ -155,15 +155,17 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.08        ;
-; Maximum used               ; 2           ;
+; Average used               ; 1.21        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   7.8%      ;
+;     Processor 2            ;   7.2%      ;
+;     Processor 3            ;   6.9%      ;
+;     Processor 4            ;   6.7%      ;
 +----------------------------+-------------+
 
 
@@ -484,44 +486,44 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------------------------------+----------------------------------------+-----------+----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+-----------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Ignored Assignments                                                                                                            ;
-+-----------------------------+------------------------+--------------+-------------+---------------+----------------------------+
-; Name                        ; Ignored Entity         ; Ignored From ; Ignored To  ; Ignored Value ; Ignored Source             ;
-+-----------------------------+------------------------+--------------+-------------+---------------+----------------------------+
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[0]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[10] ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[11] ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[12] ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[13] ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[14] ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[15] ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[1]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[2]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[3]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[4]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[5]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[6]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[7]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[8]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[9]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[0]   ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[10]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[11]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[12]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[13]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[14]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[15]  ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[1]   ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[2]   ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[3]   ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[4]   ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[5]   ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[6]   ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[7]   ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[8]   ; ON            ; Compiler or HDL Assignment ;
-; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[9]   ; ON            ; Compiler or HDL Assignment ;
-+-----------------------------+------------------------+--------------+-------------+---------------+----------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Ignored Assignments                                                                                                                 ;
++-----------------------------+------------------------+--------------+------------------+---------------+----------------------------+
+; Name                        ; Ignored Entity         ; Ignored From ; Ignored To       ; Ignored Value ; Ignored Source             ;
++-----------------------------+------------------------+--------------+------------------+---------------+----------------------------+
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[0]~reg0  ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[10]~reg0 ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[11]~reg0 ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[12]~reg0 ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[13]~reg0 ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[14]~reg0 ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[15]~reg0 ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[1]~reg0  ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[2]~reg0  ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[3]~reg0  ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[4]~reg0  ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[5]~reg0  ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[6]~reg0  ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[7]~reg0  ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[8]~reg0  ; ON            ; Compiler or HDL Assignment ;
+; Fast Input Register         ; sdram_sdram_controller ;              ; za_data[9]~reg0  ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[0]        ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[10]       ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[11]       ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[12]       ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[13]       ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[14]       ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[15]       ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[1]        ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[2]        ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[3]        ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[4]        ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[5]        ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[6]        ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[7]        ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[8]        ; ON            ; Compiler or HDL Assignment ;
+; Fast Output Enable Register ; sdram_sdram_controller ;              ; m_data[9]        ; ON            ; Compiler or HDL Assignment ;
++-----------------------------+------------------------+--------------+------------------+---------------+----------------------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -562,7 +564,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.pin.
+The pin-out file can be found in C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.pin.
 
 
 +---------------------------------------------------------------------------------------------+
@@ -2889,7 +2891,7 @@ Note: This table only shows the top 100 path(s) that have the largest delay adde
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device 5CSEMA5F31C6 for design "mips_cpu"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -2928,7 +2930,6 @@ Info (332111): Found 7 clocks
 Info (176233): Starting register packing
 Warning (176250): Ignoring invalid fast I/O register assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (176251): Ignoring some wildcard destinations of fast I/O register assignments
-    Info (176252): Wildcard assignment "Fast Output Enable Register=ON" to "oe" matches multiple destination nodes -- some destinations are not valid targets for this assignment
     Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[9]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
     Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[8]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
     Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_data[7]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
@@ -2948,43 +2949,44 @@ Warning (176251): Ignoring some wildcard destinations of fast I/O register assig
     Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_cmd[2]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
     Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_cmd[1]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
     Info (176252): Wildcard assignment "Fast Output Register=ON" to "m_cmd[0]" matches multiple destination nodes -- some destinations are not valid targets for this assignment
+    Info (176252): Wildcard assignment "Fast Output Enable Register=ON" to "oe" matches multiple destination nodes -- some destinations are not valid targets for this assignment
 Info (176235): Finished register packing
     Extra Info (176218): Packed 16 registers into blocks of type Block RAM
     Extra Info (176218): Packed 16 registers into blocks of type I/O input buffer
     Extra Info (176218): Packed 51 registers into blocks of type I/O output buffer
     Extra Info (176220): Created 34 register duplicates
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:30
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:21
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:01:16
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:27
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:25
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:14
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 2% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 29% of the available device resources in the region that extends from location X11_Y11 to location X21_Y22
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:39
-Info (11888): Total time spent on timing analysis during the Fitter is 21.32 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:25
+Info (11888): Total time spent on timing analysis during the Fitter is 16.21 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:42
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:23
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 6629 megabytes
-    Info: Processing ended: Thu Apr 09 15:37:47 2020
-    Info: Elapsed time: 00:06:04
-    Info: Total CPU time (on all processors): 00:08:32
+    Info: Peak virtual memory: 6993 megabytes
+    Info: Processing ended: Tue Apr 21 14:57:46 2020
+    Info: Elapsed time: 00:03:07
+    Info: Total CPU time (on all processors): 00:08:22
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.fit.smsg.
+The suppressed messages can be found in C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.fit.smsg.
 
 

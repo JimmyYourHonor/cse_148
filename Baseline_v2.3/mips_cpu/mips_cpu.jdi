@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="e19f5eb976e2603c0e97"/>
+  </project>
+  <file_info>
+    <file device="5CSEMA5F31C6" path="mips_cpu.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="sdram:u0" name="u0">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME sdram HAS_SOPCINFO 1 GENERATION_ID 1586207380"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

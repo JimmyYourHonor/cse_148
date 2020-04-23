@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for mips_cpu
-Thu Apr 09 15:38:34 2020
+Tue Apr 21 14:58:38 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -99,15 +99,17 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.48        ;
-; Maximum used               ; 2           ;
+; Average used               ; 2.18        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  47.5%      ;
+;     Processor 2            ;  39.5%      ;
+;     Processor 3            ;  39.4%      ;
+;     Processor 4            ;  39.3%      ;
 +----------------------------+-------------+
 
 
@@ -116,8 +118,8 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                          ; Status ; Read at                  ;
 +--------------------------------------------------------+--------+--------------------------+
-; sdram/synthesis/submodules/altera_reset_controller.sdc ; OK     ; Thu Apr 09 15:37:57 2020 ;
-; mips_cpu.SDC                                           ; OK     ; Thu Apr 09 15:37:57 2020 ;
+; sdram/synthesis/submodules/altera_reset_controller.sdc ; OK     ; Tue Apr 21 14:58:14 2020 ;
+; mips_cpu.SDC                                           ; OK     ; Tue Apr 21 14:58:14 2020 ;
 +--------------------------------------------------------+--------+--------------------------+
 
 
@@ -1090,11 +1092,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Apr 09 15:37:49 2020
+    Info: Processing started: Tue Apr 21 14:58:08 2020
 Info: Command: quartus_sta mips_cpu -c mips_cpu
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'sdram/synthesis/submodules/altera_reset_controller.sdc'
@@ -1259,9 +1261,9 @@ Info (332114): Report Metastability: Found 1 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 5366 megabytes
-    Info: Processing ended: Thu Apr 09 15:38:34 2020
-    Info: Elapsed time: 00:00:45
-    Info: Total CPU time (on all processors): 00:00:58
+    Info: Peak virtual memory: 5382 megabytes
+    Info: Processing ended: Tue Apr 21 14:58:38 2020
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:57
 
 
