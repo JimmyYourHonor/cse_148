@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mips_cpu
-Thu Apr 23 13:39:51 2020
+Thu Apr 23 14:32:35 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -172,13 +172,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Apr 23 13:39:50 2020       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 23 14:32:35 2020       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; mips_cpu                                    ;
 ; Top-level Entity Name           ; mips_cpu                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 3703                                        ;
+; Total registers                 ; 3704                                        ;
 ; Total pins                      ; 109                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 12,480                                      ;
@@ -287,14 +287,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 2.17        ;
+; Average used               ; 2.28        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  41.5%      ;
-;     Processor 3            ;  41.5%      ;
-;     Processor 4            ;  34.3%      ;
+;     Processor 2            ;  42.6%      ;
+;     Processor 3            ;  42.6%      ;
+;     Processor 4            ;  42.6%      ;
 +----------------------------+-------------+
 
 
@@ -388,16 +388,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                             ;
 +---------------------------------------------+-------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 3926                                                              ;
+; Estimate of Logic utilization (ALMs needed) ; 3927                                                              ;
 ;                                             ;                                                                   ;
 ; Combinational ALUT usage for logic          ; 4922                                                              ;
 ;     -- 7 input functions                    ; 62                                                                ;
-;     -- 6 input functions                    ; 2551                                                              ;
-;     -- 5 input functions                    ; 450                                                               ;
-;     -- 4 input functions                    ; 354                                                               ;
-;     -- <=3 input functions                  ; 1505                                                              ;
+;     -- 6 input functions                    ; 2552                                                              ;
+;     -- 5 input functions                    ; 449                                                               ;
+;     -- 4 input functions                    ; 357                                                               ;
+;     -- <=3 input functions                  ; 1502                                                              ;
 ;                                             ;                                                                   ;
-; Dedicated logic registers                   ; 3703                                                              ;
+; Dedicated logic registers                   ; 3704                                                              ;
 ;                                             ;                                                                   ;
 ; I/O pins                                    ; 109                                                               ;
 ; Total MLAB memory bits                      ; 0                                                                 ;
@@ -409,8 +409,8 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 2                                                                 ;
 ;                                             ;                                                                   ;
 ; Maximum fan-out node                        ; sdram:u0|sdram_pll_0:pll_0|altera_pll:altera_pll_i|outclk_wire[0] ;
-; Maximum fan-out                             ; 4145                                                              ;
-; Total fan-out                               ; 40981                                                             ;
+; Maximum fan-out                             ; 4146                                                              ;
+; Total fan-out                               ; 40987                                                             ;
 ; Average fan-out                             ; 4.42                                                              ;
 +---------------------------------------------+-------------------------------------------------------------------+
 
@@ -420,8 +420,8 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                        ; Entity Name                               ; Library Name ;
 +----------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+--------------+
-; |mips_cpu                                                                                          ; 4922 (2)            ; 3703 (0)                  ; 12480             ; 0          ; 109  ; 0            ; |mips_cpu                                                                                                                                                                                                  ; mips_cpu                                  ; work         ;
-;    |mips_core:MIPS_CORE|                                                                           ; 4216 (0)            ; 3056 (0)                  ; 9280              ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE                                                                                                                                                                              ; mips_core                                 ; work         ;
+; |mips_cpu                                                                                          ; 4922 (2)            ; 3704 (0)                  ; 12480             ; 0          ; 109  ; 0            ; |mips_cpu                                                                                                                                                                                                  ; mips_cpu                                  ; work         ;
+;    |mips_core:MIPS_CORE|                                                                           ; 4216 (0)            ; 3057 (0)                  ; 9280              ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE                                                                                                                                                                              ; mips_core                                 ; work         ;
 ;       |alu:ALU|                                                                                    ; 702 (702)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU                                                                                                                                                                      ; alu                                       ; work         ;
 ;       |d_cache:D_CACHE|                                                                            ; 377 (223)           ; 276 (222)                 ; 4640              ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|d_cache:D_CACHE                                                                                                                                                              ; d_cache                                   ; work         ;
 ;          |cache_bank:databanks[0].databank|                                                        ; 35 (35)             ; 1 (1)                     ; 1024              ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|d_cache:D_CACHE|cache_bank:databanks[0].databank                                                                                                                             ; cache_bank                                ; work         ;
@@ -478,7 +478,7 @@ refer to the applicable agreement for further details.
 ;       |pr_e2m:PR_E2M|                                                                              ; 5 (5)               ; 72 (72)                   ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|pr_e2m:PR_E2M                                                                                                                                                                ; pr_e2m                                    ; work         ;
 ;       |pr_i2d:PR_I2D|                                                                              ; 65 (65)             ; 59 (59)                   ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|pr_i2d:PR_I2D                                                                                                                                                                ; pr_i2d                                    ; work         ;
 ;       |pr_m2w:PR_M2W|                                                                              ; 5 (5)               ; 38 (38)                   ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|pr_m2w:PR_M2W                                                                                                                                                                ; pr_m2w                                    ; work         ;
-;       |reg_file:REG_FILE|                                                                          ; 2227 (2227)         ; 2303 (2303)               ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|reg_file:REG_FILE                                                                                                                                                            ; reg_file                                  ; work         ;
+;       |reg_file:REG_FILE|                                                                          ; 2227 (2227)         ; 2304 (2304)               ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|reg_file:REG_FILE                                                                                                                                                            ; reg_file                                  ; work         ;
 ;    |sdram:u0|                                                                                      ; 704 (0)             ; 647 (0)                   ; 3200              ; 0          ; 0    ; 0            ; |mips_cpu|sdram:u0                                                                                                                                                                                         ; sdram                                     ; sdram        ;
 ;       |altera_reset_controller:rst_controller|                                                     ; 0 (0)               ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|sdram:u0|altera_reset_controller:rst_controller                                                                                                                                                  ; altera_reset_controller                   ; sdram        ;
 ;          |altera_reset_synchronizer:alt_rst_sync_uq1|                                              ; 0 (0)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|sdram:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1                                                                                                       ; altera_reset_synchronizer                 ; sdram        ;
@@ -1191,7 +1191,6 @@ Encoding Type:  One-Hot
 ; sdram:u0|sdram_sdram_controller:sdram_controller|m_next~13                                                                                                                                             ; Lost fanout                                                                                                                                                      ;
 ; sdram:u0|sdram_sdram_controller:sdram_controller|m_next~14                                                                                                                                             ; Lost fanout                                                                                                                                                      ;
 ; sdram:u0|sdram_sdram_controller:sdram_controller|m_next~16                                                                                                                                             ; Lost fanout                                                                                                                                                      ;
-; mips_core:MIPS_CORE|reg_file:REG_FILE|availability[0]                                                                                                                                                  ; Stuck at VCC due to stuck port data_in                                                                                                                           ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][18]                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                                           ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[6][18]                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                                           ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[5][18]                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                                           ;
@@ -1200,7 +1199,7 @@ Encoding Type:  One-Hot
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[2][18]                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                                           ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[1][18]                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                                           ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[0][18]                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                                           ;
-; Total Number of Removed Registers = 588                                                                                                                                                                ;                                                                                                                                                                  ;
+; Total Number of Removed Registers = 587                                                                                                                                                                ;                                                                                                                                                                  ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1435,12 +1434,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 3703  ;
+; Total registers                              ; 3704  ;
 ; Number of registers using Synchronous Clear  ; 339   ;
 ; Number of registers using Synchronous Load   ; 245   ;
 ; Number of registers using Asynchronous Clear ; 930   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 3280  ;
+; Number of registers using Clock Enable       ; 3281  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -4539,11 +4538,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 3703                        ;
+; arriav_ff             ; 3704                        ;
 ;     CLR               ; 149                         ;
 ;     CLR SCLR          ; 34                          ;
 ;     CLR SLD           ; 1                           ;
-;     ENA               ; 2508                        ;
+;     ENA               ; 2509                        ;
 ;     ENA CLR           ; 350                         ;
 ;     ENA CLR SCLR      ; 248                         ;
 ;     ENA CLR SCLR SLD  ; 29                          ;
@@ -4566,10 +4565,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 17                          ;
 ;         2 data inputs ; 377                         ;
-;         3 data inputs ; 746                         ;
-;         4 data inputs ; 353                         ;
-;         5 data inputs ; 450                         ;
-;         6 data inputs ; 2551                        ;
+;         3 data inputs ; 743                         ;
+;         4 data inputs ; 356                         ;
+;         5 data inputs ; 449                         ;
+;         6 data inputs ; 2552                        ;
 ;     shared            ; 56                          ;
 ;         2 data inputs ; 56                          ;
 ; boundary_port         ; 109                         ;
@@ -4586,7 +4585,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:32     ;
+; Top            ; 00:00:48     ;
 +----------------+--------------+
 
 
@@ -4596,7 +4595,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Apr 23 13:38:53 2020
+    Info: Processing started: Thu Apr 23 14:31:09 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips_cpu -c mips_cpu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -4956,7 +4955,7 @@ Info (12128): Elaborating entity "pr_i2d" for hierarchy "mips_core:MIPS_CORE|pr_
 Info (12128): Elaborating entity "decoder" for hierarchy "mips_core:MIPS_CORE|decoder:DECODER" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv Line: 130
 Warning (10175): Verilog HDL warning at decoder.sv(554): ignoring unsupported system task File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/decoder.sv Line: 554
 Info (12128): Elaborating entity "reg_file" for hierarchy "mips_core:MIPS_CORE|reg_file:REG_FILE" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv Line: 139
-Warning (10230): Verilog HDL assignment warning at reg_file.sv(57): truncated value with size 32 to match size of target (6) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv Line: 57
+Warning (10230): Verilog HDL assignment warning at reg_file.sv(58): truncated value with size 32 to match size of target (6) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv Line: 58
 Info (12128): Elaborating entity "forward_unit" for hierarchy "mips_core:MIPS_CORE|forward_unit:FORWARD_UNIT" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv Line: 152
 Info (12128): Elaborating entity "decode_stage_glue" for hierarchy "mips_core:MIPS_CORE|decode_stage_glue:DEC_STAGE_GLUE" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv Line: 162
 Info (12128): Elaborating entity "pr_d2e" for hierarchy "mips_core:MIPS_CORE|pr_d2e:PR_D2E" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv Line: 177
@@ -4975,7 +4974,7 @@ Warning (10034): Output port "i2i_hc.flush" at hazard_controller.sv(33) has no d
 Info (12128): Elaborating entity "branch_controller" for hierarchy "mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv Line: 49
 Info (12128): Elaborating entity "branch_predictor_2bit" for hierarchy "mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_2bit:PREDICTOR" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 40
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "mips_core:MIPS_CORE|reg_file:REG_FILE|regs" is uninferred due to asynchronous read logic File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv Line: 40
+    Info (276007): RAM logic "mips_core:MIPS_CORE|reg_file:REG_FILE|regs" is uninferred due to asynchronous read logic File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv Line: 41
 Info (19000): Inferred 11 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "mips_core:MIPS_CORE|d_cache:D_CACHE|cache_bank:tagbank|cache_bank_core:BANK_CORE|data_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -5286,18 +5285,18 @@ Warning (21074): Design contains 15 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv Line: 58
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv Line: 58
     Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv Line: 58
-Info (21057): Implemented 8501 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 8502 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 75 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 7988 logic cells
+    Info (21061): Implemented 7989 logic cells
     Info (21064): Implemented 402 RAM segments
     Info (21065): Implemented 2 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 95 warnings
     Info: Peak virtual memory: 4953 megabytes
-    Info: Processing ended: Thu Apr 23 13:39:51 2020
-    Info: Elapsed time: 00:00:58
-    Info: Total CPU time (on all processors): 00:01:24
+    Info: Processing ended: Thu Apr 23 14:32:35 2020
+    Info: Elapsed time: 00:01:26
+    Info: Total CPU time (on all processors): 00:02:03
 
 
 +------------------------------------------+
