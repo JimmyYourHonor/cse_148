@@ -25,7 +25,7 @@ module branch_controller (
 	logic request_prediction;
 
 	// Change the following line to switch predictor
-	branch_predictor_2bit PREDICTOR (
+	branch_predictor_bimodal PREDICTOR (
 		.clk, .rst_n,
 
 		.i_req_valid     (request_prediction),
@@ -128,6 +128,139 @@ module branch_predictor_2bit (
 	always_comb
 	begin
 		o_req_prediction = counter[1] ? TAKEN : NOT_TAKEN;
+	end
+
+endmodule
+
+
+module branch_predictor_local (
+	input clk,    // Clock
+	input rst_n,  // Asynchronous reset active low
+
+	// Request
+	input logic i_req_valid,
+	input logic [`ADDR_WIDTH - 1 : 0] i_req_pc,
+	input logic [`ADDR_WIDTH - 1 : 0] i_req_target,
+	output mips_core_pkg::BranchOutcome o_req_prediction,
+
+	// Feedback
+	input logic i_fb_valid,
+	input logic [`ADDR_WIDTH - 1 : 0] i_fb_pc,
+	input mips_core_pkg::BranchOutcome i_fb_prediction,
+	input mips_core_pkg::BranchOutcome i_fb_outcome
+);
+
+	logic [5:0] pht [16];
+	logic [1:0] counter [16];
+
+	logic [3:0] hash;
+
+	task incr(logic[3:0] index);
+		begin
+			if (counter[index] != 2'b11)
+				counter[index] <= counter[index] + 2'b01;
+		end
+	endtask
+
+	task decr(logic[3:0] index);
+		begin
+			if (counter[index] != 2'b00)
+				counter[index] <= counter[index] - 2'b01;
+		end
+	endtask
+
+	always_ff @(posedge clk or negedge rst_n)
+	begin
+
+		if(~rst_n)
+		begin
+			counter <= '{2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1};	// Weakly not taken
+			pht <= '{'0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0}; // reset pht
+		end
+
+		else
+		begin
+			pht[hash] <= (pht[hash][2:0] << 1) | i_fb_outcome;
+
+			if (i_fb_valid)
+			begin
+				case (i_fb_outcome)
+					NOT_TAKEN: decr(pht[hash]);
+					TAKEN:     incr(pht[hash]);
+				endcase
+			end
+		end
+	end
+
+	always_comb
+	begin
+		hash = i_req_pc[3:0];
+		o_req_prediction = counter[pht[hash]][1] ? TAKEN : NOT_TAKEN;
+	end
+
+endmodule
+
+module branch_predictor_bimodal (
+	input clk,    // Clock
+	input rst_n,  // Asynchronous reset active low
+
+	// Request
+	input logic i_req_valid,
+	input logic [`ADDR_WIDTH - 1 : 0] i_req_pc,
+	input logic [`ADDR_WIDTH - 1 : 0] i_req_target,
+	output mips_core_pkg::BranchOutcome o_req_prediction,
+
+	// Feedback
+	input logic i_fb_valid,
+	input logic [`ADDR_WIDTH - 1 : 0] i_fb_pc,
+	input mips_core_pkg::BranchOutcome i_fb_prediction,
+	input mips_core_pkg::BranchOutcome i_fb_outcome
+);
+
+
+	logic [1:0] counter [16];
+
+	logic [3:0] hash;
+
+	task incr(logic[3:0] index);
+		begin
+			if (counter[index] != 2'b11)
+				counter[index] <= counter[index] + 2'b01;
+		end
+	endtask
+
+	task decr(logic[3:0] index);
+		begin
+			if (counter[index] != 2'b00)
+				counter[index] <= counter[index] - 2'b01;
+		end
+	endtask
+
+	always_ff @(posedge clk or negedge rst_n)
+	begin
+
+		if(~rst_n)
+		begin
+			counter <= '{2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1};	// Weakly not taken
+		end
+
+		else
+		begin
+
+			if (i_fb_valid)
+			begin
+				case (i_fb_outcome)
+					NOT_TAKEN: decr(hash);
+					TAKEN:     incr(hash);
+				endcase
+			end
+		end
+	end
+
+	always_comb
+	begin
+		hash = i_req_pc[3:0];
+		o_req_prediction = counter[hash][1] ? TAKEN : NOT_TAKEN;
 	end
 
 endmodule

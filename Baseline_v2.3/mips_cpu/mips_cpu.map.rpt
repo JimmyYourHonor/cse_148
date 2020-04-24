@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mips_cpu
-Thu Apr 23 14:32:35 2020
+Thu Apr 23 16:57:01 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -16,10 +16,10 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. State Machine - |mips_cpu|mips_core:MIPS_CORE|d_cache:D_CACHE|state
- 11. State Machine - |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|i_state
- 12. State Machine - |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|i_next
- 13. State Machine - |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_state
- 14. State Machine - |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_next
+ 11. State Machine - |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_state
+ 12. State Machine - |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_next
+ 13. State Machine - |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|i_state
+ 14. State Machine - |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|i_next
  15. Registers Protected by Synthesis
  16. Registers Removed During Synthesis
  17. Removed Registers Triggering Further Register Optimizations
@@ -172,13 +172,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Apr 23 14:32:35 2020       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 23 16:57:00 2020       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; mips_cpu                                    ;
 ; Top-level Entity Name           ; mips_cpu                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 3704                                        ;
+; Total registers                 ; 3734                                        ;
 ; Total pins                      ; 109                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 12,480                                      ;
@@ -287,14 +287,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 2.28        ;
+; Average used               ; 2.17        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  42.6%      ;
-;     Processor 3            ;  42.6%      ;
-;     Processor 4            ;  42.6%      ;
+;     Processor 2            ;  39.1%      ;
+;     Processor 3            ;  39.1%      ;
+;     Processor 4            ;  39.1%      ;
 +----------------------------+-------------+
 
 
@@ -388,16 +388,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                             ;
 +---------------------------------------------+-------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 3927                                                              ;
+; Estimate of Logic utilization (ALMs needed) ; 3945                                                              ;
 ;                                             ;                                                                   ;
-; Combinational ALUT usage for logic          ; 4922                                                              ;
+; Combinational ALUT usage for logic          ; 4980                                                              ;
 ;     -- 7 input functions                    ; 62                                                                ;
-;     -- 6 input functions                    ; 2552                                                              ;
-;     -- 5 input functions                    ; 449                                                               ;
+;     -- 6 input functions                    ; 2530                                                              ;
+;     -- 5 input functions                    ; 528                                                               ;
 ;     -- 4 input functions                    ; 357                                                               ;
-;     -- <=3 input functions                  ; 1502                                                              ;
+;     -- <=3 input functions                  ; 1503                                                              ;
 ;                                             ;                                                                   ;
-; Dedicated logic registers                   ; 3704                                                              ;
+; Dedicated logic registers                   ; 3734                                                              ;
 ;                                             ;                                                                   ;
 ; I/O pins                                    ; 109                                                               ;
 ; Total MLAB memory bits                      ; 0                                                                 ;
@@ -409,8 +409,8 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 2                                                                 ;
 ;                                             ;                                                                   ;
 ; Maximum fan-out node                        ; sdram:u0|sdram_pll_0:pll_0|altera_pll:altera_pll_i|outclk_wire[0] ;
-; Maximum fan-out                             ; 4146                                                              ;
-; Total fan-out                               ; 40987                                                             ;
+; Maximum fan-out                             ; 4176                                                              ;
+; Total fan-out                               ; 41343                                                             ;
 ; Average fan-out                             ; 4.42                                                              ;
 +---------------------------------------------+-------------------------------------------------------------------+
 
@@ -420,8 +420,8 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                        ; Entity Name                               ; Library Name ;
 +----------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+--------------+
-; |mips_cpu                                                                                          ; 4922 (2)            ; 3704 (0)                  ; 12480             ; 0          ; 109  ; 0            ; |mips_cpu                                                                                                                                                                                                  ; mips_cpu                                  ; work         ;
-;    |mips_core:MIPS_CORE|                                                                           ; 4216 (0)            ; 3057 (0)                  ; 9280              ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE                                                                                                                                                                              ; mips_core                                 ; work         ;
+; |mips_cpu                                                                                          ; 4980 (2)            ; 3734 (0)                  ; 12480             ; 0          ; 109  ; 0            ; |mips_cpu                                                                                                                                                                                                  ; mips_cpu                                  ; work         ;
+;    |mips_core:MIPS_CORE|                                                                           ; 4275 (0)            ; 3087 (0)                  ; 9280              ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE                                                                                                                                                                              ; mips_core                                 ; work         ;
 ;       |alu:ALU|                                                                                    ; 702 (702)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU                                                                                                                                                                      ; alu                                       ; work         ;
 ;       |d_cache:D_CACHE|                                                                            ; 377 (223)           ; 276 (222)                 ; 4640              ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|d_cache:D_CACHE                                                                                                                                                              ; d_cache                                   ; work         ;
 ;          |cache_bank:databanks[0].databank|                                                        ; 35 (35)             ; 1 (1)                     ; 1024              ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|d_cache:D_CACHE|cache_bank:databanks[0].databank                                                                                                                             ; cache_bank                                ; work         ;
@@ -448,10 +448,10 @@ refer to the applicable agreement for further details.
 ;       |decoder:DECODER|                                                                            ; 138 (138)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|decoder:DECODER                                                                                                                                                              ; decoder                                   ; work         ;
 ;       |fetch_unit:FETCH_UNIT|                                                                      ; 70 (70)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|fetch_unit:FETCH_UNIT                                                                                                                                                        ; fetch_unit                                ; work         ;
 ;       |forward_unit:FORWARD_UNIT|                                                                  ; 224 (224)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|forward_unit:FORWARD_UNIT                                                                                                                                                    ; forward_unit                              ; work         ;
-;       |hazard_controller:HAZARD_CONTROLLER|                                                        ; 37 (12)             ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER                                                                                                                                          ; hazard_controller                         ; work         ;
-;          |branch_controller:BRANCH_CONTROLLER|                                                     ; 25 (23)             ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER                                                                                                      ; branch_controller                         ; work         ;
-;             |branch_predictor_2bit:PREDICTOR|                                                      ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_2bit:PREDICTOR                                                                      ; branch_predictor_2bit                     ; work         ;
-;       |i_cache:I_CACHE|                                                                            ; 76 (70)             ; 112 (59)                  ; 4640              ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|i_cache:I_CACHE                                                                                                                                                              ; i_cache                                   ; work         ;
+;       |hazard_controller:HAZARD_CONTROLLER|                                                        ; 63 (12)             ; 32 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER                                                                                                                                          ; hazard_controller                         ; work         ;
+;          |branch_controller:BRANCH_CONTROLLER|                                                     ; 51 (23)             ; 32 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER                                                                                                      ; branch_controller                         ; work         ;
+;             |branch_predictor_bimodal:PREDICTOR|                                                   ; 28 (28)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR                                                                   ; branch_predictor_bimodal                  ; work         ;
+;       |i_cache:I_CACHE|                                                                            ; 108 (102)           ; 112 (59)                  ; 4640              ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|i_cache:I_CACHE                                                                                                                                                              ; i_cache                                   ; work         ;
 ;          |cache_bank:databanks[0].databank|                                                        ; 1 (1)               ; 1 (1)                     ; 1024              ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|i_cache:I_CACHE|cache_bank:databanks[0].databank                                                                                                                             ; cache_bank                                ; work         ;
 ;             |cache_bank_core:BANK_CORE|                                                            ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|i_cache:I_CACHE|cache_bank:databanks[0].databank|cache_bank_core:BANK_CORE                                                                                                   ; cache_bank_core                           ; work         ;
 ;                |altsyncram:data_rtl_0|                                                             ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|i_cache:I_CACHE|cache_bank:databanks[0].databank|cache_bank_core:BANK_CORE|altsyncram:data_rtl_0                                                                             ; altsyncram                                ; work         ;
@@ -476,10 +476,10 @@ refer to the applicable agreement for further details.
 ;       |mem_stage_glue:MEM_STAGE_GLUE|                                                              ; 99 (99)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|mem_stage_glue:MEM_STAGE_GLUE                                                                                                                                                ; mem_stage_glue                            ; work         ;
 ;       |pr_d2e:PR_D2E|                                                                              ; 118 (118)           ; 141 (141)                 ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E                                                                                                                                                                ; pr_d2e                                    ; work         ;
 ;       |pr_e2m:PR_E2M|                                                                              ; 5 (5)               ; 72 (72)                   ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|pr_e2m:PR_E2M                                                                                                                                                                ; pr_e2m                                    ; work         ;
-;       |pr_i2d:PR_I2D|                                                                              ; 65 (65)             ; 59 (59)                   ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|pr_i2d:PR_I2D                                                                                                                                                                ; pr_i2d                                    ; work         ;
+;       |pr_i2d:PR_I2D|                                                                              ; 66 (66)             ; 59 (59)                   ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|pr_i2d:PR_I2D                                                                                                                                                                ; pr_i2d                                    ; work         ;
 ;       |pr_m2w:PR_M2W|                                                                              ; 5 (5)               ; 38 (38)                   ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|pr_m2w:PR_M2W                                                                                                                                                                ; pr_m2w                                    ; work         ;
 ;       |reg_file:REG_FILE|                                                                          ; 2227 (2227)         ; 2304 (2304)               ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|mips_core:MIPS_CORE|reg_file:REG_FILE                                                                                                                                                            ; reg_file                                  ; work         ;
-;    |sdram:u0|                                                                                      ; 704 (0)             ; 647 (0)                   ; 3200              ; 0          ; 0    ; 0            ; |mips_cpu|sdram:u0                                                                                                                                                                                         ; sdram                                     ; sdram        ;
+;    |sdram:u0|                                                                                      ; 703 (0)             ; 647 (0)                   ; 3200              ; 0          ; 0    ; 0            ; |mips_cpu|sdram:u0                                                                                                                                                                                         ; sdram                                     ; sdram        ;
 ;       |altera_reset_controller:rst_controller|                                                     ; 0 (0)               ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|sdram:u0|altera_reset_controller:rst_controller                                                                                                                                                  ; altera_reset_controller                   ; sdram        ;
 ;          |altera_reset_synchronizer:alt_rst_sync_uq1|                                              ; 0 (0)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|sdram:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1                                                                                                       ; altera_reset_synchronizer                 ; sdram        ;
 ;       |custom_master:d_cache_read|                                                                 ; 120 (0)             ; 78 (0)                    ; 1024              ; 0          ; 0    ; 0            ; |mips_cpu|sdram:u0|custom_master:d_cache_read                                                                                                                                                              ; custom_master                             ; sdram        ;
@@ -526,7 +526,7 @@ refer to the applicable agreement for further details.
 ;          |sdram_mm_interconnect_0_rsp_demux:rsp_demux|                                             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|sdram_mm_interconnect_0_rsp_demux:rsp_demux                                                                                                   ; sdram_mm_interconnect_0_rsp_demux         ; sdram        ;
 ;       |sdram_pll_0:pll_0|                                                                          ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|sdram:u0|sdram_pll_0:pll_0                                                                                                                                                                       ; sdram_pll_0                               ; sdram        ;
 ;          |altera_pll:altera_pll_i|                                                                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|sdram:u0|sdram_pll_0:pll_0|altera_pll:altera_pll_i                                                                                                                                               ; altera_pll                                ; work         ;
-;       |sdram_sdram_controller:sdram_controller|                                                    ; 191 (141)           ; 238 (150)                 ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller                                                                                                                                                 ; sdram_sdram_controller                    ; sdram        ;
+;       |sdram_sdram_controller:sdram_controller|                                                    ; 190 (140)           ; 238 (150)                 ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller                                                                                                                                                 ; sdram_sdram_controller                    ; sdram        ;
 ;          |sdram_sdram_controller_input_efifo_module:the_sdram_sdram_controller_input_efifo_module| ; 50 (50)             ; 88 (88)                   ; 0                 ; 0          ; 0    ; 0            ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|sdram_sdram_controller_input_efifo_module:the_sdram_sdram_controller_input_efifo_module                                                         ; sdram_sdram_controller_input_efifo_module ; sdram        ;
 +----------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -608,34 +608,6 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+-------------------------------------------------------------------------------------------------+
-; State Machine - |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|i_state              ;
-+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-; Name        ; i_state.111 ; i_state.101 ; i_state.011 ; i_state.010 ; i_state.001 ; i_state.000 ;
-+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-; i_state.000 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ;
-; i_state.001 ; 0           ; 0           ; 0           ; 0           ; 1           ; 1           ;
-; i_state.010 ; 0           ; 0           ; 0           ; 1           ; 0           ; 1           ;
-; i_state.011 ; 0           ; 0           ; 1           ; 0           ; 0           ; 1           ;
-; i_state.101 ; 0           ; 1           ; 0           ; 0           ; 0           ; 1           ;
-; i_state.111 ; 1           ; 0           ; 0           ; 0           ; 0           ; 1           ;
-+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-
-
-Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------+
-; State Machine - |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|i_next ;
-+------------+------------+------------+------------+-------------------------------+
-; Name       ; i_next.111 ; i_next.101 ; i_next.010 ; i_next.000                    ;
-+------------+------------+------------+------------+-------------------------------+
-; i_next.000 ; 0          ; 0          ; 0          ; 0                             ;
-; i_next.010 ; 0          ; 0          ; 1          ; 1                             ;
-; i_next.101 ; 0          ; 1          ; 0          ; 1                             ;
-; i_next.111 ; 1          ; 0          ; 0          ; 1                             ;
-+------------+------------+------------+------------+-------------------------------+
-
-
-Encoding Type:  One-Hot
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; State Machine - |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_state                                                                                                                    ;
 +-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+
@@ -664,6 +636,34 @@ Encoding Type:  One-Hot
 ; m_next.000010000 ; 0                ; 1                ; 0                ; 1                ;
 ; m_next.010000000 ; 1                ; 0                ; 0                ; 1                ;
 +------------------+------------------+------------------+------------------+------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------+
+; State Machine - |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|i_state              ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+; Name        ; i_state.111 ; i_state.101 ; i_state.011 ; i_state.010 ; i_state.001 ; i_state.000 ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+; i_state.000 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ;
+; i_state.001 ; 0           ; 0           ; 0           ; 0           ; 1           ; 1           ;
+; i_state.010 ; 0           ; 0           ; 0           ; 1           ; 0           ; 1           ;
+; i_state.011 ; 0           ; 0           ; 1           ; 0           ; 0           ; 1           ;
+; i_state.101 ; 0           ; 1           ; 0           ; 0           ; 0           ; 1           ;
+; i_state.111 ; 1           ; 0           ; 0           ; 0           ; 0           ; 1           ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|i_next ;
++------------+------------+------------+------------+-------------------------------+
+; Name       ; i_next.111 ; i_next.101 ; i_next.010 ; i_next.000                    ;
++------------+------------+------------+------------+-------------------------------+
+; i_next.000 ; 0          ; 0          ; 0          ; 0                             ;
+; i_next.010 ; 0          ; 0          ; 1          ; 1                             ;
+; i_next.101 ; 0          ; 1          ; 0          ; 1                             ;
+; i_next.111 ; 1          ; 0          ; 0          ; 1                             ;
++------------+------------+------------+------------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -918,11 +918,11 @@ Encoding Type:  One-Hot
 ; mips_core:MIPS_CORE|i_cache:I_CACHE|cache_bank:databanks[1].databank|new_data[31]                                                                                                                      ; Merged with mips_core:MIPS_CORE|i_cache:I_CACHE|cache_bank:databanks[3].databank|new_data[31]                                                                    ;
 ; mips_core:MIPS_CORE|i_cache:I_CACHE|cache_bank:databanks[2].databank|new_data[31]                                                                                                                      ; Merged with mips_core:MIPS_CORE|i_cache:I_CACHE|cache_bank:databanks[3].databank|new_data[31]                                                                    ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:sdram_controller_s1_cmd_width_adapter|byteen_reg[2]                                                                     ; Merged with sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:sdram_controller_s1_cmd_width_adapter|byteen_reg[3]                   ;
+; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][56]                                                                                 ; Merged with sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][79]                               ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][77]                                                                                 ; Merged with sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][79]                               ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][44]                                                                                 ; Merged with sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][79]                               ;
-; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][56]                                                                                 ; Merged with sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][79]                               ;
-; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][50]                                                                                 ; Merged with sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][79]                               ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][52]                                                                                 ; Merged with sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][79]                               ;
+; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][50]                                                                                 ; Merged with sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][79]                               ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][53]                                                                                 ; Merged with sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][78]                               ;
 ; sdram:u0|sdram_sdram_controller:sdram_controller|i_addr[0..3,6..11]                                                                                                                                    ; Merged with sdram:u0|sdram_sdram_controller:sdram_controller|i_addr[12]                                                                                          ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:sdram_controller_s1_cmd_width_adapter|byteen_reg[0]                                                                     ; Merged with sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:sdram_controller_s1_cmd_width_adapter|byteen_reg[1]                   ;
@@ -980,8 +980,8 @@ Encoding Type:  One-Hot
 ; sdram:u0|sdram_sdram_controller:sdram_controller|sdram_sdram_controller_input_efifo_module:the_sdram_sdram_controller_input_efifo_module|entry_1[16]                                                   ; Stuck at GND due to stuck port data_in                                                                                                                           ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|sdram_mm_interconnect_0_cmd_mux:cmd_mux|share_count_zero_flag                                                                                       ; Stuck at VCC due to stuck port data_in                                                                                                                           ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|sdram_mm_interconnect_0_cmd_mux:cmd_mux|share_count[0]                                                                                              ; Stuck at GND due to stuck port data_in                                                                                                                           ;
-; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sdram_controller_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[2..25]            ; Lost fanout                                                                                                                                                      ;
 ; mips_core:MIPS_CORE|i_cache:I_CACHE|cache_bank:databanks[3].databank|new_data_flag                                                                                                                     ; Merged with mips_core:MIPS_CORE|i_cache:I_CACHE|cache_bank:tagbank|new_data_flag                                                                                 ;
+; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sdram_controller_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_address_offset[2..25]            ; Lost fanout                                                                                                                                                      ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][55]                                                                                 ; Merged with sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][79]                               ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][51]                                                                                 ; Merged with sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][54]                               ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][79]                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                                           ;
@@ -1174,23 +1174,23 @@ Encoding Type:  One-Hot
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[4][20]                                                                                 ; Lost fanout                                                                                                                                                      ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[5][20]                                                                                 ; Lost fanout                                                                                                                                                      ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[6][20]                                                                                 ; Lost fanout                                                                                                                                                      ;
-; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sdram_controller_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_byte_counter[0..3]               ; Lost fanout                                                                                                                                                      ;
 ; sdram:u0|sdram_sdram_controller:sdram_controller|active_dqm[0]                                                                                                                                         ; Stuck at GND due to stuck port data_in                                                                                                                           ;
-; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sdram_controller_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_busy                             ; Stuck at GND due to stuck port data_in                                                                                                                           ;
+; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sdram_controller_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_byte_counter[0..3]               ; Lost fanout                                                                                                                                                      ;
 ; sdram:u0|sdram_sdram_controller:sdram_controller|m_dqm[0,1]                                                                                                                                            ; Stuck at GND due to stuck port data_in                                                                                                                           ;
+; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sdram_controller_s1_agent|altera_merlin_burst_uncompressor:uncompressor|burst_uncompress_busy                             ; Stuck at GND due to stuck port data_in                                                                                                                           ;
 ; mips_core:MIPS_CORE|d_cache:D_CACHE|state~4                                                                                                                                                            ; Lost fanout                                                                                                                                                      ;
 ; mips_core:MIPS_CORE|d_cache:D_CACHE|state~5                                                                                                                                                            ; Lost fanout                                                                                                                                                      ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|m_next~9                                                                                                                                              ; Lost fanout                                                                                                                                                      ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|m_next~10                                                                                                                                             ; Lost fanout                                                                                                                                                      ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|m_next~13                                                                                                                                             ; Lost fanout                                                                                                                                                      ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|m_next~14                                                                                                                                             ; Lost fanout                                                                                                                                                      ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|m_next~16                                                                                                                                             ; Lost fanout                                                                                                                                                      ;
 ; sdram:u0|sdram_sdram_controller:sdram_controller|i_state~14                                                                                                                                            ; Lost fanout                                                                                                                                                      ;
 ; sdram:u0|sdram_sdram_controller:sdram_controller|i_state~15                                                                                                                                            ; Lost fanout                                                                                                                                                      ;
 ; sdram:u0|sdram_sdram_controller:sdram_controller|i_state~16                                                                                                                                            ; Lost fanout                                                                                                                                                      ;
 ; sdram:u0|sdram_sdram_controller:sdram_controller|i_next~4                                                                                                                                              ; Lost fanout                                                                                                                                                      ;
 ; sdram:u0|sdram_sdram_controller:sdram_controller|i_next~5                                                                                                                                              ; Lost fanout                                                                                                                                                      ;
 ; sdram:u0|sdram_sdram_controller:sdram_controller|i_next~6                                                                                                                                              ; Lost fanout                                                                                                                                                      ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|m_next~9                                                                                                                                              ; Lost fanout                                                                                                                                                      ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|m_next~10                                                                                                                                             ; Lost fanout                                                                                                                                                      ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|m_next~13                                                                                                                                             ; Lost fanout                                                                                                                                                      ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|m_next~14                                                                                                                                             ; Lost fanout                                                                                                                                                      ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|m_next~16                                                                                                                                             ; Lost fanout                                                                                                                                                      ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[7][18]                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                                           ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[6][18]                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                                           ;
 ; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem[5][18]                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                                           ;
@@ -1434,46 +1434,61 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 3704  ;
+; Total registers                              ; 3734  ;
 ; Number of registers using Synchronous Clear  ; 339   ;
 ; Number of registers using Synchronous Load   ; 245   ;
-; Number of registers using Asynchronous Clear ; 930   ;
+; Number of registers using Asynchronous Clear ; 960   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 3281  ;
+; Number of registers using Clock Enable       ; 3282  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Inverted Register Statistics                                                                                                                          ;
-+---------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; Inverted Register                                                                                                                           ; Fan out ;
-+---------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; sdram:u0|sdram_sdram_controller:sdram_controller|m_cmd[1]                                                                                   ; 2       ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|m_cmd[3]                                                                                   ; 1       ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|m_cmd[2]                                                                                   ; 2       ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|m_cmd[0]                                                                                   ; 2       ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|i_addr[12]                                                                                 ; 11      ;
-; sdram:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out          ; 557     ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|i_cmd[1]                                                                                   ; 2       ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|i_cmd[3]                                                                                   ; 2       ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|i_cmd[2]                                                                                   ; 2       ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|i_cmd[0]                                                                                   ; 2       ;
-; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_agent:d_cache_read_avalon_master_agent|hold_waitrequest             ; 7       ;
-; sdram:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain[0]           ; 1       ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|refresh_counter[5]                                                                         ; 2       ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|refresh_counter[6]                                                                         ; 2       ;
-; sdram:u0|sdram_sdram_controller:sdram_controller|refresh_counter[2]                                                                         ; 2       ;
-; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|sdram_mm_interconnect_0_cmd_mux:cmd_mux|altera_merlin_arbitrator:arb|top_priority_reg[0] ; 3       ;
-; sdram:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain[1]           ; 1       ;
-; mips_core:MIPS_CORE|i_cache:I_CACHE|databank_select[0]                                                                                      ; 2       ;
-; mips_core:MIPS_CORE|pr_e2m:PR_E2M|o_d_cache_input.mem_action                                                                                ; 7       ;
-; mips_core:MIPS_CORE|d_cache:D_CACHE|databank_select[0]                                                                                      ; 3       ;
-; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_2bit:PREDICTOR|counter[0]      ; 2       ;
-; mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_pass_through.mem_action                                                                             ; 1       ;
-; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rdata_fifo|empty                         ; 2       ;
-; Total number of inverted registers = 23                                                                                                     ;         ;
-+---------------------------------------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                                                                                            ;
++-----------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Inverted Register                                                                                                                             ; Fan out ;
++-----------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; sdram:u0|sdram_sdram_controller:sdram_controller|m_cmd[1]                                                                                     ; 2       ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|m_cmd[3]                                                                                     ; 1       ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|m_cmd[2]                                                                                     ; 2       ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|m_cmd[0]                                                                                     ; 2       ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|i_addr[12]                                                                                   ; 11      ;
+; sdram:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out            ; 557     ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|i_cmd[1]                                                                                     ; 2       ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|i_cmd[3]                                                                                     ; 2       ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|i_cmd[2]                                                                                     ; 2       ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|i_cmd[0]                                                                                     ; 2       ;
+; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_merlin_master_agent:d_cache_read_avalon_master_agent|hold_waitrequest               ; 7       ;
+; sdram:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain[0]             ; 1       ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|refresh_counter[5]                                                                           ; 2       ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|refresh_counter[6]                                                                           ; 2       ;
+; sdram:u0|sdram_sdram_controller:sdram_controller|refresh_counter[2]                                                                           ; 2       ;
+; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|sdram_mm_interconnect_0_cmd_mux:cmd_mux|altera_merlin_arbitrator:arb|top_priority_reg[0]   ; 3       ;
+; sdram:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain[1]             ; 1       ;
+; mips_core:MIPS_CORE|i_cache:I_CACHE|databank_select[0]                                                                                        ; 2       ;
+; mips_core:MIPS_CORE|pr_e2m:PR_E2M|o_d_cache_input.mem_action                                                                                  ; 7       ;
+; mips_core:MIPS_CORE|d_cache:D_CACHE|databank_select[0]                                                                                        ; 3       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[0][0]  ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[4][0]  ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[8][0]  ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[12][0] ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[1][0]  ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[5][0]  ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[9][0]  ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[13][0] ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[2][0]  ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[6][0]  ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[10][0] ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[14][0] ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[3][0]  ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[7][0]  ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[11][0] ; 1       ;
+; mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|counter[15][0] ; 1       ;
+; mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_pass_through.mem_action                                                                               ; 1       ;
+; sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rdata_fifo|empty                           ; 2       ;
+; Total number of inverted registers = 38                                                                                                       ;         ;
++-----------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1495,77 +1510,78 @@ Encoding Type:  One-Hot
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_pass_through.recovery_target[23]                                                         ;
-; 3:1                ; 17 bits   ; 34 LEs        ; 0 LEs                ; 34 LEs                 ; Yes        ; |mips_cpu|sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:sdram_controller_s1_cmd_width_adapter|data_reg[4] ;
-; 3:1                ; 22 bits   ; 44 LEs        ; 0 LEs                ; 44 LEs                 ; Yes        ; |mips_cpu|sdram:u0|custom_master:d_cache_write|write_master:a_write_master|address[21]                                                     ;
-; 3:1                ; 25 bits   ; 50 LEs        ; 0 LEs                ; 50 LEs                 ; Yes        ; |mips_cpu|sdram:u0|custom_master:d_cache_write|write_master:a_write_master|length[9]                                                       ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.is_sw                                                                              ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 38 LEs               ; 0 LEs                  ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|fetch_unit:FETCH_UNIT|o_pc_current.pc[21]                                                                    ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |mips_cpu|sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem_used[6]          ;
-; 3:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|llsc_module:LLSC_mod|LLAddr[14]                                                                              ;
-; 3:1                ; 25 bits   ; 50 LEs        ; 0 LEs                ; 50 LEs                 ; Yes        ; |mips_cpu|sdram:u0|custom_master:d_cache_read|latency_aware_read_master:a_latency_aware_read_master|length[23]                             ;
-; 3:1                ; 22 bits   ; 44 LEs        ; 0 LEs                ; 44 LEs                 ; Yes        ; |mips_cpu|sdram:u0|custom_master:i_cache_read|latency_aware_read_master:a_latency_aware_read_master|address[9]                             ;
-; 3:1                ; 25 bits   ; 50 LEs        ; 0 LEs                ; 50 LEs                 ; Yes        ; |mips_cpu|sdram:u0|custom_master:i_cache_read|latency_aware_read_master:a_latency_aware_read_master|length[21]                             ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.op2[29]                                                                            ;
-; 4:1                ; 22 bits   ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; Yes        ; |mips_cpu|sdram:u0|custom_master:d_cache_read|latency_aware_read_master:a_latency_aware_read_master|address[4]                             ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.op1[26]                                                                            ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_pass_through.rw_addr[1]                                                                  ;
-; 7:1                ; 5 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.op2[1]                                                                             ;
-; 66:1               ; 2 bits    ; 88 LEs        ; 18 LEs               ; 70 LEs                 ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.alu_ctl[2]                                                                         ;
-; 66:1               ; 2 bits    ; 88 LEs        ; 38 LEs               ; 50 LEs                 ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.alu_ctl[1]                                                                         ;
-; 8:1                ; 11 bits   ; 55 LEs        ; 22 LEs               ; 33 LEs                 ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.op2[14]                                                                            ;
-; 9:1                ; 11 bits   ; 66 LEs        ; 22 LEs               ; 44 LEs                 ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.op2[25]                                                                            ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft0                                                                                           ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft0                                                                                           ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft0                                                                                           ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftRight0                                                                                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftRight1                                                                                          ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftRight0                                                                                          ;
-; 4:1                ; 49 bits   ; 98 LEs        ; 98 LEs               ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft0                                                                                           ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft1                                                                                           ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft1                                                                                           ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft1                                                                                           ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftRight2                                                                                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftRight3                                                                                          ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft1                                                                                           ;
-; 4:1                ; 49 bits   ; 98 LEs        ; 98 LEs               ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftRight3                                                                                          ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|d_cache:D_CACHE|databank_we[1]                                                                               ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|fetch_unit:FETCH_UNIT|o_pc_next.pc[5]                                                                        ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|decode_stage_glue:DEC_STAGE_GLUE|branch_decoded.target[0]                                                    ;
-; 5:1                ; 26 bits   ; 78 LEs        ; 78 LEs               ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|forward_unit:FORWARD_UNIT|out.rs_data[0]                                                                     ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|forward_unit:FORWARD_UNIT|out.rt_data[13]                                                                    ;
-; 32:1               ; 2 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|d_cache:D_CACHE|Mux33                                                                                        ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|mem_stage_glue:MEM_STAGE_GLUE|o_write_back.rw_data[12]                                                       ;
-; 32:1               ; 6 bits    ; 126 LEs       ; 126 LEs              ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|reg_file:REG_FILE|Mux1                                                                                       ;
-; 32:1               ; 12 bits   ; 252 LEs       ; 252 LEs              ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|reg_file:REG_FILE|Mux16                                                                                      ;
-; 32:1               ; 6 bits    ; 126 LEs       ; 126 LEs              ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|reg_file:REG_FILE|Mux11                                                                                      ;
-; 9:1                ; 24 bits   ; 144 LEs       ; 72 LEs               ; 72 LEs                 ; No         ; |mips_cpu|mips_core:MIPS_CORE|decode_stage_glue:DEC_STAGE_GLUE|branch_decoded.target[10]                                                   ;
-; 31:1               ; 8 bits    ; 160 LEs       ; 144 LEs              ; 16 LEs                 ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|out.result[21]                                                                                       ;
-; 29:1               ; 5 bits    ; 95 LEs        ; 90 LEs               ; 5 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|out.result[7]                                                                                        ;
-; 33:1               ; 2 bits    ; 44 LEs        ; 36 LEs               ; 8 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|out.result[9]                                                                                        ;
-; 29:1               ; 3 bits    ; 57 LEs        ; 54 LEs               ; 3 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|out.result[12]                                                                                       ;
-; 37:1               ; 3 bits    ; 72 LEs        ; 66 LEs               ; 6 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|out.result[30]                                                                                       ;
-; 35:1               ; 2 bits    ; 46 LEs        ; 40 LEs               ; 6 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|out.result[26]                                                                                       ;
-; 35:1               ; 3 bits    ; 69 LEs        ; 66 LEs               ; 3 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|out.result[3]                                                                                        ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|d_cache:D_CACHE|databank_select[2]                                                                           ;
-; 9:1                ; 32 bits   ; 192 LEs       ; 96 LEs               ; 96 LEs                 ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_i2d:PR_I2D|o_inst.data[11]                                                                                ;
-; 7:1                ; 5 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; No         ; |mips_cpu|mips_core:MIPS_CORE|decoder:DECODER|out.rt_addr[0]                                                                               ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_dqm[1]                                                                        ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_data[0]                                                                       ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_bank[0]                                                                       ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_addr[10]                                                                      ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_addr[5]                                                                       ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_addr[0]                                                                       ;
-; 7:1                ; 43 bits   ; 172 LEs       ; 0 LEs                ; 172 LEs                ; Yes        ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|active_addr[6]                                                                  ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|Selector34                                                                      ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 10 LEs               ; 6 LEs                  ; No         ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|Selector24                                                                      ;
-; 16:1               ; 2 bits    ; 20 LEs        ; 14 LEs               ; 6 LEs                  ; No         ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|Selector27                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 17 bits   ; 34 LEs        ; 0 LEs                ; 34 LEs                 ; Yes        ; |mips_cpu|sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_merlin_width_adapter:sdram_controller_s1_cmd_width_adapter|data_reg[14]   ;
+; 3:1                ; 22 bits   ; 44 LEs        ; 0 LEs                ; 44 LEs                 ; Yes        ; |mips_cpu|sdram:u0|custom_master:d_cache_write|write_master:a_write_master|address[14]                                                        ;
+; 3:1                ; 25 bits   ; 50 LEs        ; 0 LEs                ; 50 LEs                 ; Yes        ; |mips_cpu|sdram:u0|custom_master:d_cache_write|write_master:a_write_master|length[10]                                                         ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.is_sc                                                                                 ;
+; 3:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_pass_through.recovery_target[10]                                                            ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 38 LEs               ; 0 LEs                  ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|fetch_unit:FETCH_UNIT|o_pc_current.pc[13]                                                                       ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |mips_cpu|sdram:u0|sdram_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_controller_s1_agent_rsp_fifo|mem_used[4]             ;
+; 3:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|llsc_module:LLSC_mod|LLAddr[6]                                                                                  ;
+; 3:1                ; 25 bits   ; 50 LEs        ; 0 LEs                ; 50 LEs                 ; Yes        ; |mips_cpu|sdram:u0|custom_master:d_cache_read|latency_aware_read_master:a_latency_aware_read_master|length[22]                                ;
+; 3:1                ; 22 bits   ; 44 LEs        ; 0 LEs                ; 44 LEs                 ; Yes        ; |mips_cpu|sdram:u0|custom_master:i_cache_read|latency_aware_read_master:a_latency_aware_read_master|address[10]                               ;
+; 3:1                ; 25 bits   ; 50 LEs        ; 0 LEs                ; 50 LEs                 ; Yes        ; |mips_cpu|sdram:u0|custom_master:i_cache_read|latency_aware_read_master:a_latency_aware_read_master|length[12]                                ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.op2[30]                                                                               ;
+; 4:1                ; 22 bits   ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; Yes        ; |mips_cpu|sdram:u0|custom_master:d_cache_read|latency_aware_read_master:a_latency_aware_read_master|address[12]                               ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.op1[28]                                                                               ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_pass_through.rw_addr[4]                                                                     ;
+; 7:1                ; 5 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.op2[2]                                                                                ;
+; 66:1               ; 2 bits    ; 88 LEs        ; 18 LEs               ; 70 LEs                 ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.alu_ctl[2]                                                                            ;
+; 66:1               ; 2 bits    ; 88 LEs        ; 38 LEs               ; 50 LEs                 ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.alu_ctl[1]                                                                            ;
+; 8:1                ; 11 bits   ; 55 LEs        ; 22 LEs               ; 33 LEs                 ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.op2[13]                                                                               ;
+; 9:1                ; 11 bits   ; 66 LEs        ; 22 LEs               ; 44 LEs                 ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_d2e:PR_D2E|o_alu_input.op2[24]                                                                               ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft0                                                                                              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft0                                                                                              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft0                                                                                              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftRight0                                                                                             ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftRight1                                                                                             ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft0                                                                                              ;
+; 4:1                ; 49 bits   ; 98 LEs        ; 98 LEs               ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft0                                                                                              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft1                                                                                              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft1                                                                                              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft1                                                                                              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftRight2                                                                                             ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftRight3                                                                                             ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftRight2                                                                                             ;
+; 4:1                ; 49 bits   ; 98 LEs        ; 98 LEs               ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|ShiftLeft1                                                                                              ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|d_cache:D_CACHE|databank_we[2]                                                                                  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|fetch_unit:FETCH_UNIT|o_pc_next.pc[7]                                                                           ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|decode_stage_glue:DEC_STAGE_GLUE|branch_decoded.target[1]                                                       ;
+; 5:1                ; 26 bits   ; 78 LEs        ; 78 LEs               ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|forward_unit:FORWARD_UNIT|out.rs_data[15]                                                                       ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|forward_unit:FORWARD_UNIT|out.rt_data[31]                                                                       ;
+; 32:1               ; 2 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|d_cache:D_CACHE|Mux0                                                                                            ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|mem_stage_glue:MEM_STAGE_GLUE|o_write_back.rw_data[13]                                                          ;
+; 32:1               ; 6 bits    ; 126 LEs       ; 126 LEs              ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|reg_file:REG_FILE|Mux5                                                                                          ;
+; 32:1               ; 12 bits   ; 252 LEs       ; 252 LEs              ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|reg_file:REG_FILE|Mux19                                                                                         ;
+; 32:1               ; 6 bits    ; 126 LEs       ; 126 LEs              ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|reg_file:REG_FILE|Mux6                                                                                          ;
+; 9:1                ; 24 bits   ; 144 LEs       ; 72 LEs               ; 72 LEs                 ; No         ; |mips_cpu|mips_core:MIPS_CORE|decode_stage_glue:DEC_STAGE_GLUE|branch_decoded.target[8]                                                       ;
+; 31:1               ; 8 bits    ; 160 LEs       ; 144 LEs              ; 16 LEs                 ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|out.result[19]                                                                                          ;
+; 29:1               ; 5 bits    ; 95 LEs        ; 90 LEs               ; 5 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|out.result[5]                                                                                           ;
+; 33:1               ; 2 bits    ; 44 LEs        ; 36 LEs               ; 8 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|out.result[9]                                                                                           ;
+; 29:1               ; 3 bits    ; 57 LEs        ; 54 LEs               ; 3 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|out.result[14]                                                                                          ;
+; 37:1               ; 3 bits    ; 72 LEs        ; 66 LEs               ; 6 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|out.result[30]                                                                                          ;
+; 35:1               ; 2 bits    ; 46 LEs        ; 40 LEs               ; 6 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|out.result[26]                                                                                          ;
+; 35:1               ; 3 bits    ; 69 LEs        ; 66 LEs               ; 3 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|alu:ALU|out.result[2]                                                                                           ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|d_cache:D_CACHE|databank_select[3]                                                                              ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |mips_cpu|mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR|Mux1 ;
+; 7:1                ; 5 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; No         ; |mips_cpu|mips_core:MIPS_CORE|decoder:DECODER|out.rt_addr[0]                                                                                  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_dqm[1]                                                                           ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_data[0]                                                                          ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_bank[0]                                                                          ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_addr[10]                                                                         ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_addr[5]                                                                          ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|m_addr[0]                                                                          ;
+; 7:1                ; 43 bits   ; 172 LEs       ; 0 LEs                ; 172 LEs                ; Yes        ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|active_addr[6]                                                                     ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|Selector34                                                                         ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 10 LEs               ; 6 LEs                  ; No         ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|Selector24                                                                         ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 14 LEs               ; 6 LEs                  ; No         ; |mips_cpu|sdram:u0|sdram_sdram_controller:sdram_controller|Selector27                                                                         ;
+; 9:1                ; 32 bits   ; 192 LEs       ; 96 LEs               ; 96 LEs                 ; Yes        ; |mips_cpu|mips_core:MIPS_CORE|pr_i2d:PR_I2D|o_inst.data[5]                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -4538,12 +4554,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 3704                        ;
-;     CLR               ; 149                         ;
+; arriav_ff             ; 3734                        ;
+;     CLR               ; 178                         ;
 ;     CLR SCLR          ; 34                          ;
 ;     CLR SLD           ; 1                           ;
 ;     ENA               ; 2509                        ;
-;     ENA CLR           ; 350                         ;
+;     ENA CLR           ; 351                         ;
 ;     ENA CLR SCLR      ; 248                         ;
 ;     ENA CLR SCLR SLD  ; 29                          ;
 ;     ENA CLR SLD       ; 119                         ;
@@ -4552,7 +4568,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SLD               ; 96                          ;
 ;     plain             ; 141                         ;
 ; arriav_io_obuf        ; 16                          ;
-; arriav_lcell_comb     ; 4927                        ;
+; arriav_lcell_comb     ; 4985                        ;
 ;     arith             ; 313                         ;
 ;         0 data inputs ; 3                           ;
 ;         1 data inputs ; 254                         ;
@@ -4561,14 +4577,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs ; 1                           ;
 ;     extend            ; 62                          ;
 ;         7 data inputs ; 62                          ;
-;     normal            ; 4496                        ;
+;     normal            ; 4554                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 17                          ;
 ;         2 data inputs ; 377                         ;
-;         3 data inputs ; 743                         ;
+;         3 data inputs ; 744                         ;
 ;         4 data inputs ; 356                         ;
-;         5 data inputs ; 449                         ;
-;         6 data inputs ; 2552                        ;
+;         5 data inputs ; 528                         ;
+;         6 data inputs ; 2530                        ;
 ;     shared            ; 56                          ;
 ;         2 data inputs ; 56                          ;
 ; boundary_port         ; 109                         ;
@@ -4576,7 +4592,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block    ; 402                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 22.00                       ;
-; Average LUT depth     ; 8.66                        ;
+; Average LUT depth     ; 8.63                        ;
 +-----------------------+-----------------------------+
 
 
@@ -4585,7 +4601,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:48     ;
+; Top            ; 00:00:41     ;
 +----------------+--------------+
 
 
@@ -4595,7 +4611,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Apr 23 14:31:09 2020
+    Info: Processing started: Thu Apr 23 16:55:38 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips_cpu -c mips_cpu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -4646,10 +4662,12 @@ Info (12021): Found 2 design units, including 2 entities, in source file mips_co
 Info (12021): Found 2 design units, including 2 entities, in source file mips_core/d_cache.sv
     Info (12023): Found entity 1: d_cache_input_ifc File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv Line: 27
     Info (12023): Found entity 2: d_cache File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv Line: 39
-Info (12021): Found 3 design units, including 3 entities, in source file mips_core/branch_controller.sv
+Info (12021): Found 5 design units, including 5 entities, in source file mips_core/branch_controller.sv
     Info (12023): Found entity 1: branch_controller File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 13
     Info (12023): Found entity 2: branch_predictor_always_not_taken File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 53
     Info (12023): Found entity 3: branch_predictor_2bit File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 77
+    Info (12023): Found entity 4: branch_predictor_local File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 136
+    Info (12023): Found entity 5: branch_predictor_bimodal File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 203
 Info (12021): Found 3 design units, including 3 entities, in source file mips_core/alu.sv
     Info (12023): Found entity 1: alu_input_ifc File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv Line: 15
     Info (12023): Found entity 2: alu_output_ifc File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv Line: 28
@@ -4931,7 +4949,6 @@ Info (12128): Elaborating entity "pc_ifc" for hierarchy "mips_core:MIPS_CORE|pc_
 Info (12128): Elaborating entity "cache_output_ifc" for hierarchy "mips_core:MIPS_CORE|cache_output_ifc:if_i_cache_output" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv Line: 32
 Info (12128): Elaborating entity "decoder_output_ifc" for hierarchy "mips_core:MIPS_CORE|decoder_output_ifc:dec_decoder_output" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv Line: 39
 Info (12128): Elaborating entity "reg_file_output_ifc" for hierarchy "mips_core:MIPS_CORE|reg_file_output_ifc:dec_reg_file_output" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv Line: 40
-Warning (12158): Entity "reg_file_output_ifc" contains only dangling pins File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv Line: 40
 Info (12128): Elaborating entity "branch_decoded_ifc" for hierarchy "mips_core:MIPS_CORE|branch_decoded_ifc:dec_branch_decoded" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv Line: 42
 Info (12128): Elaborating entity "alu_input_ifc" for hierarchy "mips_core:MIPS_CORE|alu_input_ifc:dec_alu_input" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv Line: 43
 Info (12128): Elaborating entity "alu_pass_through_ifc" for hierarchy "mips_core:MIPS_CORE|alu_pass_through_ifc:dec_alu_pass_through" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv Line: 44
@@ -4972,7 +4989,7 @@ Info (12128): Elaborating entity "pr_m2w" for hierarchy "mips_core:MIPS_CORE|pr_
 Info (12128): Elaborating entity "hazard_controller" for hierarchy "mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv Line: 280
 Warning (10034): Output port "i2i_hc.flush" at hazard_controller.sv(33) has no driver File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv Line: 33
 Info (12128): Elaborating entity "branch_controller" for hierarchy "mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv Line: 49
-Info (12128): Elaborating entity "branch_predictor_2bit" for hierarchy "mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_2bit:PREDICTOR" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 40
+Info (12128): Elaborating entity "branch_predictor_bimodal" for hierarchy "mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_bimodal:PREDICTOR" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 40
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "mips_core:MIPS_CORE|reg_file:REG_FILE|regs" is uninferred due to asynchronous read logic File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv Line: 41
 Info (19000): Inferred 11 megafunctions from design logic
@@ -5285,18 +5302,18 @@ Warning (21074): Design contains 15 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv Line: 58
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv Line: 58
     Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv Line: 58
-Info (21057): Implemented 8502 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 8561 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 75 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 7989 logic cells
+    Info (21061): Implemented 8048 logic cells
     Info (21064): Implemented 402 RAM segments
     Info (21065): Implemented 2 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 95 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 94 warnings
     Info: Peak virtual memory: 4953 megabytes
-    Info: Processing ended: Thu Apr 23 14:32:35 2020
-    Info: Elapsed time: 00:01:26
-    Info: Total CPU time (on all processors): 00:02:03
+    Info: Processing ended: Thu Apr 23 16:57:01 2020
+    Info: Elapsed time: 00:01:23
+    Info: Total CPU time (on all processors): 00:01:48
 
 
 +------------------------------------------+
