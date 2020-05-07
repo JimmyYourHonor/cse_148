@@ -142,139 +142,139 @@
 # 
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv" -work error_adapter_0                      
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:12 on Apr 23,2020
+# Start time: 10:49:54 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv -work error_adapter_0 
 # -- Compiling module sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_avalon_st_adapter_error_adapter_0
-# End time: 16:58:12 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:54 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog     "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter.v"                  -work avalon_st_adapter                    
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:12 on Apr 23,2020
+# Start time: 10:49:54 on May 07,2020
 # vlog -reportprogress 300 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_avalon_st_adapter.v -work avalon_st_adapter 
 # -- Compiling module sdram_mm_interconnect_0_avalon_st_adapter
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_avalon_st_adapter
-# End time: 16:58:12 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:54 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv"                               -work sdram_controller_s1_rsp_width_adapter
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:12 on Apr 23,2020
+# Start time: 10:49:54 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_width_adapter.sv -work sdram_controller_s1_rsp_width_adapter 
 # -- Compiling module altera_merlin_width_adapter
 # 
 # Top level modules:
 # 	altera_merlin_width_adapter
-# End time: 16:58:12 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:55 on May 07,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv"                           -work sdram_controller_s1_rsp_width_adapter
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:13 on Apr 23,2020
+# Start time: 10:49:55 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv -work sdram_controller_s1_rsp_width_adapter 
 # -- Compiling module altera_merlin_address_alignment
 # 
 # Top level modules:
 # 	altera_merlin_address_alignment
-# End time: 16:58:13 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:55 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv"                          -work sdram_controller_s1_rsp_width_adapter
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:13 on Apr 23,2020
+# Start time: 10:49:55 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv -work sdram_controller_s1_rsp_width_adapter 
 # -- Compiling module altera_merlin_burst_uncompressor
 # 
 # Top level modules:
 # 	altera_merlin_burst_uncompressor
-# End time: 16:58:13 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:55 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_mux.sv"                           -work rsp_mux                              
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:13 on Apr 23,2020
+# Start time: 10:49:55 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_mux.sv -work rsp_mux 
 # -- Compiling module sdram_mm_interconnect_0_rsp_mux
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_rsp_mux
-# End time: 16:58:13 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:55 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv"                                  -work rsp_mux                              
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:13 on Apr 23,2020
+# Start time: 10:49:55 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv -work rsp_mux 
 # -- Compiling module altera_merlin_arbitrator
 # -- Compiling module altera_merlin_arb_adder
 # 
 # Top level modules:
 # 	altera_merlin_arbitrator
-# End time: 16:58:13 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:55 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_demux.sv"                         -work rsp_demux                            
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:13 on Apr 23,2020
+# Start time: 10:49:55 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_rsp_demux.sv -work rsp_demux 
 # -- Compiling module sdram_mm_interconnect_0_rsp_demux
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_rsp_demux
-# End time: 16:58:13 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:55 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_mux.sv"                           -work cmd_mux                              
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:13 on Apr 23,2020
+# Start time: 10:49:55 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_mux.sv -work cmd_mux 
 # -- Compiling module sdram_mm_interconnect_0_cmd_mux
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_cmd_mux
-# End time: 16:58:13 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:55 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv"                                  -work cmd_mux                              
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:13 on Apr 23,2020
+# Start time: 10:49:55 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_arbitrator.sv -work cmd_mux 
 # -- Compiling module altera_merlin_arbitrator
 # -- Compiling module altera_merlin_arb_adder
 # 
 # Top level modules:
 # 	altera_merlin_arbitrator
-# End time: 16:58:13 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:56 on May 07,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_demux.sv"                         -work cmd_demux                            
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:14 on Apr 23,2020
+# Start time: 10:49:56 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_cmd_demux.sv -work cmd_demux 
 # -- Compiling module sdram_mm_interconnect_0_cmd_demux
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_cmd_demux
-# End time: 16:58:14 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:56 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter.sv"                               -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:14 on Apr 23,2020
+# Start time: 10:49:56 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_merlin_burst_adapter
 # 
 # Top level modules:
 # 	altera_merlin_burst_adapter
-# End time: 16:58:14 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:56 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_uncmpr.sv"                        -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:14 on Apr 23,2020
+# Start time: 10:49:56 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_uncmpr.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_merlin_burst_adapter_uncompressed_only
 # 
 # Top level modules:
 # 	altera_merlin_burst_adapter_uncompressed_only
-# End time: 16:58:14 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:56 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_13_1.sv"                          -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:14 on Apr 23,2020
+# Start time: 10:49:56 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_13_1.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_merlin_burst_adapter_burstwrap_increment
 # -- Compiling module altera_merlin_burst_adapter_adder
@@ -284,11 +284,11 @@
 # 
 # Top level modules:
 # 	altera_merlin_burst_adapter_13_1
-# End time: 16:58:14 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:56 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv"                           -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:14 on Apr 23,2020
+# Start time: 10:49:56 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_merlin_burst_adapter_new
 # ** Warning: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv(500): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
@@ -386,11 +386,11 @@
 # 
 # Top level modules:
 # 	altera_merlin_burst_adapter_new
-# End time: 16:58:15 on Apr 23,2020, Elapsed time: 0:00:01
+# End time: 10:49:57 on May 07,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 92
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv"                               -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:15 on Apr 23,2020
+# Start time: 10:49:57 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_incr_burst_converter
 # ** Warning: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv(266): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
@@ -400,94 +400,94 @@
 # 
 # Top level modules:
 # 	altera_incr_burst_converter
-# End time: 16:58:15 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:57 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_wrap_burst_converter.sv"                               -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:15 on Apr 23,2020
+# Start time: 10:49:57 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_wrap_burst_converter.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_wrap_burst_converter
 # 
 # Top level modules:
 # 	altera_wrap_burst_converter
-# End time: 16:58:15 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:57 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv"                            -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:15 on Apr 23,2020
+# Start time: 10:49:57 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_default_burst_converter
 # ** Warning: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv(102): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
 # 
 # Top level modules:
 # 	altera_default_burst_converter
-# End time: 16:58:15 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:57 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv"                           -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:15 on Apr 23,2020
+# Start time: 10:49:57 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_merlin_address_alignment
 # 
 # Top level modules:
 # 	altera_merlin_address_alignment
-# End time: 16:58:15 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:57 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_stage.sv"                           -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:15 on Apr 23,2020
+# Start time: 10:49:57 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_stage.sv -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_avalon_st_pipeline_stage
 # 
 # Top level modules:
 # 	altera_avalon_st_pipeline_stage
-# End time: 16:58:16 on Apr 23,2020, Elapsed time: 0:00:01
+# End time: 10:49:57 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_base.v"                             -work sdram_controller_s1_burst_adapter    
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:16 on Apr 23,2020
+# Start time: 10:49:57 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_base.v -work sdram_controller_s1_burst_adapter 
 # -- Compiling module altera_avalon_st_pipeline_base
 # 
 # Top level modules:
 # 	altera_avalon_st_pipeline_base
-# End time: 16:58:16 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:57 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router_003.sv"                        -work router_003                           
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:16 on Apr 23,2020
+# Start time: 10:49:57 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router_003.sv -work router_003 
 # -- Compiling module sdram_mm_interconnect_0_router_003_default_decode
 # -- Compiling module sdram_mm_interconnect_0_router_003
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_router_003
-# End time: 16:58:16 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:58 on May 07,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router.sv"                            -work router                               
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:16 on Apr 23,2020
+# Start time: 10:49:58 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0_router.sv -work router 
 # -- Compiling module sdram_mm_interconnect_0_router_default_decode
 # -- Compiling module sdram_mm_interconnect_0_router
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0_router
-# End time: 16:58:16 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:58 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog     "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_sc_fifo.v"                                      -work sdram_controller_s1_agent_rsp_fifo   
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:16 on Apr 23,2020
+# Start time: 10:49:58 on May 07,2020
 # vlog -reportprogress 300 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_sc_fifo.v -work sdram_controller_s1_agent_rsp_fifo 
 # -- Compiling module altera_avalon_sc_fifo
 # 
 # Top level modules:
 # 	altera_avalon_sc_fifo
-# End time: 16:58:16 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:58 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv"                                 -work sdram_controller_s1_agent            
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:16 on Apr 23,2020
+# Start time: 10:49:58 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv -work sdram_controller_s1_agent 
 # -- Compiling module altera_merlin_slave_agent
 # ** Warning: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
@@ -503,205 +503,205 @@
 # 
 # Top level modules:
 # 	altera_merlin_slave_agent
-# End time: 16:58:16 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:58 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 6
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv"                          -work sdram_controller_s1_agent            
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:16 on Apr 23,2020
+# Start time: 10:49:58 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_uncompressor.sv -work sdram_controller_s1_agent 
 # -- Compiling module altera_merlin_burst_uncompressor
 # 
 # Top level modules:
 # 	altera_merlin_burst_uncompressor
-# End time: 16:58:16 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:58 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_agent.sv"                                -work d_cache_read_avalon_master_agent     
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:17 on Apr 23,2020
+# Start time: 10:49:58 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_agent.sv -work d_cache_read_avalon_master_agent 
 # -- Compiling module altera_merlin_master_agent
 # 
 # Top level modules:
 # 	altera_merlin_master_agent
-# End time: 16:58:17 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:58 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_translator.sv"                            -work sdram_controller_s1_translator       
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:17 on Apr 23,2020
+# Start time: 10:49:58 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_slave_translator.sv -work sdram_controller_s1_translator 
 # -- Compiling module altera_merlin_slave_translator
 # 
 # Top level modules:
 # 	altera_merlin_slave_translator
-# End time: 16:58:17 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:59 on May 07,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_translator.sv"                           -work d_cache_read_avalon_master_translator
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:17 on Apr 23,2020
+# Start time: 10:49:59 on May 07,2020
 # vlog -reportprogress 300 -sv C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_master_translator.sv -work d_cache_read_avalon_master_translator 
 # -- Compiling module altera_merlin_master_translator
 # 
 # Top level modules:
 # 	altera_merlin_master_translator
-# End time: 16:58:17 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:59 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog     "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v"                                    -work rst_controller                       
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:17 on Apr 23,2020
+# Start time: 10:49:59 on May 07,2020
 # vlog -reportprogress 300 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_controller.v -work rst_controller 
 # -- Compiling module altera_reset_controller
 # 
 # Top level modules:
 # 	altera_reset_controller
-# End time: 16:58:17 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:59 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog     "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v"                                  -work rst_controller                       
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:17 on Apr 23,2020
+# Start time: 10:49:59 on May 07,2020
 # vlog -reportprogress 300 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_reset_synchronizer.v -work rst_controller 
 # -- Compiling module altera_reset_synchronizer
 # 
 # Top level modules:
 # 	altera_reset_synchronizer
-# End time: 16:58:17 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:59 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog     "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0.v"                                    -work mm_interconnect_0                    
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:17 on Apr 23,2020
+# Start time: 10:49:59 on May 07,2020
 # vlog -reportprogress 300 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_mm_interconnect_0.v -work mm_interconnect_0 
 # -- Compiling module sdram_mm_interconnect_0
 # 
 # Top level modules:
 # 	sdram_mm_interconnect_0
-# End time: 16:58:17 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:59 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog     "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v"                                     -work sdram_controller                     
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:17 on Apr 23,2020
+# Start time: 10:49:59 on May 07,2020
 # vlog -reportprogress 300 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v -work sdram_controller 
 # -- Compiling module sdram_sdram_controller_input_efifo_module
 # -- Compiling module sdram_sdram_controller
 # 
 # Top level modules:
 # 	sdram_sdram_controller
-# End time: 16:58:18 on Apr 23,2020, Elapsed time: 0:00:01
+# End time: 10:49:59 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog     "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v"                      -work sdram_controller                     
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:18 on Apr 23,2020
+# Start time: 10:49:59 on May 07,2020
 # vlog -reportprogress 300 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v -work sdram_controller 
 # -- Compiling module sdram_sdram_controller_test_component_ram_module
 # -- Compiling module sdram_sdram_controller_test_component
 # 
 # Top level modules:
 # 	sdram_sdram_controller_test_component
-# End time: 16:58:18 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:59 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog     "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo"                                               -work pll_0                                
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:18 on Apr 23,2020
+# Start time: 10:49:59 on May 07,2020
 # vlog -reportprogress 300 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo -work pll_0 
 # -- Compiling module sdram_pll_0
 # 
 # Top level modules:
 # 	sdram_pll_0
-# End time: 16:58:18 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:49:59 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog     "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v"                                              -work d_cache_read                         
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:18 on Apr 23,2020
+# Start time: 10:49:59 on May 07,2020
 # vlog -reportprogress 300 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v -work d_cache_read 
 # -- Compiling module custom_master
 # 
 # Top level modules:
 # 	custom_master
-# End time: 16:58:18 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:00 on May 07,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog     "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v"                                         -work d_cache_read                         
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:18 on Apr 23,2020
+# Start time: 10:50:00 on May 07,2020
 # vlog -reportprogress 300 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v -work d_cache_read 
 # -- Compiling module burst_write_master
 # 
 # Top level modules:
 # 	burst_write_master
-# End time: 16:58:18 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:00 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog     "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v"                                          -work d_cache_read                         
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:18 on Apr 23,2020
+# Start time: 10:50:00 on May 07,2020
 # vlog -reportprogress 300 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v -work d_cache_read 
 # -- Compiling module burst_read_master
 # 
 # Top level modules:
 # 	burst_read_master
-# End time: 16:58:18 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:00 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog     "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v"                                               -work d_cache_read                         
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:18 on Apr 23,2020
+# Start time: 10:50:00 on May 07,2020
 # vlog -reportprogress 300 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v -work d_cache_read 
 # -- Compiling module write_master
 # 
 # Top level modules:
 # 	write_master
-# End time: 16:58:18 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:00 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog     "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v"                                  -work d_cache_read                         
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:18 on Apr 23,2020
+# Start time: 10:50:00 on May 07,2020
 # vlog -reportprogress 300 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v -work d_cache_read 
 # -- Compiling module latency_aware_read_master
 # 
 # Top level modules:
 # 	latency_aware_read_master
-# End time: 16:58:18 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:00 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog     "C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v"                                                                                                            
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:19 on Apr 23,2020
+# Start time: 10:50:00 on May 07,2020
 # vlog -reportprogress 300 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v 
 # -- Compiling module sdram
 # 
 # Top level modules:
 # 	sdram
-# End time: 16:58:19 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:00 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:19 on Apr 23,2020
+# Start time: 10:50:00 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv 
 # -- Compiling module cache_bank
 # -- Compiling module cache_bank_core
 # 
 # Top level modules:
 # 	cache_bank
-# End time: 16:58:19 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:00 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:19 on Apr 23,2020
+# Start time: 10:50:00 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv 
 # -- Compiling package mips_core_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 16:58:19 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:00 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:19 on Apr 23,2020
+# Start time: 10:50:00 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv 
 # -- Compiling package mips_cpu_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 16:58:19 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:00 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:19 on Apr 23,2020
+# Start time: 10:50:00 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv 
 # -- Compiling package llsc_module_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -712,11 +712,11 @@
 # 
 # Top level modules:
 # 	llsc_module
-# End time: 16:58:19 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:01 on May 07,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:19 on Apr 23,2020
+# Start time: 10:50:01 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv 
 # -- Compiling package mips_core_interfaces_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -733,11 +733,11 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 16:58:19 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:01 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/pass_done_interface.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:19 on Apr 23,2020
+# Start time: 10:50:01 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/pass_done_interface.sv 
 # -- Compiling package pass_done_interface_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -745,11 +745,11 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 16:58:19 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:01 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/memory_interfaces.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:20 on Apr 23,2020
+# Start time: 10:50:01 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/memory_interfaces.sv 
 # -- Compiling package memory_interfaces_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -758,11 +758,11 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 16:58:20 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:01 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:20 on Apr 23,2020
+# Start time: 10:50:01 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv 
 # -- Compiling package i_cache_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -771,11 +771,11 @@
 # 
 # Top level modules:
 # 	i_cache
-# End time: 16:58:20 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:01 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:20 on Apr 23,2020
+# Start time: 10:50:01 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv 
 # -- Compiling package fetch_unit_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -784,11 +784,11 @@
 # 
 # Top level modules:
 # 	fetch_unit
-# End time: 16:58:20 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:01 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:20 on Apr 23,2020
+# Start time: 10:50:01 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/decoder.sv 
 # -- Compiling package decoder_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -798,11 +798,11 @@
 # 
 # Top level modules:
 # 	decoder
-# End time: 16:58:20 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:01 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:20 on Apr 23,2020
+# Start time: 10:50:01 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv 
 # -- Compiling package d_cache_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -812,11 +812,11 @@
 # 
 # Top level modules:
 # 	d_cache
-# End time: 16:58:20 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:01 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:20 on Apr 23,2020
+# Start time: 10:50:01 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv 
 # -- Compiling package branch_controller_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -826,17 +826,19 @@
 # -- Compiling module branch_predictor_2bit
 # -- Compiling module branch_predictor_local
 # -- Compiling module branch_predictor_bimodal
+# -- Compiling module branch_predictor_global
+# -- Compiling module branch_predictor_tournament
 # 
 # Top level modules:
 # 	branch_controller
 # 	branch_predictor_always_not_taken
-# 	branch_predictor_2bit
-# 	branch_predictor_local
-# End time: 16:58:20 on Apr 23,2020, Elapsed time: 0:00:00
+# 	branch_predictor_bimodal
+# 	branch_predictor_tournament
+# End time: 10:50:02 on May 07,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:20 on Apr 23,2020
+# Start time: 10:50:02 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv 
 # -- Compiling package alu_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -847,11 +849,11 @@
 # 
 # Top level modules:
 # 	alu
-# End time: 16:58:21 on Apr 23,2020, Elapsed time: 0:00:01
+# End time: 10:50:02 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:21 on Apr 23,2020
+# Start time: 10:50:02 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv 
 # -- Compiling package reg_file_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -861,11 +863,11 @@
 # 
 # Top level modules:
 # 	reg_file
-# End time: 16:58:21 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:02 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:21 on Apr 23,2020
+# Start time: 10:50:02 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv 
 # -- Compiling package pipeline_registers_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -880,11 +882,11 @@
 # 	pr_d2e
 # 	pr_e2m
 # 	pr_m2w
-# End time: 16:58:21 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:02 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:21 on Apr 23,2020
+# Start time: 10:50:02 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv 
 # -- Compiling package hazard_controller_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -893,11 +895,11 @@
 # 
 # Top level modules:
 # 	hazard_controller
-# End time: 16:58:21 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:02 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:21 on Apr 23,2020
+# Start time: 10:50:02 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv 
 # -- Compiling package glue_circuits_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -910,11 +912,11 @@
 # 	decode_stage_glue
 # 	ex_stage_glue
 # 	mem_stage_glue
-# End time: 16:58:21 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:02 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:21 on Apr 23,2020
+# Start time: 10:50:02 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv 
 # -- Compiling package forward_unit_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -923,11 +925,11 @@
 # 
 # Top level modules:
 # 	forward_unit
-# End time: 16:58:21 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:02 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:21 on Apr 23,2020
+# Start time: 10:50:02 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv 
 # -- Compiling package mips_core_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -936,11 +938,11 @@
 # 
 # Top level modules:
 # 	mips_core
-# End time: 16:58:22 on Apr 23,2020, Elapsed time: 0:00:01
+# End time: 10:50:03 on May 07,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu {C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:58:22 on Apr 23,2020
+# Start time: 10:50:03 on May 07,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu" C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv 
 # -- Compiling package mips_cpu_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -948,12 +950,12 @@
 # 
 # Top level modules:
 # 	mips_cpu
-# End time: 16:58:22 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:03 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 do C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/testbench.do
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:59:37 on Apr 23,2020
+# Start time: 10:50:23 on May 07,2020
 # vlog -reportprogress 300 -work work ../../testbench.sv 
 # -- Compiling package testbench_sv_unit
 # -- Importing package mips_cpu_pkg
@@ -961,19 +963,19 @@ do C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3
 # 
 # Top level modules:
 # 	testbench
-# End time: 16:59:37 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:23 on May 07,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:59:37 on Apr 23,2020
+# Start time: 10:50:23 on May 07,2020
 # vlog -reportprogress 300 -work work ../../ip/sdr_sdram/sdr.v 
 # -- Compiling module sdr
 # 
 # Top level modules:
 # 	sdr
-# End time: 16:59:37 on Apr 23,2020, Elapsed time: 0:00:00
+# End time: 10:50:24 on May 07,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -t ns -L error_adapter_0 -L avalon_st_adapter -L sdram_controller_s1_rsp_width_adapter -L rsp_mux -L rsp_demux -L cmd_mux -L cmd_demux -L sdram_controller_s1_burst_adapter -L router_003 -L router -L sdram_controller_s1_agent_rsp_fifo -L sdram_controller_s1_agent -L d_cache_read_avalon_master_agent -L sdram_controller_s1_translator -L d_cache_read_avalon_master_translator -L rst_controller -L mm_interconnect_0 -L sdram_controller -L pll_0 -L d_cache_read -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver testbench 
-# Start time: 16:59:37 on Apr 23,2020
+# Start time: 10:50:24 on May 07,2020
 # Loading sv_std.std
 # Loading work.mips_cpu_pkg
 # Loading work.testbench_sv_unit
@@ -1065,7 +1067,7 @@ do C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3
 # Loading work.hazard_controller
 # Loading work.branch_controller_sv_unit
 # Loading work.branch_controller
-# Loading work.branch_predictor_bimodal
+# Loading work.branch_predictor_2bit
 # Loading work.sdr
 # Loading d_cache_read.latency_aware_read_master
 # Loading altera_mf_ver.scfifo
@@ -1135,7 +1137,7 @@ do C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3
 # ** Warning: (vsim-3722) C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'extclk_out'.
 # ** Warning: (vsim-3722) C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_pll_0.vo(48): [TFMPC] - Missing connection for port 'zdbfbclk'.
-# ** Warning: Design size of 11788 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 11657 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 run -all
 # Info: =================================================
@@ -1154,189 +1156,611 @@ run -all
 #    Time: 2190 ns  Iteration: 4  Instance: /testbench
 # Break in Module testbench at ../../testbench.sv line 93
 run -all
-# testbench.DUT.MIPS_CORE.ALU ( 458000.0 ns) PASS test 00000001
+# testbench.DUT.MIPS_CORE.ALU ( 456340.0 ns) PASS test 00000001
 # 
-# testbench.DUT.MIPS_CORE.ALU ( 656950.0 ns) PASS test 00000002
+# testbench.DUT.MIPS_CORE.ALU ( 655080.0 ns) PASS test 00000002
 # 
-# testbench.DUT.MIPS_CORE.ALU ( 909520.0 ns) PASS test 00000003
+# testbench.DUT.MIPS_CORE.ALU ( 908740.0 ns) PASS test 00000003
 # 
-# testbench.DUT.MIPS_CORE.ALU (1345030.0 ns) PASS test 00000004
+# testbench.DUT.MIPS_CORE.ALU (1348720.0 ns) PASS test 00000004
 # 
-# testbench.DUT.MIPS_CORE.ALU (1464160.0 ns) PASS test 00000005
+# testbench.DUT.MIPS_CORE.ALU (1466630.0 ns) PASS test 00000005
 # 
-# testbench.DUT.MIPS_CORE.ALU (1534020.0 ns) PASS test 00000006
+# testbench.DUT.MIPS_CORE.ALU (1535860.0 ns) PASS test 00000006
 # 
-# testbench.DUT.MIPS_CORE.ALU (1763750.0 ns) PASS test 00000007
+# testbench.DUT.MIPS_CORE.ALU (1764780.0 ns) PASS test 00000007
 # 
-# testbench.DUT.MIPS_CORE.ALU (1889490.0 ns) PASS test 00000008
+# testbench.DUT.MIPS_CORE.ALU (1891360.0 ns) PASS test 00000008
 # 
-# testbench.DUT.MIPS_CORE.ALU (2035280.0 ns) PASS test 00000009
+# testbench.DUT.MIPS_CORE.ALU (2039860.0 ns) PASS test 00000009
 # 
-# testbench.DUT.MIPS_CORE.ALU (2347050.0 ns) PASS test 0000000a
+# testbench.DUT.MIPS_CORE.ALU (2356710.0 ns) PASS test 0000000a
 # 
-# testbench.DUT.MIPS_CORE.ALU (2628150.0 ns) PASS test 0000000b
+# testbench.DUT.MIPS_CORE.ALU (2635900.0 ns) PASS test 0000000b
 # 
-# testbench.DUT.MIPS_CORE.ALU (2675340.0 ns) PASS test 0000000c
+# testbench.DUT.MIPS_CORE.ALU (2683750.0 ns) PASS test 0000000c
 # 
-# testbench.DUT.MIPS_CORE.ALU (2720140.0 ns) PASS test 0000000d
+# testbench.DUT.MIPS_CORE.ALU (2729320.0 ns) PASS test 0000000d
 # 
-# testbench.DUT.MIPS_CORE.ALU (3080620.0 ns) PASS test 0000000e
+# testbench.DUT.MIPS_CORE.ALU (3093060.0 ns) PASS test 0000000e
 # 
-# testbench.DUT.MIPS_CORE.ALU (3151800.0 ns) PASS test 0000000f
+# testbench.DUT.MIPS_CORE.ALU (3163310.0 ns) PASS test 0000000f
 # 
-# testbench.DUT.MIPS_CORE.ALU (3328120.0 ns) PASS test 00000010
+# testbench.DUT.MIPS_CORE.ALU (3336790.0 ns) PASS test 00000010
 # 
-# testbench.DUT.MIPS_CORE.ALU (3409080.0 ns) PASS test 00000011
+# testbench.DUT.MIPS_CORE.ALU (3416400.0 ns) PASS test 00000011
 # 
-# testbench.DUT.MIPS_CORE.ALU (3441110.0 ns) PASS test 00000012
+# testbench.DUT.MIPS_CORE.ALU (3448850.0 ns) PASS test 00000012
 # 
-# testbench.DUT.MIPS_CORE.ALU (3680020.0 ns) PASS test 00000013
+# testbench.DUT.MIPS_CORE.ALU (3686530.0 ns) PASS test 00000013
 # 
-# testbench.DUT.MIPS_CORE.ALU (3734710.0 ns) PASS test 00000014
+# testbench.DUT.MIPS_CORE.ALU (3741560.0 ns) PASS test 00000014
 # 
-# testbench.DUT.MIPS_CORE.ALU (3946540.0 ns) PASS test 00000015
+# testbench.DUT.MIPS_CORE.ALU (3951810.0 ns) PASS test 00000015
 # 
-# testbench.DUT.MIPS_CORE.ALU (4371110.0 ns) PASS test 00000016
+# testbench.DUT.MIPS_CORE.ALU (4379320.0 ns) PASS test 00000016
 # 
-# testbench.DUT.MIPS_CORE.ALU (4420680.0 ns) PASS test 00000017
+# testbench.DUT.MIPS_CORE.ALU (4429880.0 ns) PASS test 00000017
 # 
-# testbench.DUT.MIPS_CORE.ALU (4442740.0 ns) PASS test 00000018
+# testbench.DUT.MIPS_CORE.ALU (4452620.0 ns) PASS test 00000018
 # 
-# testbench.DUT.MIPS_CORE.ALU (4642950.0 ns) PASS test 00000019
+# testbench.DUT.MIPS_CORE.ALU (4653010.0 ns) PASS test 00000019
 # 
-# testbench.DUT.MIPS_CORE.ALU (5161140.0 ns) PASS test 0000001a
+# testbench.DUT.MIPS_CORE.ALU (5175480.0 ns) PASS test 0000001a
 # 
-# testbench.DUT.MIPS_CORE.ALU (5479400.0 ns) PASS test 0000001b
+# testbench.DUT.MIPS_CORE.ALU (5500110.0 ns) PASS test 0000001b
 # 
-# testbench.DUT.MIPS_CORE.ALU (5507960.0 ns) PASS test 0000001c
+# testbench.DUT.MIPS_CORE.ALU (5529810.0 ns) PASS test 0000001c
 # 
-# testbench.DUT.MIPS_CORE.ALU (6775570.0 ns) PASS test 0000001d
+# testbench.DUT.MIPS_CORE.ALU (6811070.0 ns) PASS test 0000001d
 # 
-# testbench.DUT.MIPS_CORE.ALU (7195660.0 ns) PASS test 0000001e
+# testbench.DUT.MIPS_CORE.ALU (7230830.0 ns) PASS test 0000001e
 # 
-# testbench.DUT.MIPS_CORE.ALU (7472020.0 ns) PASS test 0000001f
+# testbench.DUT.MIPS_CORE.ALU (7512930.0 ns) PASS test 0000001f
 # 
-# testbench.DUT.MIPS_CORE.ALU (7629380.0 ns) PASS test 00000020
+# testbench.DUT.MIPS_CORE.ALU (7669270.0 ns) PASS test 00000020
 # 
-# testbench.DUT.MIPS_CORE.ALU (7676280.0 ns) PASS test 00000021
+# testbench.DUT.MIPS_CORE.ALU (7715280.0 ns) PASS test 00000021
 # 
-# testbench.DUT.MIPS_CORE.ALU (8153960.0 ns) PASS test 00000022
+# testbench.DUT.MIPS_CORE.ALU (8185080.0 ns) PASS test 00000022
 # 
-# testbench.DUT.MIPS_CORE.ALU (8244300.0 ns) PASS test 00000023
+# testbench.DUT.MIPS_CORE.ALU (8274270.0 ns) PASS test 00000023
 # 
-# testbench.DUT.MIPS_CORE.ALU (8350790.0 ns) PASS test 00000024
+# testbench.DUT.MIPS_CORE.ALU (8378950.0 ns) PASS test 00000024
 # 
-# testbench.DUT.MIPS_CORE.ALU (8417860.0 ns) PASS test 00000025
+# testbench.DUT.MIPS_CORE.ALU (8445720.0 ns) PASS test 00000025
 # 
-# testbench.DUT.MIPS_CORE.ALU (8468330.0 ns) PASS test 00000026
+# testbench.DUT.MIPS_CORE.ALU (8495470.0 ns) PASS test 00000026
 # 
-# testbench.DUT.MIPS_CORE.ALU (8565020.0 ns) PASS test 00000027
+# testbench.DUT.MIPS_CORE.ALU (8593720.0 ns) PASS test 00000027
 # 
-# testbench.DUT.MIPS_CORE.ALU (8734340.0 ns) PASS test 00000028
+# testbench.DUT.MIPS_CORE.ALU (8768240.0 ns) PASS test 00000028
 # 
-# testbench.DUT.MIPS_CORE.ALU (8744020.0 ns) PASS test 00000029
+# testbench.DUT.MIPS_CORE.ALU (8777720.0 ns) PASS test 00000029
 # 
-# testbench.DUT.MIPS_CORE.ALU (8862220.0 ns) PASS test 0000002a
+# testbench.DUT.MIPS_CORE.ALU (8897180.0 ns) PASS test 0000002a
 # 
-# testbench.DUT.MIPS_CORE.ALU (9018090.0 ns) PASS test 0000002b
+# testbench.DUT.MIPS_CORE.ALU (9047680.0 ns) PASS test 0000002b
 # 
-# testbench.DUT.MIPS_CORE.ALU (9068370.0 ns) PASS test 0000002c
+# testbench.DUT.MIPS_CORE.ALU (9100120.0 ns) PASS test 0000002c
 # 
-# testbench.DUT.MIPS_CORE.ALU (9098970.0 ns) PASS test 0000002d
+# testbench.DUT.MIPS_CORE.ALU (9129140.0 ns) PASS test 0000002d
 # 
-# testbench.DUT.MIPS_CORE.ALU (9175460.0 ns) PASS test 0000002e
+# testbench.DUT.MIPS_CORE.ALU (9205270.0 ns) PASS test 0000002e
 # 
-# testbench.DUT.MIPS_CORE.ALU (9339250.0 ns) PASS test 0000002f
+# testbench.DUT.MIPS_CORE.ALU (9366220.0 ns) PASS test 0000002f
 # 
-# testbench.DUT.MIPS_CORE.ALU (9906340.0 ns) PASS test 00000030
+# testbench.DUT.MIPS_CORE.ALU (9927670.0 ns) PASS test 00000030
 # 
-# testbench.DUT.MIPS_CORE.ALU (10642310.0 ns) PASS test 00000031
+# testbench.DUT.MIPS_CORE.ALU (10665520.0 ns) PASS test 00000031
 # 
-# testbench.DUT.MIPS_CORE.ALU (10828580.0 ns) PASS test 00000032
+# testbench.DUT.MIPS_CORE.ALU (10848760.0 ns) PASS test 00000032
 # 
-# testbench.DUT.MIPS_CORE.ALU (11200920.0 ns) PASS test 00000033
+# testbench.DUT.MIPS_CORE.ALU (11227590.0 ns) PASS test 00000033
 # 
-# testbench.DUT.MIPS_CORE.ALU (11382160.0 ns) PASS test 00000034
+# testbench.DUT.MIPS_CORE.ALU (11412060.0 ns) PASS test 00000034
 # 
-# testbench.DUT.MIPS_CORE.ALU (11942400.0 ns) PASS test 00000035
+# testbench.DUT.MIPS_CORE.ALU (11982250.0 ns) PASS test 00000035
 # 
-# testbench.DUT.MIPS_CORE.ALU (12405850.0 ns) PASS test 00000036
+# testbench.DUT.MIPS_CORE.ALU (12451310.0 ns) PASS test 00000036
 # 
-# testbench.DUT.MIPS_CORE.ALU (12984970.0 ns) PASS test 00000037
+# testbench.DUT.MIPS_CORE.ALU (13031020.0 ns) PASS test 00000037
 # 
-# testbench.DUT.MIPS_CORE.ALU (13224850.0 ns) PASS test 00000038
+# testbench.DUT.MIPS_CORE.ALU (13270850.0 ns) PASS test 00000038
 # 
-# testbench.DUT.MIPS_CORE.ALU (13264830.0 ns) PASS test 00000039
+# testbench.DUT.MIPS_CORE.ALU (13309260.0 ns) PASS test 00000039
 # 
-# testbench.DUT.MIPS_CORE.ALU (13333650.0 ns) PASS test 0000003a
+# testbench.DUT.MIPS_CORE.ALU (13376710.0 ns) PASS test 0000003a
 # 
-# testbench.DUT.MIPS_CORE.ALU (13841470.0 ns) PASS test 0000003b
+# testbench.DUT.MIPS_CORE.ALU (13887420.0 ns) PASS test 0000003b
 # 
-# testbench.DUT.MIPS_CORE.ALU (14157660.0 ns) PASS test 0000003c
+# testbench.DUT.MIPS_CORE.ALU (14204820.0 ns) PASS test 0000003c
 # 
-# testbench.DUT.MIPS_CORE.ALU (14312540.0 ns) PASS test 0000003d
+# testbench.DUT.MIPS_CORE.ALU (14357480.0 ns) PASS test 0000003d
 # 
-# testbench.DUT.MIPS_CORE.ALU (14465160.0 ns) PASS test 0000003e
+# testbench.DUT.MIPS_CORE.ALU (14510250.0 ns) PASS test 0000003e
 # 
-# testbench.DUT.MIPS_CORE.ALU (14689480.0 ns) PASS test 0000003f
+# testbench.DUT.MIPS_CORE.ALU (14736060.0 ns) PASS test 0000003f
 # 
-# testbench.DUT.MIPS_CORE.ALU (15026870.0 ns) PASS test 00000040
+# testbench.DUT.MIPS_CORE.ALU (15075040.0 ns) PASS test 00000040
 # 
-# testbench.DUT.MIPS_CORE.ALU (15145110.0 ns) PASS test 00000041
+# testbench.DUT.MIPS_CORE.ALU (15193430.0 ns) PASS test 00000041
 # 
-# testbench.DUT.MIPS_CORE.ALU (15167980.0 ns) PASS test 00000042
+# testbench.DUT.MIPS_CORE.ALU (15215990.0 ns) PASS test 00000042
 # 
-# testbench.DUT.MIPS_CORE.ALU (15361900.0 ns) PASS test 00000043
+# testbench.DUT.MIPS_CORE.ALU (15406880.0 ns) PASS test 00000043
 # 
-# testbench.DUT.MIPS_CORE.ALU (15812350.0 ns) PASS test 00000044
+# testbench.DUT.MIPS_CORE.ALU (15856580.0 ns) PASS test 00000044
 # 
-# testbench.DUT.MIPS_CORE.ALU (15833630.0 ns) PASS test 00000045
+# testbench.DUT.MIPS_CORE.ALU (15878540.0 ns) PASS test 00000045
 # 
-# testbench.DUT.MIPS_CORE.ALU (16053940.0 ns) PASS test 00000046
+# testbench.DUT.MIPS_CORE.ALU (16099610.0 ns) PASS test 00000046
 # 
-# testbench.DUT.MIPS_CORE.ALU (16105700.0 ns) PASS test 00000047
+# testbench.DUT.MIPS_CORE.ALU (16149750.0 ns) PASS test 00000047
 # 
-# testbench.DUT.MIPS_CORE.ALU (16289050.0 ns) PASS test 00000048
+# testbench.DUT.MIPS_CORE.ALU (16328230.0 ns) PASS test 00000048
 # 
-# testbench.DUT.MIPS_CORE.ALU (16393920.0 ns) PASS test 00000049
+# testbench.DUT.MIPS_CORE.ALU (16429470.0 ns) PASS test 00000049
 # 
-# testbench.DUT.MIPS_CORE.ALU (16668970.0 ns) PASS test 0000004a
+# testbench.DUT.MIPS_CORE.ALU (16699220.0 ns) PASS test 0000004a
 # 
-# testbench.DUT.MIPS_CORE.ALU (16748840.0 ns) PASS test 0000004b
+# testbench.DUT.MIPS_CORE.ALU (16780550.0 ns) PASS test 0000004b
 # 
-# testbench.DUT.MIPS_CORE.ALU (16825580.0 ns) PASS test 0000004c
+# testbench.DUT.MIPS_CORE.ALU (16856790.0 ns) PASS test 0000004c
 # 
-# testbench.DUT.MIPS_CORE.ALU (16906200.0 ns) PASS test 0000004d
+# testbench.DUT.MIPS_CORE.ALU (16937850.0 ns) PASS test 0000004d
 # 
-# testbench.DUT.MIPS_CORE.ALU (16947730.0 ns) PASS test 0000004e
+# testbench.DUT.MIPS_CORE.ALU (16980180.0 ns) PASS test 0000004e
 # 
-# testbench.DUT.MIPS_CORE.ALU (17037110.0 ns) PASS test 0000004f
+# testbench.DUT.MIPS_CORE.ALU (17069640.0 ns) PASS test 0000004f
 # 
-# testbench.DUT.MIPS_CORE.ALU (17187710.0 ns) PASS test 00000050
+# testbench.DUT.MIPS_CORE.ALU (17218060.0 ns) PASS test 00000050
 # 
-# testbench.DUT.MIPS_CORE.ALU (17218740.0 ns) PASS test 00000051
+# testbench.DUT.MIPS_CORE.ALU (17249760.0 ns) PASS test 00000051
 # 
-# testbench.DUT.MIPS_CORE.ALU (17324790.0 ns) PASS test 00000052
+# testbench.DUT.MIPS_CORE.ALU (17354960.0 ns) PASS test 00000052
 # 
-# testbench.DUT.MIPS_CORE.ALU (17397880.0 ns) PASS test 00000053
+# testbench.DUT.MIPS_CORE.ALU (17427730.0 ns) PASS test 00000053
 # 
-# testbench.DUT.MIPS_CORE.ALU (17449100.0 ns) PASS test 00000054
+# testbench.DUT.MIPS_CORE.ALU (17478400.0 ns) PASS test 00000054
 # 
-# testbench.DUT.MIPS_CORE.ALU (17478920.0 ns) PASS test 00000055
+# testbench.DUT.MIPS_CORE.ALU (17509870.0 ns) PASS test 00000055
 # 
-# testbench.DUT.MIPS_CORE.ALU (17634670.0 ns) PASS test 00000056
+# testbench.DUT.MIPS_CORE.ALU (17663580.0 ns) PASS test 00000056
 # 
-# testbench.DUT.MIPS_CORE.ALU (17774490.0 ns) PASS test 00000057
+# testbench.DUT.MIPS_CORE.ALU (17805770.0 ns) PASS test 00000057
 # 
-# testbench.DUT.MIPS_CORE.ALU (17825140.0 ns) PASS test 00000058
+# testbench.DUT.MIPS_CORE.ALU (17856330.0 ns) PASS test 00000058
 # 
-# testbench.DUT.MIPS_CORE.ALU (18115990.0 ns) PASS test 00000059
+# testbench.DUT.MIPS_CORE.ALU (18145000.0 ns) PASS test 00000059
 # 
-# testbench.DUT.MIPS_CORE.ALU (18139400.0 ns) PASS test 0000005a
+# testbench.DUT.MIPS_CORE.ALU (18167230.0 ns) PASS test 0000005a
 # 
-# testbench.DUT.MIPS_CORE.ALU (18226270.0 ns) PASS test 0000005b
+# testbench.DUT.MIPS_CORE.ALU (18256790.0 ns) PASS test 0000005b
 # 
-# testbench.DUT.MIPS_CORE.ALU (18290030.0 ns) PASS test 0000005c
+# testbench.DUT.MIPS_CORE.ALU (18320400.0 ns) PASS test 0000005c
 # 
-# testbench.DUT.MIPS_CORE.ALU (18519200.0 ns) PASS test 0000005d
+# testbench.DUT.MIPS_CORE.ALU (18548070.0 ns) PASS test 0000005d
+# 
+# testbench.DUT.MIPS_CORE.ALU (18746810.0 ns) PASS test 0000005e
+# 
+# testbench.DUT.MIPS_CORE.ALU (19193750.0 ns) PASS test 0000005f
+# 
+# testbench.DUT.MIPS_CORE.ALU (19352680.0 ns) PASS test 00000060
+# 
+# testbench.DUT.MIPS_CORE.ALU (19556390.0 ns) PASS test 00000061
+# 
+# testbench.DUT.MIPS_CORE.ALU (19635140.0 ns) PASS test 00000062
+# 
+# testbench.DUT.MIPS_CORE.ALU (19797980.0 ns) PASS test 00000063
+# 
+# testbench.DUT.MIPS_CORE.ALU (20016000.0 ns) PASS test 00000064
+# 
+# testbench.DUT.MIPS_CORE.ALU (20065480.0 ns) PASS test 00000065
+# 
+# testbench.DUT.MIPS_CORE.ALU (20113960.0 ns) PASS test 00000066
+# 
+# testbench.DUT.MIPS_CORE.ALU (20219160.0 ns) PASS test 00000067
+# 
+# testbench.DUT.MIPS_CORE.ALU (20261730.0 ns) PASS test 00000068
+# 
+# testbench.DUT.MIPS_CORE.ALU (20359540.0 ns) PASS test 00000069
+# 
+# testbench.DUT.MIPS_CORE.ALU (20946550.0 ns) PASS test 0000006a
+# 
+# testbench.DUT.MIPS_CORE.ALU (21273840.0 ns) PASS test 0000006b
+# 
+# testbench.DUT.MIPS_CORE.ALU (21315540.0 ns) PASS test 0000006c
+# 
+# testbench.DUT.MIPS_CORE.ALU (21392050.0 ns) PASS test 0000006d
+# 
+# testbench.DUT.MIPS_CORE.ALU (21599950.0 ns) PASS test 0000006e
+# 
+# testbench.DUT.MIPS_CORE.ALU (22311490.0 ns) PASS test 0000006f
+# 
+# testbench.DUT.MIPS_CORE.ALU (22428680.0 ns) PASS test 00000070
+# 
+# testbench.DUT.MIPS_CORE.ALU (22603040.0 ns) PASS test 00000071
+# 
+# testbench.DUT.MIPS_CORE.ALU (22800440.0 ns) PASS test 00000072
+# 
+# testbench.DUT.MIPS_CORE.ALU (22822540.0 ns) PASS test 00000073
+# 
+# testbench.DUT.MIPS_CORE.ALU (23048430.0 ns) PASS test 00000074
+# 
+# testbench.DUT.MIPS_CORE.ALU (23424330.0 ns) PASS test 00000075
+# 
+# testbench.DUT.MIPS_CORE.ALU (23463680.0 ns) PASS test 00000076
+# 
+# testbench.DUT.MIPS_CORE.ALU (23744720.0 ns) PASS test 00000077
+# 
+# testbench.DUT.MIPS_CORE.ALU (23869610.0 ns) PASS test 00000078
+# 
+# testbench.DUT.MIPS_CORE.ALU (23902240.0 ns) PASS test 00000079
+# 
+# testbench.DUT.MIPS_CORE.ALU (24036340.0 ns) PASS test 0000007a
+# 
+# testbench.DUT.MIPS_CORE.ALU (24065460.0 ns) PASS test 0000007b
+# 
+# testbench.DUT.MIPS_CORE.ALU (24095600.0 ns) PASS test 0000007c
+# 
+# testbench.DUT.MIPS_CORE.ALU (24178640.0 ns) PASS test 0000007d
+# 
+# testbench.DUT.MIPS_CORE.ALU (24216000.0 ns) PASS test 0000007e
+# 
+# testbench.DUT.MIPS_CORE.ALU (24247090.0 ns) PASS test 0000007f
+# 
+# testbench.DUT.MIPS_CORE.ALU (24309380.0 ns) PASS test 00000080
+# 
+# testbench.DUT.MIPS_CORE.ALU (24545150.0 ns) PASS test 00000081
+# 
+# testbench.DUT.MIPS_CORE.ALU (24804430.0 ns) PASS test 00000082
+# 
+# testbench.DUT.MIPS_CORE.ALU (24873680.0 ns) PASS test 00000083
+# 
+# testbench.DUT.MIPS_CORE.ALU (24988890.0 ns) PASS test 00000084
+# 
+# testbench.DUT.MIPS_CORE.ALU (25108250.0 ns) PASS test 00000085
+# 
+# testbench.DUT.MIPS_CORE.ALU (25214930.0 ns) PASS test 00000086
+# 
+# testbench.DUT.MIPS_CORE.ALU (25243620.0 ns) PASS test 00000087
+# 
+# testbench.DUT.MIPS_CORE.ALU (25269950.0 ns) PASS test 00000088
+# 
+# testbench.DUT.MIPS_CORE.ALU (25348550.0 ns) PASS test 00000089
+# 
+# testbench.DUT.MIPS_CORE.ALU (25362910.0 ns) PASS test 0000008a
+# 
+# testbench.DUT.MIPS_CORE.ALU (25398790.0 ns) PASS test 0000008b
+# 
+# testbench.DUT.MIPS_CORE.ALU (25591120.0 ns) PASS test 0000008c
+# 
+# testbench.DUT.MIPS_CORE.ALU (25633020.0 ns) PASS test 0000008d
+# 
+# testbench.DUT.MIPS_CORE.ALU (25868920.0 ns) PASS test 0000008e
+# 
+# testbench.DUT.MIPS_CORE.ALU (26101320.0 ns) PASS test 0000008f
+# 
+# testbench.DUT.MIPS_CORE.ALU (26653210.0 ns) PASS test 00000090
+# 
+# testbench.DUT.MIPS_CORE.ALU (26675460.0 ns) PASS test 00000091
+# 
+# testbench.DUT.MIPS_CORE.ALU (27288970.0 ns) PASS test 00000092
+# 
+# testbench.DUT.MIPS_CORE.ALU (27394350.0 ns) PASS test 00000093
+# 
+# testbench.DUT.MIPS_CORE.ALU (27425530.0 ns) PASS test 00000094
+# 
+# testbench.DUT.MIPS_CORE.ALU (27463720.0 ns) PASS test 00000095
+# 
+# testbench.DUT.MIPS_CORE.ALU (28104830.0 ns) PASS test 00000096
+# 
+# testbench.DUT.MIPS_CORE.ALU (28326470.0 ns) PASS test 00000097
+# 
+# testbench.DUT.MIPS_CORE.ALU (28469160.0 ns) PASS test 00000098
+# 
+# testbench.DUT.MIPS_CORE.ALU (28900760.0 ns) PASS test 00000099
+# 
+# testbench.DUT.MIPS_CORE.ALU (29068410.0 ns) PASS test 0000009a
+# 
+# testbench.DUT.MIPS_CORE.ALU (29118680.0 ns) PASS test 0000009b
+# 
+# testbench.DUT.MIPS_CORE.ALU (29264170.0 ns) PASS test 0000009c
+# 
+# testbench.DUT.MIPS_CORE.ALU (29321550.0 ns) PASS test 0000009d
+# 
+# testbench.DUT.MIPS_CORE.ALU (29444130.0 ns) PASS test 0000009e
+# 
+# testbench.DUT.MIPS_CORE.ALU (29515630.0 ns) PASS test 0000009f
+# 
+# testbench.DUT.MIPS_CORE.ALU (29562210.0 ns) PASS test 000000a0
+# 
+# testbench.DUT.MIPS_CORE.ALU (29583460.0 ns) PASS test 000000a1
+# 
+# testbench.DUT.MIPS_CORE.ALU (29799890.0 ns) PASS test 000000a2
+# 
+# testbench.DUT.MIPS_CORE.ALU (29946270.0 ns) PASS test 000000a3
+# 
+# testbench.DUT.MIPS_CORE.ALU (30306870.0 ns) PASS test 000000a4
+# 
+# testbench.DUT.MIPS_CORE.ALU (30373900.0 ns) PASS test 000000a5
+# 
+# testbench.DUT.MIPS_CORE.ALU (30435070.0 ns) PASS test 000000a6
+# 
+# testbench.DUT.MIPS_CORE.ALU (30716240.0 ns) PASS test 000000a7
+# 
+# testbench.DUT.MIPS_CORE.ALU (30753990.0 ns) PASS test 000000a8
+# 
+# testbench.DUT.MIPS_CORE.ALU (30781020.0 ns) PASS test 000000a9
+# 
+# testbench.DUT.MIPS_CORE.ALU (30800950.0 ns) PASS test 000000aa
+# 
+# testbench.DUT.MIPS_CORE.ALU (30847730.0 ns) PASS test 000000ab
+# 
+# testbench.DUT.MIPS_CORE.ALU (30897240.0 ns) PASS test 000000ac
+# 
+# testbench.DUT.MIPS_CORE.ALU (30952540.0 ns) PASS test 000000ad
+# 
+# testbench.DUT.MIPS_CORE.ALU (30968130.0 ns) PASS test 000000ae
+# 
+# testbench.DUT.MIPS_CORE.ALU (31081240.0 ns) PASS test 000000af
+# 
+# testbench.DUT.MIPS_CORE.ALU (31209570.0 ns) PASS test 000000b0
+# 
+# testbench.DUT.MIPS_CORE.ALU (31554010.0 ns) PASS test 000000b1
+# 
+# testbench.DUT.MIPS_CORE.ALU (31683960.0 ns) PASS test 000000b2
+# 
+# testbench.DUT.MIPS_CORE.ALU (31803630.0 ns) PASS test 000000b3
+# 
+# testbench.DUT.MIPS_CORE.ALU (31819590.0 ns) PASS test 000000b4
+# 
+# testbench.DUT.MIPS_CORE.ALU (31876490.0 ns) PASS test 000000b5
+# 
+# testbench.DUT.MIPS_CORE.ALU (31921080.0 ns) PASS test 000000b6
+# 
+# testbench.DUT.MIPS_CORE.ALU (31973370.0 ns) PASS test 000000b7
+# 
+# testbench.DUT.MIPS_CORE.ALU (31995380.0 ns) PASS test 000000b8
+# 
+# testbench.DUT.MIPS_CORE.ALU (32024300.0 ns) PASS test 000000b9
+# 
+# testbench.DUT.MIPS_CORE.ALU (32061360.0 ns) PASS test 000000ba
+# 
+# testbench.DUT.MIPS_CORE.ALU (32322690.0 ns) PASS test 000000bb
+# 
+# testbench.DUT.MIPS_CORE.ALU (32379130.0 ns) PASS test 000000bc
+# 
+# testbench.DUT.MIPS_CORE.ALU (32439160.0 ns) PASS test 000000bd
+# 
+# testbench.DUT.MIPS_CORE.ALU (32786630.0 ns) PASS test 000000be
+# 
+# testbench.DUT.MIPS_CORE.ALU (32938490.0 ns) PASS test 000000bf
+# 
+# testbench.DUT.MIPS_CORE.ALU (33149970.0 ns) PASS test 000000c0
+# 
+# testbench.DUT.MIPS_CORE.ALU (33169210.0 ns) PASS test 000000c1
+# 
+# testbench.DUT.MIPS_CORE.ALU (33217900.0 ns) PASS test 000000c2
+# 
+# testbench.DUT.MIPS_CORE.ALU (33283180.0 ns) PASS test 000000c3
+# 
+# testbench.DUT.MIPS_CORE.ALU (33400740.0 ns) PASS test 000000c4
+# 
+# testbench.DUT.MIPS_CORE.ALU (33462030.0 ns) PASS test 000000c5
+# 
+# testbench.DUT.MIPS_CORE.ALU (33605250.0 ns) PASS test 000000c6
+# 
+# testbench.DUT.MIPS_CORE.ALU (33650330.0 ns) PASS test 000000c7
+# 
+# testbench.DUT.MIPS_CORE.ALU (33801850.0 ns) PASS test 000000c8
+# 
+# testbench.DUT.MIPS_CORE.ALU (34225450.0 ns) PASS test 000000c9
+# 
+# testbench.DUT.MIPS_CORE.ALU (34360200.0 ns) PASS test 000000ca
+# 
+# testbench.DUT.MIPS_CORE.ALU (34583010.0 ns) PASS test 000000cb
+# 
+# testbench.DUT.MIPS_CORE.ALU (35200790.0 ns) PASS test 000000cc
+# 
+# testbench.DUT.MIPS_CORE.ALU (35238540.0 ns) PASS test 000000cd
+# 
+# testbench.DUT.MIPS_CORE.ALU (35266850.0 ns) PASS test 000000ce
+# 
+# testbench.DUT.MIPS_CORE.ALU (35374940.0 ns) PASS test 000000cf
+# 
+# testbench.DUT.MIPS_CORE.ALU (35954730.0 ns) PASS test 000000d0
+# 
+# testbench.DUT.MIPS_CORE.ALU (35973110.0 ns) PASS test 000000d1
+# 
+# testbench.DUT.MIPS_CORE.ALU (36508890.0 ns) PASS test 000000d2
+# 
+# testbench.DUT.MIPS_CORE.ALU (36733510.0 ns) PASS test 000000d3
+# 
+# testbench.DUT.MIPS_CORE.ALU (36978260.0 ns) PASS test 000000d4
+# 
+# testbench.DUT.MIPS_CORE.ALU (37018120.0 ns) PASS test 000000d5
+# 
+# testbench.DUT.MIPS_CORE.ALU (37205580.0 ns) PASS test 000000d6
+# 
+# testbench.DUT.MIPS_CORE.ALU (37242930.0 ns) PASS test 000000d7
+# 
+# testbench.DUT.MIPS_CORE.ALU (37257920.0 ns) PASS test 000000d8
+# 
+# testbench.DUT.MIPS_CORE.ALU (37334430.0 ns) PASS test 000000d9
+# 
+# testbench.DUT.MIPS_CORE.ALU (37365590.0 ns) PASS test 000000da
+# 
+# testbench.DUT.MIPS_CORE.ALU (37393010.0 ns) PASS test 000000db
+# 
+# testbench.DUT.MIPS_CORE.ALU (37504010.0 ns) PASS test 000000dc
+# 
+# testbench.DUT.MIPS_CORE.ALU (37619100.0 ns) PASS test 000000dd
+# 
+# testbench.DUT.MIPS_CORE.ALU (37727360.0 ns) PASS test 000000de
+# 
+# testbench.DUT.MIPS_CORE.ALU (37798830.0 ns) PASS test 000000df
+# 
+# testbench.DUT.MIPS_CORE.ALU (38051230.0 ns) PASS test 000000e0
+# 
+# testbench.DUT.MIPS_CORE.ALU (38292510.0 ns) PASS test 000000e1
+# 
+# testbench.DUT.MIPS_CORE.ALU (38352810.0 ns) PASS test 000000e2
+# 
+# testbench.DUT.MIPS_CORE.ALU (38381610.0 ns) PASS test 000000e3
+# 
+# testbench.DUT.MIPS_CORE.ALU (38422850.0 ns) PASS test 000000e4
+# 
+# testbench.DUT.MIPS_CORE.ALU (38511600.0 ns) PASS test 000000e5
+# 
+# testbench.DUT.MIPS_CORE.ALU (38544080.0 ns) PASS test 000000e6
+# 
+# testbench.DUT.MIPS_CORE.ALU (38571450.0 ns) PASS test 000000e7
+# 
+# testbench.DUT.MIPS_CORE.ALU (38709530.0 ns) PASS test 000000e8
+# 
+# testbench.DUT.MIPS_CORE.ALU (38740360.0 ns) PASS test 000000e9
+# 
+# testbench.DUT.MIPS_CORE.ALU (38865530.0 ns) PASS test 000000ea
+# 
+# testbench.DUT.MIPS_CORE.ALU (39132160.0 ns) PASS test 000000eb
+# 
+# testbench.DUT.MIPS_CORE.ALU (39172540.0 ns) PASS test 000000ec
+# 
+# testbench.DUT.MIPS_CORE.ALU (39527150.0 ns) PASS test 000000ed
+# 
+# testbench.DUT.MIPS_CORE.ALU (39746680.0 ns) PASS test 000000ee
+# 
+# testbench.DUT.MIPS_CORE.ALU (39768390.0 ns) PASS test 000000ef
+# 
+# testbench.DUT.MIPS_CORE.ALU (39937940.0 ns) PASS test 000000f0
+# 
+# testbench.DUT.MIPS_CORE.ALU (40093070.0 ns) PASS test 000000f1
+# 
+# testbench.DUT.MIPS_CORE.ALU (40202640.0 ns) PASS test 000000f2
+# 
+# testbench.DUT.MIPS_CORE.ALU (40876780.0 ns) PASS test 000000f3
+# 
+# testbench.DUT.MIPS_CORE.ALU (41060590.0 ns) PASS test 000000f4
+# 
+# testbench.DUT.MIPS_CORE.ALU (41128910.0 ns) PASS test 000000f5
+# 
+# testbench.DUT.MIPS_CORE.ALU (41162610.0 ns) PASS test 000000f6
+# 
+# testbench.DUT.MIPS_CORE.ALU (41464050.0 ns) PASS test 000000f7
+# 
+# testbench.DUT.MIPS_CORE.ALU (42046320.0 ns) PASS test 000000f8
+# 
+# testbench.DUT.MIPS_CORE.ALU (42149860.0 ns) PASS test 000000f9
+# 
+# testbench.DUT.MIPS_CORE.ALU (42187610.0 ns) PASS test 000000fa
+# 
+# testbench.DUT.MIPS_CORE.ALU (42295810.0 ns) PASS test 000000fb
+# 
+# testbench.DUT.MIPS_CORE.ALU (42347720.0 ns) PASS test 000000fc
+# 
+# testbench.DUT.MIPS_CORE.ALU (42396840.0 ns) PASS test 000000fd
+# 
+# testbench.DUT.MIPS_CORE.ALU (42610090.0 ns) PASS test 000000fe
+# 
+# testbench.DUT.MIPS_CORE.ALU (42767700.0 ns) PASS test 000000ff
+# 
+# testbench.DUT.MIPS_CORE.ALU (42858640.0 ns) PASS test 00000100
+# 
+# testbench.DUT.MIPS_CORE.ALU (43075160.0 ns) PASS test 00000101
+# 
+# testbench.DUT.MIPS_CORE.ALU (43235870.0 ns) PASS test 00000102
+# 
+# testbench.DUT.MIPS_CORE.ALU (43687630.0 ns) PASS test 00000103
+# 
+# testbench.DUT.MIPS_CORE.ALU (43875560.0 ns) PASS test 00000104
+# 
+# testbench.DUT.MIPS_CORE.ALU (44108560.0 ns) PASS test 00000105
+# 
+# testbench.DUT.MIPS_CORE.ALU (44169520.0 ns) PASS test 00000106
+# 
+# testbench.DUT.MIPS_CORE.ALU (44257970.0 ns) PASS test 00000107
+# 
+# testbench.DUT.MIPS_CORE.ALU (44276930.0 ns) PASS test 00000108
+# 
+# testbench.DUT.MIPS_CORE.ALU (44541560.0 ns) PASS test 00000109
+# 
+# testbench.DUT.MIPS_CORE.ALU (44593400.0 ns) PASS test 0000010a
+# 
+# testbench.DUT.MIPS_CORE.ALU (44718650.0 ns) PASS test 0000010b
+# 
+# testbench.DUT.MIPS_CORE.ALU (44871840.0 ns) PASS test 0000010c
+# 
+# testbench.DUT.MIPS_CORE.ALU (44903570.0 ns) PASS test 0000010d
+# 
+# testbench.DUT.MIPS_CORE.ALU (44955450.0 ns) PASS test 0000010e
+# 
+# testbench.DUT.MIPS_CORE.ALU (45031650.0 ns) PASS test 0000010f
+# 
+# testbench.DUT.MIPS_CORE.ALU (45151070.0 ns) PASS test 00000110
+# 
+# testbench.DUT.MIPS_CORE.ALU (45179360.0 ns) PASS test 00000111
+# 
+# testbench.DUT.MIPS_CORE.ALU (45334960.0 ns) PASS test 00000112
+# 
+# testbench.DUT.MIPS_CORE.ALU (45427790.0 ns) PASS test 00000113
+# 
+# testbench.DUT.MIPS_CORE.ALU (45472960.0 ns) PASS test 00000114
+# 
+# testbench.DUT.MIPS_CORE.ALU (45561750.0 ns) PASS test 00000115
+# 
+# testbench.DUT.MIPS_CORE.ALU (45634610.0 ns) PASS test 00000116
+# 
+# testbench.DUT.MIPS_CORE.ALU (45713970.0 ns) PASS test 00000117
+# 
+# testbench.DUT.MIPS_CORE.ALU (45971370.0 ns) PASS test 00000118
+# 
+# testbench.DUT.MIPS_CORE.ALU (46071440.0 ns) PASS test 00000119
+# 
+# testbench.DUT.MIPS_CORE.ALU (46240090.0 ns) PASS test 0000011a
+# 
+# testbench.DUT.MIPS_CORE.ALU (46284330.0 ns) PASS test 0000011b
+# 
+# testbench.DUT.MIPS_CORE.ALU (46497600.0 ns) PASS test 0000011c
+# 
+# testbench.DUT.MIPS_CORE.ALU (46522170.0 ns) PASS test 0000011d
+# 
+# testbench.DUT.MIPS_CORE.ALU (46958450.0 ns) PASS test 0000011e
+# 
+# testbench.DUT.MIPS_CORE.ALU (47129510.0 ns) PASS test 0000011f
+# 
+# testbench.DUT.MIPS_CORE.ALU (47147830.0 ns) PASS test 00000120
+# 
+# testbench.DUT.MIPS_CORE.ALU (47254820.0 ns) PASS test 00000121
+# 
+# testbench.DUT.MIPS_CORE.ALU (47573410.0 ns) PASS test 00000122
+# 
+# testbench.DUT.MIPS_CORE.ALU (47791900.0 ns) PASS test 00000123
+# 
+# testbench.DUT.MIPS_CORE.ALU (47923170.0 ns) PASS test 00000124
+# 
+# testbench.DUT.MIPS_CORE.ALU (48069960.0 ns) PASS test 00000125
+# 
+# testbench.DUT.MIPS_CORE.ALU (48344490.0 ns) PASS test 00000126
+# 
+# testbench.DUT.MIPS_CORE.ALU (48835230.0 ns) PASS test 00000127
+# 
+# testbench.DUT.MIPS_CORE.ALU (48903650.0 ns) PASS test 00000128
+# 
+# testbench.DUT.MIPS_CORE.ALU (48940530.0 ns) PASS test 00000129
+# 
+# testbench.DUT.MIPS_CORE.ALU (49191680.0 ns) PASS test 0000012a
+# 
+# testbench.DUT.MIPS_CORE.ALU (49776470.0 ns) PASS test 0000012b
+# 
+# testbench.DUT.MIPS_CORE.ALU (50260550.0 ns) PASS test 0000012c
+# 
+# testbench.DUT.MIPS_CORE.ALU (50811390.0 ns) PASS test 0000012d
+# 
+# testbench.DUT.MIPS_CORE.ALU (50995190.0 ns) PASS test 0000012e
+# 
+# testbench.DUT.MIPS_CORE.ALU (51378060.0 ns) PASS test 0000012f
+# 
+# testbench.DUT.MIPS_CORE.ALU (51549960.0 ns) PASS test 00000130
 # 

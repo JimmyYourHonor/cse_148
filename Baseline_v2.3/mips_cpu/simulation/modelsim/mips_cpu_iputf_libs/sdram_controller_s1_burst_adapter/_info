@@ -10,163 +10,163 @@ cModel Technology
 dC:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/simulation/modelsim
 valtera_avalon_st_pipeline_base
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-!s110 1587686296
+Z1 !s110 1588873797
 !i10b 1
 !s100 IZ246NSd;dW2a7WAUFMLa1
 I^igVSV]JBR:9kmKAg4UX80
-Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 !s105 altera_avalon_st_pipeline_base_v_unit
 S1
-Z2 dC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/simulation/modelsim
-Z3 w1587499481
+Z3 dC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/simulation/modelsim
+Z4 w1587499481
 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_base.v
 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_base.v
-Z4 L0 22
-Z5 OV;L;10.5b;63
+Z5 L0 22
+Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1587686296.000000
+Z7 !s108 1588873797.000000
 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_base.v|
 !s90 -reportprogress|300|-sv|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_base.v|-work|sdram_controller_s1_burst_adapter|
 !i113 1
-Z6 o-sv -work sdram_controller_s1_burst_adapter
-Z7 tCvgOpt 0
+Z8 o-sv -work sdram_controller_s1_burst_adapter
+Z9 tCvgOpt 0
 valtera_avalon_st_pipeline_stage
 R0
-Z8 !s110 1587686295
+R1
 !i10b 1
 !s100 0[eR^H<[LF9R7ZA?d`HaW2
 If9=HGGa_G:MhLN^NF5kJm2
-R1
+R2
 !s105 altera_avalon_st_pipeline_stage_sv_unit
 S1
-R2
 R3
+R4
 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_stage.sv
 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_stage.sv
-R4
 R5
+R6
 r1
 !s85 0
 31
-Z9 !s108 1587686295.000000
+R7
 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_stage.sv|
 !s90 -reportprogress|300|-sv|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_avalon_st_pipeline_stage.sv|-work|sdram_controller_s1_burst_adapter|
 !i113 1
-R6
-R7
+R8
+R9
 valtera_default_burst_converter
 R0
-R8
+R1
 !i10b 1
 !s100 EmN7^KGFmnmba?3NNCWgU0
 I8^C1_>U:XMl26ZTX@569o3
-R1
+R2
 !s105 altera_default_burst_converter_sv_unit
 S1
-R2
 R3
+R4
 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv
 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv
 L0 30
-R5
+R6
 r1
 !s85 0
 31
-R9
+R7
 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv|
 !s90 -reportprogress|300|-sv|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_default_burst_converter.sv|-work|sdram_controller_s1_burst_adapter|
 !i113 1
-R6
-R7
+R8
+R9
 valtera_incr_burst_converter
 R0
-R8
+R1
 !i10b 1
 !s100 9gP0R0To835oQO4JK^zb<3
 I1H9D:??9J2?<]gDnmB^T70
-R1
+R2
 !s105 altera_incr_burst_converter_sv_unit
 S1
-R2
 R3
+R4
 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv
 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv
 L0 28
-R5
+R6
 r1
 !s85 0
 31
-R9
+R7
 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv|
 !s90 -reportprogress|300|-sv|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_incr_burst_converter.sv|-work|sdram_controller_s1_burst_adapter|
 !i113 1
-R6
-R7
+R8
+R9
 valtera_merlin_address_alignment
 R0
-R8
+R1
 !i10b 1
 !s100 ;A9^i^d]cR@BAQXEG>h_<3
 IV4?GOIAc@WGe088HY7ZWK0
-R1
+R2
 !s105 altera_merlin_address_alignment_sv_unit
 S1
-R2
 R3
+R4
 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv
 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv
 L0 26
-R5
+R6
 r1
 !s85 0
 31
-R9
+R7
 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv|
 !s90 -reportprogress|300|-sv|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_address_alignment.sv|-work|sdram_controller_s1_burst_adapter|
 !i113 1
-R6
-R7
+R8
+R9
 valtera_merlin_burst_adapter
 R0
-Z10 !s110 1587686294
+Z10 !s110 1588873796
 !i10b 1
 !s100 OCc70X^k:B?GW6i71n`L_3
 ICJ?[k;756JUW5afaYMPWE2
-R1
+R2
 !s105 altera_merlin_burst_adapter_sv_unit
 S1
-R2
 R3
+R4
 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter.sv
 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter.sv
 L0 21
-R5
+R6
 r1
 !s85 0
 31
-Z11 !s108 1587686294.000000
+Z11 !s108 1588873796.000000
 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter.sv|
 !s90 -reportprogress|300|-sv|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter.sv|-work|sdram_controller_s1_burst_adapter|
 !i113 1
-R6
-R7
+R8
+R9
 valtera_merlin_burst_adapter_13_1
 R0
 R10
 !i10b 1
 !s100 iQDJAL[b9z>XeokOb35D]1
 IJ:MOI7Q_2^`g?AC@o4X>:3
-R1
+R2
 Z12 !s105 altera_merlin_burst_adapter_13_1_sv_unit
 S1
-R2
 R3
+R4
 Z13 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_13_1.sv
 Z14 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_13_1.sv
 L0 264
-R5
+R6
 r1
 !s85 0
 31
@@ -174,23 +174,23 @@ R11
 Z15 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_13_1.sv|
 Z16 !s90 -reportprogress|300|-sv|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_13_1.sv|-work|sdram_controller_s1_burst_adapter|
 !i113 1
-R6
-R7
+R8
+R9
 valtera_merlin_burst_adapter_adder
 R0
 R10
 !i10b 1
 !s100 cJB8e]Mn>T^mE[9iEE1jk1
 ICk7IYJ53aUCi[ZLL:Gl3O2
-R1
+R2
 R12
 S1
-R2
 R3
+R4
 R13
 R14
 L0 55
-R5
+R6
 r1
 !s85 0
 31
@@ -198,23 +198,23 @@ R11
 R15
 R16
 !i113 1
-R6
-R7
+R8
+R9
 valtera_merlin_burst_adapter_burstwrap_increment
 R0
 R10
 !i10b 1
 !s100 ILP^RoOQ^]Ef]XAJeF<SX0
 IAan<W_f4VVdD[I;512IPQ3
-R1
+R2
 R12
 S1
-R2
 R3
+R4
 R13
 R14
 L0 40
-R5
+R6
 r1
 !s85 0
 31
@@ -222,23 +222,23 @@ R11
 R15
 R16
 !i113 1
-R6
-R7
+R8
+R9
 valtera_merlin_burst_adapter_min
 R0
 R10
 !i10b 1
 !s100 5OK?oF?>S0i7IYQi<IKhS1
 IDmO_@4;><VmR7FC@ZLO:H1
-R1
+R2
 R12
 S1
-R2
 R3
+R4
 R13
 R14
 L0 98
-R5
+R6
 r1
 !s85 0
 31
@@ -246,23 +246,23 @@ R11
 R15
 R16
 !i113 1
-R6
-R7
+R8
+R9
 valtera_merlin_burst_adapter_new
 R0
-R8
+R1
 !i10b 1
 !s100 eY?@Ti=8ZUfaj_BZGBf:M0
 IIcn<=Wj5b>kX^3lBTGR]i0
-R1
+R2
 !s105 altera_merlin_burst_adapter_new_sv_unit
 S1
-R2
 R3
+R4
 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv
 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv
 L0 25
-R5
+R6
 r1
 !s85 0
 31
@@ -270,23 +270,23 @@ R11
 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv|
 !s90 -reportprogress|300|-sv|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_new.sv|-work|sdram_controller_s1_burst_adapter|
 !i113 1
-R6
-R7
+R8
+R9
 valtera_merlin_burst_adapter_subtractor
 R0
 R10
 !i10b 1
 !s100 3nMfY`gC_:azzfSULAX8f2
 Il:BKC?S_N:hS[YN@oaCeK3
-R1
+R2
 R12
 S1
-R2
 R3
+R4
 R13
 R14
 L0 77
-R5
+R6
 r1
 !s85 0
 31
@@ -294,23 +294,23 @@ R11
 R15
 R16
 !i113 1
-R6
-R7
+R8
+R9
 valtera_merlin_burst_adapter_uncompressed_only
 R0
 R10
 !i10b 1
 !s100 STH]BdUM[JDMJZNJGXCd>0
 I6d;4OiL3@SVn6[Um8z0M?1
-R1
+R2
 !s105 altera_merlin_burst_adapter_uncmpr_sv_unit
 S1
-R2
 R3
+R4
 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_uncmpr.sv
 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_uncmpr.sv
 L0 39
-R5
+R6
 r1
 !s85 0
 31
@@ -318,29 +318,29 @@ R11
 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_uncmpr.sv|
 !s90 -reportprogress|300|-sv|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_merlin_burst_adapter_uncmpr.sv|-work|sdram_controller_s1_burst_adapter|
 !i113 1
-R6
-R7
+R8
+R9
 valtera_wrap_burst_converter
 R0
-R8
+R1
 !i10b 1
 !s100 NPBYN=]<L:km?aGk_2fQE3
 Ia3eYKoT04hOmg6AZo<8<G3
-R1
+R2
 !s105 altera_wrap_burst_converter_sv_unit
 S1
-R2
 R3
+R4
 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_wrap_burst_converter.sv
 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_wrap_burst_converter.sv
 L0 27
-R5
+R6
 r1
 !s85 0
 31
-R9
+R7
 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_wrap_burst_converter.sv|
 !s90 -reportprogress|300|-sv|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/altera_wrap_burst_converter.sv|-work|sdram_controller_s1_burst_adapter|
 !i113 1
-R6
-R7
+R8
+R9
