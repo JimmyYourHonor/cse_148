@@ -25,7 +25,7 @@ module branch_controller (
 	logic request_prediction;
 
 	// Change the following line to switch predictor
-	branch_predictor_2bit PREDICTOR (
+	branch_predictor_tournament PREDICTOR (
 		.clk, .rst_n,
 
 		.i_req_valid     (request_prediction),
@@ -92,6 +92,7 @@ module branch_predictor_2bit (
 );
 
 	logic [1:0] counter;
+	logic [19:0] correct = 20'b0, total = 20'b0;
 
 	task incr;
 		begin
@@ -121,6 +122,11 @@ module branch_predictor_2bit (
 					NOT_TAKEN: decr();
 					TAKEN:     incr();
 				endcase
+
+				if (i_fb_outcome == i_fb_prediction) correct++;
+				total++;
+
+				$display(i_fb_outcome == NOT_TAKEN ? "2 bit: Not taken" : "2 bit: Taken");
 			end
 		end
 	end
@@ -155,6 +161,7 @@ module branch_predictor_local (
 
 	logic [9:0] hash;
 
+	logic [19:0] correct = 20'b0, total = 20'b0;
 	task incr(logic[9:0] index);
 		begin
 			if (counter[index] != 3'b111)
@@ -191,6 +198,12 @@ module branch_predictor_local (
 					NOT_TAKEN: decr(pht[hash]);
 					TAKEN:     incr(pht[hash]);
 				endcase
+
+				if (i_fb_outcome == i_fb_prediction) correct++;
+				total++;
+
+				$display(i_fb_outcome == NOT_TAKEN ? "Local: Not taken" : "Local: Taken");
+				//$display();
 			end
 		end
 	end
@@ -225,6 +238,8 @@ module branch_predictor_bimodal (
 
 	logic [3:0] hash;
 
+	logic [19:0] correct = 20'b0, total = 20'b0;
+
 	task incr(logic[3:0] index);
 		begin
 			if (counter[index] != 2'b11)
@@ -256,6 +271,11 @@ module branch_predictor_bimodal (
 					NOT_TAKEN: decr(hash);
 					TAKEN:     incr(hash);
 				endcase
+
+				if (i_fb_outcome == i_fb_prediction) correct++;
+				total++;
+
+				$display(i_fb_outcome == NOT_TAKEN ? "Bimodal: Not taken" : "Bimodal: Taken");
 			end
 		end
 	end
@@ -289,6 +309,8 @@ module branch_predictor_global (
 
 	logic [11:0] GR; // prediction history
 
+	logic [19:0] correct = 20'b0, total = 20'b0;
+
 	task incr(logic[11:0] index);
 		begin
 			if (counter[index] != 2'b11)
@@ -308,7 +330,6 @@ module branch_predictor_global (
 
 		if(~rst_n)
 		begin
-			// counter <= '{2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1, 2'b1};
 			for (int i = 0; i < 4096; i++)
 			begin
 				counter[i] <= 2'b1;
@@ -334,6 +355,11 @@ module branch_predictor_global (
 						incr(GR);
 					end
 				endcase
+
+				if (i_fb_outcome == i_fb_prediction) correct++;
+				total++;
+
+				$display(i_fb_outcome == NOT_TAKEN ? "Global: Not taken" : "Global: Taken");
 			end
 		end
 	end
@@ -364,6 +390,8 @@ module branch_predictor_tournament (
 );
 
 	mips_core_pkg::BranchOutcome prediction_local, prediction_global;
+
+	logic [19:0] correct = 20'b0, total = 20'b0;
 
 	branch_predictor_local b_l(
 		.clk, .rst_n,
@@ -446,6 +474,11 @@ module branch_predictor_tournament (
 				if (prediction_local != i_fb_outcome && prediction_global == i_fb_outcome) begin
 					incr(G_R);
 				end
+
+				if (i_fb_outcome == i_fb_prediction) correct++;
+				total++;
+
+				$display(i_fb_outcome == NOT_TAKEN ? "Tournament: Not taken" : "Tournament: Taken");
 			end
 		end
 	end

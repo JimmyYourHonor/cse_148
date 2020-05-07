@@ -1764,3 +1764,5 @@ run -all
 # 
 # testbench.DUT.MIPS_CORE.ALU (51549960.0 ns) PASS test 00000130
 # 
+# End time: 14:34:10 on May 07,2020, Elapsed time: 3:43:46
+# Errors: 0, Warnings: 54
