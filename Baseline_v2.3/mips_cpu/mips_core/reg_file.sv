@@ -16,9 +16,11 @@
 interface reg_file_output_ifc ();
 	logic [`DATA_WIDTH - 1 : 0] rs_data;
 	logic [`DATA_WIDTH - 1 : 0] rt_data;
+	logic rs_ready;
+	logic rt_ready;
 
-	modport in  (input rs_data, rt_data);
-	modport out (output rs_data, rt_data);
+	modport in  (input rs_data, rt_data, rs_ready, rt_ready);
+	modport out (output rs_data, rt_data, rs_ready, rt_ready);
 endinterface
 
 module reg_file (
@@ -31,7 +33,7 @@ module reg_file (
 	write_back_ifc.in i_wb,
 
 	// Output data
-	reg_file_output_ifc.out out
+	reg_file_output_ifc.out out,
 );
 
 	logic availability [64] = '{'0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0,
@@ -46,19 +48,27 @@ module reg_file (
 	assign out.rs_data = i_decoded.uses_rs ? regs[map[i_decoded.rs_addr]] : '0;
 	assign out.rt_data = i_decoded.uses_rt ? regs[map[i_decoded.rt_addr]] : '0;
 
+	assign out.rs_ready = availability[map[i_decoded.rs_addr]];
+	assign out.rt_ready = availability[map[i_decoded.rt_addr]];
+
 	always_ff @(posedge clk) begin
-		if(i_wb.uses_rw)
+		if (i_wb.uses_rw)
 		begin
 			// recycle the old spot
 			availability[map[i_wb.rw_addr]] = 1'b0;
+
+			integer i;
+			integer index = 0;
+
 			// find an empty spot in availability list
-			for (int i = 0; i < 64; i = i+1) begin
+			for (i = 63; i >= 0; i = i-1) begin
 				if (availability[i] == 1'b0) begin
-					availability[i] = 1'b1;
-					map[i_wb.rw_addr] = i;
-					break;
+					index = i;
 				end
 			end
+
+			availability[index] = 1'b1;
+			map[i_wb.rw_addr] = index;
 			regs[map[i_wb.rw_addr]] = i_wb.rw_data;
 		end
 	end

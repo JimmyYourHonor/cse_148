@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mips_cpu
-Wed May 06 12:43:16 2020
+Tue May 12 13:08:12 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -172,7 +172,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May 06 12:43:16 2020       ;
+; Analysis & Synthesis Status     ; Successful - Tue May 12 13:08:12 2020       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; mips_cpu                                    ;
 ; Top-level Entity Name           ; mips_cpu                                    ;
@@ -287,14 +287,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.60        ;
+; Average used               ; 1.77        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  20.1%      ;
-;     Processor 3            ;  20.1%      ;
-;     Processor 4            ;  20.1%      ;
+;     Processor 2            ;  25.7%      ;
+;     Processor 3            ;  25.7%      ;
+;     Processor 4            ;  25.7%      ;
 +----------------------------+-------------+
 
 
@@ -9091,7 +9091,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:44     ;
+; Top            ; 00:00:43     ;
 +----------------+--------------+
 
 
@@ -9101,7 +9101,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed May 06 12:40:50 2020
+    Info: Processing started: Tue May 12 13:06:18 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips_cpu -c mips_cpu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -9156,10 +9156,10 @@ Info (12021): Found 7 design units, including 7 entities, in source file mips_co
     Info (12023): Found entity 1: branch_controller File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 13
     Info (12023): Found entity 2: branch_predictor_always_not_taken File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 53
     Info (12023): Found entity 3: branch_predictor_2bit File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 77
-    Info (12023): Found entity 4: branch_predictor_local File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 136
-    Info (12023): Found entity 5: branch_predictor_bimodal File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 206
-    Info (12023): Found entity 6: branch_predictor_global File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 271
-    Info (12023): Found entity 7: branch_predictor_tournament File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 349
+    Info (12023): Found entity 4: branch_predictor_local File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 142
+    Info (12023): Found entity 5: branch_predictor_bimodal File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 219
+    Info (12023): Found entity 6: branch_predictor_global File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 291
+    Info (12023): Found entity 7: branch_predictor_tournament File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 375
 Info (12021): Found 3 design units, including 3 entities, in source file mips_core/alu.sv
     Info (12023): Found entity 1: alu_input_ifc File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv Line: 15
     Info (12023): Found entity 2: alu_output_ifc File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv Line: 28
@@ -9482,21 +9482,27 @@ Info (12128): Elaborating entity "hazard_controller" for hierarchy "mips_core:MI
 Warning (10034): Output port "i2i_hc.flush" at hazard_controller.sv(33) has no driver File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv Line: 33
 Info (12128): Elaborating entity "branch_controller" for hierarchy "mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv Line: 49
 Info (12128): Elaborating entity "branch_predictor_tournament" for hierarchy "mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_tournament:PREDICTOR" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 40
-Warning (10030): Net "G_R[11..1]" at branch_controller.sv(399) has no driver or initial value, using a default initial value '0' File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 399
-Info (12128): Elaborating entity "branch_predictor_local" for hierarchy "mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_tournament:PREDICTOR|branch_predictor_local:b_l" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 380
-Info (12128): Elaborating entity "branch_predictor_global" for hierarchy "mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_tournament:PREDICTOR|branch_predictor_global:b_g" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 394
-Warning (10240): Verilog HDL Always Construct warning at branch_controller.sv(306): inferring latch(es) for variable "GR", which holds its previous value in one or more paths through the always construct File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 306
-Info (10041): Inferred latch for "GR[1]" at branch_controller.sv(323) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 323
-Info (10041): Inferred latch for "GR[2]" at branch_controller.sv(323) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 323
-Info (10041): Inferred latch for "GR[3]" at branch_controller.sv(323) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 323
-Info (10041): Inferred latch for "GR[4]" at branch_controller.sv(323) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 323
-Info (10041): Inferred latch for "GR[5]" at branch_controller.sv(323) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 323
-Info (10041): Inferred latch for "GR[6]" at branch_controller.sv(323) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 323
-Info (10041): Inferred latch for "GR[7]" at branch_controller.sv(323) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 323
-Info (10041): Inferred latch for "GR[8]" at branch_controller.sv(323) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 323
-Info (10041): Inferred latch for "GR[9]" at branch_controller.sv(323) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 323
-Info (10041): Inferred latch for "GR[10]" at branch_controller.sv(323) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 323
-Info (10041): Inferred latch for "GR[11]" at branch_controller.sv(323) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 323
+Warning (10036): Verilog HDL or VHDL warning at branch_controller.sv(394): object "correct" assigned a value but never read File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 394
+Warning (10036): Verilog HDL or VHDL warning at branch_controller.sv(394): object "total" assigned a value but never read File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 394
+Warning (10030): Net "G_R[11..1]" at branch_controller.sv(427) has no driver or initial value, using a default initial value '0' File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 427
+Info (12128): Elaborating entity "branch_predictor_local" for hierarchy "mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_tournament:PREDICTOR|branch_predictor_local:b_l" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 408
+Warning (10036): Verilog HDL or VHDL warning at branch_controller.sv(164): object "correct" assigned a value but never read File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 164
+Warning (10036): Verilog HDL or VHDL warning at branch_controller.sv(164): object "total" assigned a value but never read File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 164
+Info (12128): Elaborating entity "branch_predictor_global" for hierarchy "mips_core:MIPS_CORE|hazard_controller:HAZARD_CONTROLLER|branch_controller:BRANCH_CONTROLLER|branch_predictor_tournament:PREDICTOR|branch_predictor_global:b_g" File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 422
+Warning (10036): Verilog HDL or VHDL warning at branch_controller.sv(312): object "correct" assigned a value but never read File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 312
+Warning (10036): Verilog HDL or VHDL warning at branch_controller.sv(312): object "total" assigned a value but never read File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 312
+Warning (10240): Verilog HDL Always Construct warning at branch_controller.sv(328): inferring latch(es) for variable "GR", which holds its previous value in one or more paths through the always construct File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 328
+Info (10041): Inferred latch for "GR[1]" at branch_controller.sv(344) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 344
+Info (10041): Inferred latch for "GR[2]" at branch_controller.sv(344) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 344
+Info (10041): Inferred latch for "GR[3]" at branch_controller.sv(344) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 344
+Info (10041): Inferred latch for "GR[4]" at branch_controller.sv(344) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 344
+Info (10041): Inferred latch for "GR[5]" at branch_controller.sv(344) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 344
+Info (10041): Inferred latch for "GR[6]" at branch_controller.sv(344) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 344
+Info (10041): Inferred latch for "GR[7]" at branch_controller.sv(344) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 344
+Info (10041): Inferred latch for "GR[8]" at branch_controller.sv(344) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 344
+Info (10041): Inferred latch for "GR[9]" at branch_controller.sv(344) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 344
+Info (10041): Inferred latch for "GR[10]" at branch_controller.sv(344) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 344
+Info (10041): Inferred latch for "GR[11]" at branch_controller.sv(344) File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv Line: 344
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "mips_core:MIPS_CORE|reg_file:REG_FILE|regs" is uninferred due to asynchronous read logic File: C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv Line: 41
 Info (19000): Inferred 11 megafunctions from design logic
@@ -9816,11 +9822,11 @@ Info (21057): Implemented 15125 device resources after synthesis - the final res
     Info (21061): Implemented 14612 logic cells
     Info (21064): Implemented 402 RAM segments
     Info (21065): Implemented 2 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 96 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 102 warnings
     Info: Peak virtual memory: 5103 megabytes
-    Info: Processing ended: Wed May 06 12:43:16 2020
-    Info: Elapsed time: 00:02:26
-    Info: Total CPU time (on all processors): 00:03:06
+    Info: Processing ended: Tue May 12 13:08:12 2020
+    Info: Elapsed time: 00:01:54
+    Info: Total CPU time (on all processors): 00:02:27
 
 
 +------------------------------------------+
