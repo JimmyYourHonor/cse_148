@@ -44,6 +44,8 @@ module mips_core (
 	alu_input_ifc dec_alu_input();
 	alu_pass_through_ifc dec_alu_pass_through();
 
+	logic ooo_hazard;
+
 	// ==== DEC to EX
 	pc_ifc d2e_pc();
 	alu_input_ifc d2e_alu_input();
@@ -144,9 +146,10 @@ module mips_core (
 
 		.reg_ready (dec_reg_file_output),
 		.decoded_insn (dec_decoder_output),
-		.i_pc (i2d_pc)
+		.i_pc (i2d_pc),
 
-		.out(ooo_output)
+		.out(ooo_output),
+		.hazard_flag(ooo_hazard)
 	);
 
 	forward_unit FORWARD_UNIT(
@@ -197,10 +200,10 @@ module mips_core (
 	);
 
 	llsc_module LLSC_mod(
-	.clk(clk),
-	.i_llsc(ex_llsc_input),
-	.o_llsc(llsc_mem_output)
-);
+		.clk(clk),
+		.i_llsc(ex_llsc_input),
+		.o_llsc(llsc_mem_output)
+	);
 
 
 	ex_stage_glue EX_STAGE_GLUE (
@@ -281,6 +284,7 @@ module mips_core (
 		.lw_hazard,
 		.ex_branch_result,
 		.mem_done,
+		.ooo_hazard,
 
 		.i2i_hc,
 		.i2d_hc,

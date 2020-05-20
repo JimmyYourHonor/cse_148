@@ -29,6 +29,9 @@ module hazard_controller (
 	// Feedback from MEM
 	input mem_done,
 
+	// ooo buffer hazard
+	input ooo_hazard,
+
 	// Hazard control output
 	hazard_control_ifc.out i2i_hc,
 	hazard_control_ifc.out i2d_hc,
@@ -135,7 +138,7 @@ module hazard_controller (
 			dec_flush <= 1'b1;
 		end
 
-		if (ex_stall)
+		if (ex_stall | ooo_hazard)
 			dec_stall <= 1'b1;
 	end
 
