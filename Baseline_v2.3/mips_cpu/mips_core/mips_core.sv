@@ -82,6 +82,10 @@ module mips_core (
 	load_pc_ifc load_pc();
 
 
+	logic free_list [64];
+	write_back_ifc retired_reg[8]();
+	logic[3:0] instruction_id;
+
 
 	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 	// |||| IF Stage
@@ -137,19 +141,27 @@ module mips_core (
 
 		.i_decoded(dec_decoder_output),
 		.i_wb(m2w_write_back), // WB stage
+		.retired_reg,
 
-		.out(dec_reg_file_output)
+		.out(dec_reg_file_output),
+
+		.free_list
 	);
 
-	out_of_order_buffer OOO_BUFFER (
+	ooo_buffer OOO_BUFFER (
 		.clk,
+
+		.free_list,
 
 		.reg_ready (dec_reg_file_output),
 		.decoded_insn (dec_decoder_output),
 		.i_pc (i2d_pc),
 
 		.out(ooo_output),
-		.hazard_flag(ooo_hazard)
+		.hazard_flag(ooo_hazard),
+
+		.instruction_id,
+		.retired_reg
 	);
 
 	forward_unit FORWARD_UNIT(

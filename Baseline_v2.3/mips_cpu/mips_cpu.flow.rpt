@@ -1,5 +1,5 @@
 Flow report for mips_cpu
-Wed May 20 12:08:37 2020
+Wed May 20 14:23:40 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Flow Failed - Wed May 20 12:08:37 2020      ;
+; Flow Status                 ; Flow Failed - Wed May 20 14:23:40 2020      ;
 ; Quartus Prime Version       ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name               ; mips_cpu                                    ;
 ; Top-level Entity Name       ; mips_cpu                                    ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/20/2020 12:08:19 ;
+; Start date & time ; 05/20/2020 14:23:05 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mips_cpu            ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                                                    ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 30905327339132.159000169818080                                                           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 10995770589201.159000978423572                                                           ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                                                                        ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)                                                          ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                       ; --            ; --          ; --             ;
@@ -138,8 +138,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 4795 MB             ; 00:00:47                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:47                           ;
+; Analysis & Synthesis ; 00:00:37     ; 1.0                     ; 4849 MB             ; 00:00:55                           ;
+; Total                ; 00:00:37     ; --                      ; --                  ; 00:00:55                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -148,7 +148,7 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-QE7KTEQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-POTBJ1E  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
