@@ -44,8 +44,6 @@ module mips_core (
 	alu_input_ifc dec_alu_input();
 	alu_pass_through_ifc dec_alu_pass_through();
 
-	logic ooo_hazard;
-
 	// ==== DEC to EX
 	pc_ifc d2e_pc();
 	alu_input_ifc d2e_alu_input();
@@ -69,10 +67,16 @@ module mips_core (
 	logic mem_done;
 	write_back_ifc mem_write_back();
 
+	// write buffer
+	d_cache_input_ifc write_buffer_output();
+	
+
 	// ==== MEM to WB
 	write_back_ifc m2w_write_back();
 
 	// xxxx Hazard control
+	logic ooo_hazard;
+	logic reg_hazard;
 	logic lw_hazard;
 	hazard_control_ifc i2i_hc();
 	hazard_control_ifc i2d_hc();
@@ -83,9 +87,20 @@ module mips_core (
 
 
 	logic free_list [64];
-	write_back_ifc retired_reg[8]();
-	logic[3:0] instruction_id;
+	logic[5:0] retired_rw;
+	logic retired_uses_rw;
+	logic[19:0] instruction_id_0;
+	logic[19:0] instruction_id_1;
+	logic[19:0] instruction_id_2;
+	logic[19:0] instruction_id_3;
+	logic[19:0] instruction_id_4;
+	logic[19:0] instruction_id_5;
 
+	d_cache_input_ifc write_buffer_to_cache();
+
+	logic retired;
+	logic[19:0] instruction_id_retired;
+	logic i_take_write_buffer;
 
 	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 	// |||| IF Stage
@@ -141,7 +156,8 @@ module mips_core (
 
 		.i_decoded(dec_decoder_output),
 		.i_wb(m2w_write_back), // WB stage
-		.retired_reg,
+		.retired_uses_rw,
+		.retired_rw,
 
 		.out(dec_reg_file_output),
 
@@ -152,6 +168,11 @@ module mips_core (
 		.clk,
 
 		.free_list,
+		.instruction_id_in(instruction_id_5),
+		.branch_result(ex_branch_result),
+
+		.alu_result(ex_alu_output),
+		.instruction_id_alu(intruction_id_4),
 
 		.reg_ready (dec_reg_file_output),
 		.decoded_insn (dec_decoder_output),
@@ -160,11 +181,15 @@ module mips_core (
 		.out(ooo_output),
 		.hazard_flag(ooo_hazard),
 
-		.instruction_id,
-		.retired_reg
+		.instruction_id_out(instruction_id_0),
+		.retired_uses_rw,
+		.retired_rw,
+		.retired,
+		.instruction_id_retired
 	);
 
 	forward_unit FORWARD_UNIT(
+		.instruction_id(instruction_id_0),
 		.decoded     (ooo_output),
 		.reg_data    (dec_reg_file_output),
 
@@ -173,16 +198,19 @@ module mips_core (
 		.mem         (mem_write_back),
 		.wb          (m2w_write_back),
 
+		.instruction_id_out(instruction_id_1),
 		.out         (dec_forward_unit_output),
 		.o_lw_hazard (lw_hazard)
 	);
 
 	decode_stage_glue DEC_STAGE_GLUE(
+		.instruction_id		(instruction_id_1),
 		.i_decoded          (dec_decoder_output),
 		.i_reg_data         (dec_forward_unit_output),
 
 		.branch_decoded     (dec_branch_decoded),
 
+		.instruction_id_out	(instruction_id_2),
 		.o_alu_input        (dec_alu_input),
 		.o_alu_pass_through (dec_alu_pass_through)
 	);
@@ -191,6 +219,7 @@ module mips_core (
 	// ==== DEC to EX
 	// ========================================================================
 	pr_d2e PR_D2E(
+		.instruction_id(instruction_id_2),
 		.clk, .rst_n,
 		.i_hc(d2e_hc),
 
@@ -199,16 +228,19 @@ module mips_core (
 		.i_alu_input        (dec_alu_input),
 		.o_alu_input        (d2e_alu_input),
 		.i_alu_pass_through (dec_alu_pass_through),
-		.o_alu_pass_through (d2e_alu_pass_through)
+		.o_alu_pass_through (d2e_alu_pass_through),
+		.instruction_id_out (instruction_id_3)
 	);
 
 	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 	// |||| EX Stage
 	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 	alu ALU(
+		.instruction_id(instruction_id_3),
 		.in(d2e_alu_input),
 		.out(ex_alu_output),
-		.pass_done
+		.pass_done,
+		.instruction_id_out(instruction_id_4)
 	);
 
 	llsc_module LLSC_mod(
@@ -219,12 +251,14 @@ module mips_core (
 
 
 	ex_stage_glue EX_STAGE_GLUE (
+		.instruction_id_in		(instruction_id_4),
 		.i_alu_output           (ex_alu_output),
 		.i_alu_pass_through     (d2e_alu_pass_through),
 		.o_llsc_input           (ex_llsc_input),
 		.o_branch_result        (ex_branch_result),
 		.o_d_cache_input        (ex_d_cache_input),
-		.o_d_cache_pass_through (ex_d_cache_pass_through)
+		.o_d_cache_pass_through (ex_d_cache_pass_through),
+		.instruction_id_out		(instruction_id_5)
 	);
 
 	// ========================================================================
@@ -233,6 +267,8 @@ module mips_core (
 	pr_e2m PR_E2M (
 		.clk, .rst_n,
 		.i_hc(e2m_hc),
+		.instruction_id(instruction_id_5),
+		.instruction_id_out(instruction_id_6),
 
 		.i_pc(d2e_pc), .o_pc(e2m_pc),
 		.i_d_cache_input       (ex_d_cache_input),
@@ -242,17 +278,35 @@ module mips_core (
 		.o_d_cache_pass_through(e2m_d_cache_pass_through)
 	);
 
+	cache_output_ifc cache_out();
+
 	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 	// |||| MEM Stage
 	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+	write_buffer write (
+		.clk,
+    	.i_write_buffer(e2m_d_cache_input),
+		.instruction_id(instruction_id_6),
+
+		.instruction_id_retired,
+		.retired,
+
+		.cache_out,
+		.found(i_take_write_buffer),
+		// connected to cache
+		.o_write_buffer(write_buffer_to_cache)
+	);
+
 	d_cache #(.INDEX_WIDTH(5), .BLOCK_OFFSET_WIDTH(2)) D_CACHE (
 		.clk, .rst_n,
 
-		.in(e2m_d_cache_input),
+		.in(write_buffer_to_cache),
 		.out(mem_d_cache_output),
 		.llsc_mem_in(llsc_mem_output),
 		.mem_read(d_cache_read),
-		.mem_write(d_cache_write)
+		.mem_write(d_cache_write),
+
 	);
 	// If you want to change the line size and total size of data cache,
 	// uncomment the following two lines and change the parameter.
@@ -261,6 +315,8 @@ module mips_core (
 	// 	D_CACHE.BLOCK_OFFSET_WIDTH = 2;
 
 	mem_stage_glue MEM_STAGE_GLUE (
+		.i_take_write_buffer,
+		.i_write_buffer_output (cache_out),
 		.i_d_cache_output      (mem_d_cache_output),
 		.i_d_cache_pass_through(e2m_d_cache_pass_through),
 		.o_done                (mem_done),

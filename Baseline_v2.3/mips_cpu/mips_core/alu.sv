@@ -39,13 +39,19 @@ interface alu_output_ifc ();
 endinterface
 
 module alu (
+	// input instruction id
+	input logic [19:0] instruction_id,
 	alu_input_ifc.in in,
+
+	// output instrudtion id
+	output logic [19:0] instruction_id_out,
 	alu_output_ifc.out out,
 	pass_done_ifc.out pass_done
 );
 
 	always_comb
 	begin
+		instruction_id_out <= instruction_id;
 		out.valid <= 1'b0;
 		out.result <= '0;
 		out.branch_outcome <= NOT_TAKEN;

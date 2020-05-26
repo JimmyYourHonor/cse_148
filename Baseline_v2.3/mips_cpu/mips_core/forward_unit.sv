@@ -14,6 +14,8 @@
 `include "mips_core.svh"
 
 module forward_unit (
+	// Input from out of order buffer
+	input logic [19:0] instruction_id,
 	// Input from decoder
 	decoder_output_ifc.in decoded,
 	reg_file_output_ifc.in reg_data,
@@ -28,9 +30,13 @@ module forward_unit (
 	// Feedback from WB stage
 	write_back_ifc.in wb,
 
+	// Output for out of order retiring
+	output logic [19:0] instruction_id_out,
+
 	// Output
 	reg_file_output_ifc.out out,
 	output logic o_lw_hazard
+
 );
 
 	task check_forward_rs;
@@ -76,6 +82,7 @@ module forward_unit (
 
 	always_comb
 	begin
+		instruction_id_out <= instruction_id;
 		out.rs_data <= reg_data.rs_data;
 		out.rt_data <= reg_data.rt_data;
 

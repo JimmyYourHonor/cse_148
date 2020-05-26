@@ -81,7 +81,7 @@
 </TR>
 <TR >
 <TD >MIPS_CORE|HAZARD_CONTROLLER</TD>
-<TD >146</TD>
+<TD >147</TD>
 <TD >3</TD>
 <TD >32</TD>
 <TD >3</TD>
@@ -113,7 +113,7 @@
 </TR>
 <TR >
 <TD >MIPS_CORE|MEM_STAGE_GLUE</TD>
-<TD >72</TD>
+<TD >106</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -304,15 +304,47 @@
 <TD >0</TD>
 </TR>
 <TR >
+<TD >MIPS_CORE|write</TD>
+<TD >128</TD>
+<TD >20</TD>
+<TD >2</TD>
+<TD >20</TD>
+<TD >120</TD>
+<TD >20</TD>
+<TD >20</TD>
+<TD >20</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >MIPS_CORE|cache_out</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >33</TD>
+<TD >0</TD>
+<TD >33</TD>
+<TD >0</TD>
+<TD >33</TD>
+</TR>
+<TR >
 <TD >MIPS_CORE|PR_E2M</TD>
-<TD >155</TD>
+<TD >175</TD>
+<TD >19</TD>
 <TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >151</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
+<TD >19</TD>
+<TD >171</TD>
+<TD >19</TD>
+<TD >19</TD>
+<TD >19</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -321,11 +353,11 @@
 </TR>
 <TR >
 <TD >MIPS_CORE|EX_STAGE_GLUE</TD>
-<TD >105</TD>
+<TD >125</TD>
 <TD >6</TD>
 <TD >0</TD>
 <TD >6</TD>
-<TD >189</TD>
+<TD >209</TD>
 <TD >6</TD>
 <TD >6</TD>
 <TD >6</TD>
@@ -353,11 +385,11 @@
 </TR>
 <TR >
 <TD >MIPS_CORE|ALU</TD>
-<TD >73</TD>
+<TD >93</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
-<TD >55</TD>
+<TD >75</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -369,11 +401,11 @@
 </TR>
 <TR >
 <TD >MIPS_CORE|PR_D2E</TD>
-<TD >171</TD>
+<TD >191</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
-<TD >167</TD>
+<TD >187</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -385,11 +417,11 @@
 </TR>
 <TR >
 <TD >MIPS_CORE|DEC_STAGE_GLUE</TD>
-<TD >182</TD>
+<TD >220</TD>
 <TD >0</TD>
-<TD >12</TD>
+<TD >30</TD>
 <TD >0</TD>
-<TD >169</TD>
+<TD >189</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -401,14 +433,14 @@
 </TR>
 <TR >
 <TD >MIPS_CORE|FORWARD_UNIT</TD>
-<TD >336</TD>
-<TD >0</TD>
-<TD >144</TD>
-<TD >0</TD>
-<TD >65</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
+<TD >374</TD>
+<TD >18</TD>
+<TD >162</TD>
+<TD >18</TD>
+<TD >103</TD>
+<TD >18</TD>
+<TD >18</TD>
+<TD >18</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -416,12 +448,156 @@
 <TD >0</TD>
 </TR>
 <TR >
+<TD >MIPS_CORE|OOO_BUFFER|issue_queue[7]</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+</TR>
+<TR >
+<TD >MIPS_CORE|OOO_BUFFER|issue_queue[6]</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+</TR>
+<TR >
+<TD >MIPS_CORE|OOO_BUFFER|issue_queue[5]</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+</TR>
+<TR >
+<TD >MIPS_CORE|OOO_BUFFER|issue_queue[4]</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+</TR>
+<TR >
+<TD >MIPS_CORE|OOO_BUFFER|issue_queue[3]</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+</TR>
+<TR >
+<TD >MIPS_CORE|OOO_BUFFER|issue_queue[2]</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+</TR>
+<TR >
+<TD >MIPS_CORE|OOO_BUFFER|issue_queue[1]</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+</TR>
+<TR >
+<TD >MIPS_CORE|OOO_BUFFER|issue_queue[0]</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+</TR>
+<TR >
+<TD >MIPS_CORE|OOO_BUFFER</TD>
+<TD >333</TD>
+<TD >20</TD>
+<TD >116</TD>
+<TD >20</TD>
+<TD >140</TD>
+<TD >20</TD>
+<TD >20</TD>
+<TD >20</TD>
+<TD >37</TD>
+<TD >0</TD>
+<TD >37</TD>
+<TD >0</TD>
+<TD >37</TD>
+</TR>
+<TR >
 <TD >MIPS_CORE|REG_FILE</TD>
-<TD >130</TD>
+<TD >137</TD>
 <TD >0</TD>
-<TD >79</TD>
+<TD >74</TD>
 <TD >0</TD>
-<TD >64</TD>
+<TD >146</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -656,6 +832,22 @@
 <TD >0</TD>
 </TR>
 <TR >
+<TD >MIPS_CORE|write_buffer_to_cache</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >86</TD>
+<TD >0</TD>
+<TD >86</TD>
+<TD >0</TD>
+<TD >86</TD>
+</TR>
+<TR >
 <TD >MIPS_CORE|load_pc</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -766,6 +958,22 @@
 <TD >38</TD>
 <TD >0</TD>
 <TD >38</TD>
+</TR>
+<TR >
+<TD >MIPS_CORE|write_buffer_output</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >86</TD>
+<TD >0</TD>
+<TD >86</TD>
+<TD >0</TD>
+<TD >86</TD>
 </TR>
 <TR >
 <TD >MIPS_CORE|mem_write_back</TD>
@@ -1049,11 +1257,11 @@
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
-<TD >64</TD>
+<TD >82</TD>
 <TD >0</TD>
-<TD >64</TD>
+<TD >82</TD>
 <TD >0</TD>
-<TD >64</TD>
+<TD >82</TD>
 </TR>
 <TR >
 <TD >MIPS_CORE|dec_reg_file_output</TD>
@@ -1065,11 +1273,27 @@
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
-<TD >64</TD>
+<TD >82</TD>
 <TD >0</TD>
-<TD >64</TD>
+<TD >82</TD>
 <TD >0</TD>
-<TD >64</TD>
+<TD >82</TD>
+</TR>
+<TR >
+<TD >MIPS_CORE|ooo_output</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
+<TD >0</TD>
+<TD >91</TD>
 </TR>
 <TR >
 <TD >MIPS_CORE|dec_decoder_output</TD>

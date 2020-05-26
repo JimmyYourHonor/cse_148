@@ -11,17 +11,23 @@
 `include "mips_core.svh"
 
 module decode_stage_glue (
+	// Instruction id input
+	input logic [19:0] instruction_id,
 	decoder_output_ifc.in i_decoded,
 	reg_file_output_ifc.in i_reg_data,
 
 	branch_decoded_ifc.decode branch_decoded,	// Contains both i/o
 
+	// Instruction id output
+
 	alu_input_ifc.out o_alu_input,
-	alu_pass_through_ifc.out o_alu_pass_through
+	alu_pass_through_ifc.out o_alu_pass_through,
+	output logic [19:0] instruction_id_out
 );
 
 	always_comb
 	begin
+		instruction_id_out = instruction_id;
 		o_alu_input.valid =   i_decoded.valid;
 		o_alu_input.alu_ctl = i_decoded.alu_ctl;
 		o_alu_input.op1 =     i_reg_data.rs_data;
@@ -55,9 +61,13 @@ module decode_stage_glue (
 endmodule
 
 module ex_stage_glue (
+	// input instruction id
+	input logic [19:0] instruction_id_in,
 	alu_output_ifc.in i_alu_output,
 	alu_pass_through_ifc.in i_alu_pass_through,
 	
+	// output instruction id
+	output logic [19:0] instruction_id_out,
 	llsc_input_ifc.out o_llsc_input,
 	branch_result_ifc.out o_branch_result,
 	d_cache_input_ifc.out o_d_cache_input,
@@ -66,6 +76,7 @@ module ex_stage_glue (
 
 	always_comb
 	begin
+		instruction_id_out = instruction_id_in;
 		o_llsc_input.is_sw = i_alu_output.is_sw;
 		o_llsc_input.lladdr_wr = i_alu_output.is_ll;
 		o_llsc_input.is_sc = i_alu_output.is_sc;
@@ -91,6 +102,8 @@ module ex_stage_glue (
 endmodule
 
 module mem_stage_glue (
+	input logic i_take_write_buffer,
+	cache_output_ifc.in i_write_buffer_output,
 	cache_output_ifc.in i_d_cache_output,
 	d_cache_pass_through_ifc.in i_d_cache_pass_through,
 	
@@ -101,12 +114,12 @@ module mem_stage_glue (
 	always_comb
 	begin
 		o_done = i_d_cache_pass_through.is_mem_access
-			? i_d_cache_output.valid
+			? (i_take_write_buffer ? i_write_buffer_output.valid : i_d_cache_output.valid)
 			: 1'b1;
 		o_write_back.uses_rw = i_d_cache_pass_through.uses_rw;
 		o_write_back.rw_addr = i_d_cache_pass_through.rw_addr;
 		o_write_back.rw_data = i_d_cache_pass_through.is_mem_access
-			? i_d_cache_output.data
+			? (i_take_write_buffer ? i_write_buffer_output.data : i_d_cache_output.data)
 			: i_d_cache_pass_through.alu_result;
 	end
 endmodule

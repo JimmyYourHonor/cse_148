@@ -343,3 +343,115 @@ module d_cache #(
 		end
 	end
 endmodule
+
+// connect between pr_e2m and dcache
+module write_buffer (
+    input logic clk,
+
+    d_cache_input_ifc.in i_write_buffer,
+    input logic[19:0] instruction_id,
+
+	input logic[19:0] instruction_id_retired,
+	input logic retired,
+
+	cache_output_ifc.out cache_out,
+
+	// connected to cache
+    d_cache_input_ifc.out o_write_buffer,
+	output logic found
+);
+
+    logic[19:0] ids[8];
+	logic[`ADDR_WIDTH - 1 : 0] addr_list[8];
+	logic[`ADDR_WIDTH - 1 : 0] addr_next_list[8];
+	logic[`DATA_WIDTH - 1 : 0] data_list[8];
+
+	logic in_use[8] = '{0,0,0,0,0,0,0,0};
+
+	logic found_empty = 0;
+
+	logic[2:0] index = 0;
+	logic[19:0] earliest[8] = '{0,0,0,0,0,0,0,0};
+
+	always_comb
+	begin
+		found = ((addr_list[0] == i_write_buffer.addr) && (ids[0] < instruction_id) && in_use[0]) ||
+				((addr_list[1] == i_write_buffer.addr) && (ids[1] < instruction_id) && in_use[1]) ||
+				((addr_list[2] == i_write_buffer.addr) && (ids[2] < instruction_id) && in_use[2]) ||
+				((addr_list[3] == i_write_buffer.addr) && (ids[3] < instruction_id) && in_use[3]) ||
+				((addr_list[4] == i_write_buffer.addr) && (ids[4] < instruction_id) && in_use[4]) ||
+				((addr_list[5] == i_write_buffer.addr) && (ids[5] < instruction_id) && in_use[5]) ||
+				((addr_list[6] == i_write_buffer.addr) && (ids[6] < instruction_id) && in_use[6]) ||
+				((addr_list[7] == i_write_buffer.addr) && (ids[7] < instruction_id) && in_use[7]);
+
+		found_empty = !in_use[0] || !in_use[1] || !in_use[2] || !in_use[3] || !in_use[4] || !in_use[5] || !in_use[6] || !in_use[7];
+	end
+    always_ff @(posedge clk) begin
+
+		// load
+        if (i_write_buffer.mem_action == READ) begin
+
+			// check buffer for most recent address
+			if (found) begin
+				for (int i = 0; i < 8; i++) begin
+					if (addr_list[i] == i_write_buffer.addr && ids[i] < instruction_id && ids[i] < earliest)) begin
+						index <= i;
+						earliest <= ids[i];
+					end
+				end
+
+				cache_out.valid <= 1;
+				cache_out.data <= data_list[index];
+			end
+
+			// cache access
+			else begin
+				o_write_buffer.data <= i_write_buffer.data;
+				o_write_buffer.addr <= i_write_buffer.addr;
+				o_write_buffer.addr_next <= i_write_buffer.addr_next;
+				o_write_buffer.mem_action <= READ;
+				cache_out.valid <= 0;
+			end
+		end
+
+		// store
+		else begin
+
+			cache_out.valid <= 0;
+
+			// find empty slot
+			// add data to buffer
+			if (found_empty) begin
+				for (int i = 0; i < 8; i++) begin
+					if (!in_use[i]) begin
+						index <= i;
+					end
+				end
+
+				ids[index] <= instruction_id;
+				addr_list[index] <= i_write_buffer.addr;
+				addr_next_list[index] <= i_write_buffer.addr_next;
+				data_list[index] <= i_write_buffer.data;
+				in_use[index] <= 1;
+				earliest[index] 
+			end
+			
+			// hazard
+			else begin
+				// TODO
+			end
+		end
+
+		// handle write to cache when instruction retired
+		for (int i = 0; i < 8; i++) begin
+			if (ids[i] == instruction_id_retired) begin
+				in_use[i] <= 0;
+				o_write_buffer.data <= data_list[index];
+				o_write_buffer.addr <= addr_list[index];
+				o_write_buffer.addr_next <= addr_next_list[index];
+				o_write_buffer.mem_action <= WRITE;
+			end
+		end
+    end
+
+endmodule

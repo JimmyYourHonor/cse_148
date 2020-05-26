@@ -56,6 +56,8 @@ module pr_i2d (
 endmodule
 
 module pr_d2e (
+	// instruction id input
+	input logic[19:0] instruction_id,
 	input clk,    // Clock
 	input rst_n,  // Asynchronous reset active low
 
@@ -68,11 +70,13 @@ module pr_d2e (
 	alu_input_ifc.in  i_alu_input,
 	alu_input_ifc.out o_alu_input,
 	alu_pass_through_ifc.in  i_alu_pass_through,
-	alu_pass_through_ifc.out o_alu_pass_through
+	alu_pass_through_ifc.out o_alu_pass_through,
+	output logic[19:0] instruction_id_out
 );
 
 	always_ff @(posedge clk or negedge rst_n)
 	begin
+		instruction_id_out <= instruction_id;
 		if(~rst_n)
 		begin
 			o_pc.pc <= '0;
@@ -82,7 +86,7 @@ module pr_d2e (
 			o_alu_input.op1 <= '0;
 			o_alu_input.op2 <= '0;
 			o_alu_input.is_ll <= '0;
-   		o_alu_input.is_sc <= '0;
+   			o_alu_input.is_sc <= '0;
 			o_alu_input.is_sw <= '0;
 
 
@@ -162,6 +166,9 @@ module pr_e2m (
 
 	hazard_control_ifc.in i_hc,
 
+	input logic [19:0] instruction_id,
+	output logic[19:0] instruction_id_out,
+
 	// Pipelined interfaces
 	pc_ifc.in  i_pc,
 	pc_ifc.out o_pc,
@@ -173,6 +180,7 @@ module pr_e2m (
 	// Does not register addr_next. See d_cache for details.
 	always_comb
 	begin
+		instruction_id_out = instruction_id;
 		if (i_hc.stall)
 			o_d_cache_input.addr_next = o_d_cache_input.addr;
 		else
