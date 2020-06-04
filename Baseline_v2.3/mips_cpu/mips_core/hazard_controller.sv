@@ -31,6 +31,7 @@ module hazard_controller (
 
 	// ooo buffer hazard
 	input ooo_hazard,
+	input reg_hazard,
 
 	// Hazard control output
 	hazard_control_ifc.out i2i_hc,
@@ -138,7 +139,7 @@ module hazard_controller (
 			dec_flush <= 1'b1;
 		end
 
-		if (ex_stall | ooo_hazard)
+		if (ex_stall | ooo_hazard | reg_hazard)
 			dec_stall <= 1'b1;
 	end
 

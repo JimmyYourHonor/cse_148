@@ -35,6 +35,9 @@ module reg_file (
 	// input from out of order buffer
 	input logic [5:0] retired_rw,
 	input logic retired_uses_rw,
+
+	input logic[1:0] entry,
+    input logic reset,
 	
 	// Output data
 	reg_file_output_ifc.out out,
@@ -150,7 +153,6 @@ module reg_file (
 			// 		index <= i;
 			// 	end
 			// end
-			
 
 			if (index < 64) begin
 				availability[index] <= 1'b1;
@@ -169,6 +171,13 @@ module reg_file (
 			regs_snapshot[snapshot_size] <= regs;
 			map_snapshot[snapshot_size] <= map;
 			snapshot_size <= snapshot_size + 1;
+		end
+
+		// reset reg & map when out of order buffer request for it
+		if (reset) begin
+			regs <= regs_snapshot[entry];
+			map <= map_snapshot[entry];
+			snapshot_size <= entry + 1;
 		end
 	end
 

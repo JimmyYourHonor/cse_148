@@ -102,6 +102,9 @@ module mips_core (
 	logic[19:0] instruction_id_retired;
 	logic i_take_write_buffer;
 
+	logic [1:0] entry;
+    logic reset;
+
 	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 	// |||| IF Stage
 	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -159,20 +162,23 @@ module mips_core (
 		.retired_uses_rw,
 		.retired_rw,
 
+		.entry,
+		.reset,
+
 		.out(dec_reg_file_output),
 
-		.free_list
+		.free_list,
+		.hazard(reg_hazard)
 	);
 
 	ooo_buffer OOO_BUFFER (
 		.clk,
 
 		.free_list,
-		.instruction_id_in(instruction_id_5),
+		.instruction_id_branch(instruction_id_5),
 		.branch_result(ex_branch_result),
 
-		.alu_result(ex_alu_output),
-		.instruction_id_alu(intruction_id_4),
+		.instruction_id_result(instruction_id_9),
 
 		.reg_ready (dec_reg_file_output),
 		.decoded_insn (dec_decoder_output),
@@ -185,7 +191,10 @@ module mips_core (
 		.retired_uses_rw,
 		.retired_rw,
 		.retired,
-		.instruction_id_retired
+		.instruction_id_retired,
+
+		.entry,
+		.reset
 	);
 
 	forward_unit FORWARD_UNIT(
@@ -288,6 +297,7 @@ module mips_core (
 		.clk,
     	.i_write_buffer(e2m_d_cache_input),
 		.instruction_id(instruction_id_6),
+		.instruction_id_out(instruction_id_7),
 
 		.instruction_id_retired,
 		.retired,
@@ -307,6 +317,8 @@ module mips_core (
 		.mem_read(d_cache_read),
 		.mem_write(d_cache_write),
 
+		.instruction_id(instruction_id_7),
+		.instruction_id_out(instruction_id_8)
 	);
 	// If you want to change the line size and total size of data cache,
 	// uncomment the following two lines and change the parameter.
@@ -320,7 +332,11 @@ module mips_core (
 		.i_d_cache_output      (mem_d_cache_output),
 		.i_d_cache_pass_through(e2m_d_cache_pass_through),
 		.o_done                (mem_done),
-		.o_write_back          (mem_write_back)
+		.o_write_back          (mem_write_back),
+
+		.instruction_id_write_buffer(instruction_id_7),
+		.instruction_id_dcache(instruction_id_8),
+		.instruction_id_out(instruction_id_9)
 	);
 
 	// ========================================================================
@@ -331,7 +347,8 @@ module mips_core (
 
 		.i_hc (m2w_hc),
 		.i_wb (mem_write_back),
-		.o_wb (m2w_write_back)
+		.o_wb (m2w_write_back),
+
 	);
 
 	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -353,6 +370,7 @@ module mips_core (
 		.ex_branch_result,
 		.mem_done,
 		.ooo_hazard,
+		.reg_hazard,
 
 		.i2i_hc,
 		.i2d_hc,

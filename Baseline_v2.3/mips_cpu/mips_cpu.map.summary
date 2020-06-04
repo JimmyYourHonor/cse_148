@@ -1,17 +1,12 @@
-Analysis & Synthesis Status : Successful - Tue May 26 15:24:24 2020
+Analysis & Synthesis Status : Failed - Wed Jun 03 21:21:50 2020
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : mips_cpu
 Top-level Entity Name : mips_cpu
 Family : Cyclone V
-Logic utilization (in ALMs) : N/A
-Total registers : 7779
-Total pins : 109
-Total virtual pins : 0
-Total block memory bits : 7,008
-Total DSP Blocks : 0
-Total HSSI RX PCSs : 0
-Total HSSI PMA RX Deserializers : 0
-Total HSSI TX PCSs : 0
-Total HSSI PMA TX Serializers : 0
-Total PLLs : 1
-Total DLLs : 0
+Logic utilization (in ALMs) : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total block memory bits : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge
+Total DLLs : N/A until Partition Merge

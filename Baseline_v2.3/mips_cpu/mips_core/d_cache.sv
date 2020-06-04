@@ -50,6 +50,10 @@ module d_cache #(
 	// Request
 	d_cache_input_ifc.in in,
 
+	// passing instruction ids
+	input logic [19:0] instruction_id,
+	output logic [19:0] instruction_id_out,
+
 	// Response
 	cache_output_ifc.out out,
 
@@ -153,6 +157,8 @@ module d_cache #(
 	logic hit, miss;
 	logic last_flush_word;
 	logic last_refill_word;
+
+	assign instruction_id_out = instruction_id;
 
 	always_comb
 	begin
@@ -354,7 +360,9 @@ module write_buffer (
 	input logic[19:0] instruction_id_retired,
 	input logic retired,
 
+	// ouput 
 	cache_output_ifc.out cache_out,
+	output logic[19:0] instruction_id_out, 
 
 	// connected to cache
     d_cache_input_ifc.out o_write_buffer,
@@ -366,45 +374,83 @@ module write_buffer (
 	logic[`ADDR_WIDTH - 1 : 0] addr_next_list[8];
 	logic[`DATA_WIDTH - 1 : 0] data_list[8];
 
-	logic in_use[8] = '{0,0,0,0,0,0,0,0};
+	logic[3:0] id_to_index_matrix[8];
 
-	logic found_empty = 0;
+	// List of addresses that doesn't have duplicates
+	logic[`ADDR_WIDTH-1 : 0] addr_to_index[8];
 
-	logic[2:0] index = 0;
-	logic[19:0] earliest[8] = '{0,0,0,0,0,0,0,0};
+	// index corresponding to an address
+	logic [3:0] index_addr;
+	// for finding an empty spot in the matrix availibility
+	logic [2:0] found_index_addr;
+
+	logic [3:0] index_id;
+	// a matrix of index
+	logic[2:0] index_matrix[8][8];
+	// index into the lists
+	logic[2:0] index;
+
+	// list of availible spots
+	logic availibility[8] = '{'0, '0, '0, '0, '0, '0, '0, '0};
+	logic [2:0] matrix_availibility[8] = '{'0, '0, '0, '0, '0, '0, '0, '0};
+	logic availibility_ids[8][8] = '{'{0,0,0,0,0,0,0,0}, '{0,0,0,0,0,0,0,0}, '{0,0,0,0,0,0,0,0}, '{0,0,0,0,0,0,0,0}, '{0,0,0,0,0,0,0,0}, '{0,0,0,0,0,0,0,0}, '{0,0,0,0,0,0,0,0}, '{0,0,0,0,0,0,0,0}};
+	// empty spot
+
+	logic[2:0] id_head_ptr;
 
 	always_comb
 	begin
-		found = ((addr_list[0] == i_write_buffer.addr) && (ids[0] < instruction_id) && in_use[0]) ||
-				((addr_list[1] == i_write_buffer.addr) && (ids[1] < instruction_id) && in_use[1]) ||
-				((addr_list[2] == i_write_buffer.addr) && (ids[2] < instruction_id) && in_use[2]) ||
-				((addr_list[3] == i_write_buffer.addr) && (ids[3] < instruction_id) && in_use[3]) ||
-				((addr_list[4] == i_write_buffer.addr) && (ids[4] < instruction_id) && in_use[4]) ||
-				((addr_list[5] == i_write_buffer.addr) && (ids[5] < instruction_id) && in_use[5]) ||
-				((addr_list[6] == i_write_buffer.addr) && (ids[6] < instruction_id) && in_use[6]) ||
-				((addr_list[7] == i_write_buffer.addr) && (ids[7] < instruction_id) && in_use[7]);
+		// for store
+		index_addr = (addr_to_index[0] == i_write_buffer.addr) ? 0 : (addr_to_index[1] == i_write_buffer.addr) ? 1 : 
+				(addr_to_index[2] == i_write_buffer.addr) ? 2 : (addr_to_index[3] == i_write_buffer.addr) ? 3 :
+				(addr_to_index[4] == i_write_buffer.addr) ? 4 : (addr_to_index[5] == i_write_buffer.addr) ? 5 :
+				(addr_to_index[6] == i_write_buffer.addr) ? 6 : (addr_to_index[7] == i_write_buffer.addr) ? 7 : 8;
+		index_id = instruction_id % 8;
 
-		found_empty = !in_use[0] || !in_use[1] || !in_use[2] || !in_use[3] || !in_use[4] || !in_use[5] || !in_use[6] || !in_use[7];
+		if (index_addr == 8) begin
+			if (matrix_availibility[0] == 0) begin
+				found_index_addr = 0;
+			end
+			else if (matrix_availibility[1] == 0) begin
+				found_index_addr = 1;
+			end 
+			else if (matrix_availibility[2] == 0) begin
+				found_index_addr = 2;
+			end
+			else if (matrix_availibility[3] == 0) begin
+				found_index_addr = 3;
+			end
+			else if (matrix_availibility[4] == 0) begin
+				found_index_addr = 4;
+			end
+			else if (matrix_availibility[5] == 0) begin
+				found_index_addr = 5;
+			end
+			else if (matrix_availibility[6] == 0) begin
+				found_index_addr = 6;
+			end
+			else if (matrix_availibility[7] == 0) begin
+				found_index_addr = 7;
+			end 
+		end
+		else begin
+			found_index_addr = index_addr;
+		end
+
+		// for loads
+		index = index_matrix[index_addr][index_id];
+
+		instruction_id_out = instruction_id;
 	end
     always_ff @(posedge clk) begin
 
 		// load
         if (i_write_buffer.mem_action == READ) begin
 
-			// check buffer for most recent address
-			if (found) begin
-				for (int i = 0; i < 8; i++) begin
-					if (addr_list[i] == i_write_buffer.addr && ids[i] < instruction_id && ids[i] < earliest)) begin
-						index <= i;
-						earliest <= ids[i];
-					end
-				end
-
+			if (index_addr < 8) begin
 				cache_out.valid <= 1;
 				cache_out.data <= data_list[index];
 			end
-
-			// cache access
 			else begin
 				o_write_buffer.data <= i_write_buffer.data;
 				o_write_buffer.addr <= i_write_buffer.addr;
@@ -416,42 +462,87 @@ module write_buffer (
 
 		// store
 		else begin
+			
+			ids[index_id] <= instruction_id;
+			addr_list[index_id] <= i_write_buffer.addr;
+			addr_next_list[index_id] <= i_write_buffer.addr_next;
+			data_list[index_id] <= i_write_buffer.data;
+			availibility[index_id] <= 1;
 
-			cache_out.valid <= 0;
+			matrix_availibility[found_index_addr] <= matrix_availibility[found_index_addr] + 1;
+			
+			addr_to_index[index_id] <= i_write_buffer.addr;
+			
+			availibility_ids[found_index_addr][index_id] <= 1;
 
-			// find empty slot
-			// add data to buffer
-			if (found_empty) begin
-				for (int i = 0; i < 8; i++) begin
-					if (!in_use[i]) begin
-						index <= i;
-					end
+			index_matrix[found_index_addr][index_id] <= index_id;
+			index_matrix[found_index_addr][index_id + 1] <= (availibility_ids[found_index_addr][index_id + 1] == 0 && index_id + 1 != id_head_ptr) 
+															? index_id : index_matrix[found_index_addr][1];
+			index_matrix[found_index_addr][index_id + 2] <= (availibility_ids[found_index_addr][index_id + 1] == 0 && index_id + 1 != id_head_ptr && 
+															availibility_ids[index_addr][index_id + 2] == 0 && index_id + 2 != id_head_ptr) 
+															? index_id : index_matrix[found_index_addr][2];
+			index_matrix[found_index_addr][index_id + 3] <= (availibility_ids[found_index_addr][index_id + 1] == 0 && index_id + 1 != id_head_ptr && 
+															availibility_ids[index_addr][index_id + 2] == 0 && index_id + 2 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 3] == 0 && index_id + 3 != id_head_ptr) 
+															? index_id : index_matrix[found_index_addr][3];
+			index_matrix[found_index_addr][index_id + 4] <= (availibility_ids[found_index_addr][index_id + 1] == 0 && index_id + 1 != id_head_ptr && 
+															availibility_ids[index_addr][index_id + 2] == 0 && index_id + 2 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 3] == 0 && index_id + 3 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 4] == 0 && index_id + 4 != id_head_ptr) 
+															? index_id : index_matrix[found_index_addr][4];
+			index_matrix[found_index_addr][index_id + 5] <= (availibility_ids[found_index_addr][index_id + 1] == 0 && index_id + 1 != id_head_ptr && 
+															availibility_ids[index_addr][index_id + 2] == 0 && index_id + 2 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 3] == 0 && index_id + 3 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 4] == 0 && index_id + 4 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 5] == 0 && index_id + 5 != id_head_ptr) 
+															? index_id : index_matrix[found_index_addr][5];
+			index_matrix[found_index_addr][index_id + 6] <= (availibility_ids[found_index_addr][index_id + 1] == 0 && index_id + 1 != id_head_ptr && 
+															availibility_ids[index_addr][index_id + 2] == 0 && index_id + 2 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 3] == 0 && index_id + 3 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 4] == 0 && index_id + 4 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 5] == 0 && index_id + 5 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 6] == 0 && index_id + 6 != id_head_ptr) 
+															? index_id : index_matrix[found_index_addr][6];
+			index_matrix[found_index_addr][index_id + 7] <= (availibility_ids[found_index_addr][index_id + 1] == 0 && index_id + 1 != id_head_ptr && 
+															availibility_ids[index_addr][index_id + 2] == 0 && index_id + 2 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 3] == 0 && index_id + 3 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 4] == 0 && index_id + 4 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 5] == 0 && index_id + 5 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 6] == 0 && index_id + 6 != id_head_ptr &&
+															availibility_ids[index_addr][index_id + 7] == 0 && index_id + 7 != id_head_ptr) 
+															? index_id : index_matrix[found_index_addr][7];
+
+			id_to_index_matrix[index_id] <= found_index_addr;
+
+		end
+
+		if (retired) begin
+			id_head_ptr <= id_head_ptr + 1;
+			
+			if (ids[id_head_ptr] == instruction_id_retired) begin
+				availibility[id_head_ptr] <= 0;
+				o_write_buffer.data <= data_list[id_head_ptr];
+				o_write_buffer.addr <= addr_list[id_head_ptr];
+				o_write_buffer.addr_next <= addr_next_list[id_head_ptr];
+				o_write_buffer.mem_action <= WRITE;
+				
+				availibility_ids[id_to_index_matrix[id_head_ptr]][id_head_ptr] <= 0;
+				if(matrix_availibility[id_to_index_matrix[id_head_ptr]] == 1) begin
+					addr_to_index[id_to_index_matrix[id_head_ptr]] = 0;
 				end
-
-				ids[index] <= instruction_id;
-				addr_list[index] <= i_write_buffer.addr;
-				addr_next_list[index] <= i_write_buffer.addr_next;
-				data_list[index] <= i_write_buffer.data;
-				in_use[index] <= 1;
-				earliest[index] 
+				matrix_availibility[id_to_index_matrix[id_head_ptr]] <= matrix_availibility[id_to_index_matrix[id_head_ptr]] - 1;
 			end
 			
-			// hazard
-			else begin
-				// TODO
-			end
+			index_matrix[0][id_head_ptr] <= index_matrix[0][id_head_ptr - 1];
+			index_matrix[1][id_head_ptr] <= index_matrix[1][id_head_ptr - 1];
+			index_matrix[2][id_head_ptr] <= index_matrix[2][id_head_ptr - 1];
+			index_matrix[3][id_head_ptr] <= index_matrix[3][id_head_ptr - 1];
+			index_matrix[4][id_head_ptr] <= index_matrix[4][id_head_ptr - 1];
+			index_matrix[5][id_head_ptr] <= index_matrix[5][id_head_ptr - 1];
+			index_matrix[6][id_head_ptr] <= index_matrix[6][id_head_ptr - 1];
+			index_matrix[7][id_head_ptr] <= index_matrix[7][id_head_ptr - 1];
 		end
 
-		// handle write to cache when instruction retired
-		for (int i = 0; i < 8; i++) begin
-			if (ids[i] == instruction_id_retired) begin
-				in_use[i] <= 0;
-				o_write_buffer.data <= data_list[index];
-				o_write_buffer.addr <= addr_list[index];
-				o_write_buffer.addr_next <= addr_next_list[index];
-				o_write_buffer.mem_action <= WRITE;
-			end
-		end
     end
 
 endmodule
