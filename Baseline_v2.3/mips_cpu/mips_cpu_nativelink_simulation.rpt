@@ -1,5 +1,5 @@
 Info: Start Nativelink Simulation process
-executing command line: ip-make-simscript --nativelink-mode --output-directory=mips_cpu_iputf_input --spd=C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/sdram.spd 
+executing command line: ip-make-simscript --nativelink-mode --output-directory=mips_cpu_iputf_input --spd=C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/sdram.spd 
 
 ========= EDA Simulation Settings =====================
 

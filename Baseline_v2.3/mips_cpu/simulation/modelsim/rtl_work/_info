@@ -7,33 +7,33 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/simulation/modelsim
+Z0 dC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/simulation/modelsim
 valu
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 DXx4 work 12 mips_cpu_pkg 0 22 LNlmcBmTX5S=L7iEF1^?12
-Z3 DXx4 work 13 mips_core_pkg 0 22 gT?Q4]o@hLAo1@zLP2IGA3
-Z4 DXx4 work 11 alu_sv_unit 0 22 hUC0bbmJ;QJCWc[SeDRHd0
+Z2 DXx4 work 12 mips_cpu_pkg 0 22 S>?SPM4^U;ka[lV@FPXA@0
+Z3 DXx4 work 13 mips_core_pkg 0 22 igKCUMJLi2KDf<7U?5P6z0
+Z4 DXx4 work 11 alu_sv_unit 0 22 46OfBE`Nc33:70WD1TJ:W2
 Z5 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 31
 !i10b 1
 !s100 NAY:JOO^GNcQWCX3W87C01
-IAn2ezG43=J2DRjjb6T3K72
+I[fEN5U>2`991lB<[Jno_H0
 Z6 !s105 alu_sv_unit
 S1
 R0
-Z7 w1590292110
-Z8 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv
-Z9 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv
+Z7 w1591643337
+Z8 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv
+Z9 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv
 L0 41
 Z10 OV;L;10.5b;63
-Z11 !s108 1591597098.000000
-Z12 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv|
-Z13 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv|
+Z11 !s108 1591650933.000000
+Z12 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv|
+Z13 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/alu.sv|
 !i113 1
 Z14 o-sv -work work
-Z15 !s92 -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core
+Z15 !s92 -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core
 Z16 tCvgOpt 0
 Yalu_input_ifc
 R1
@@ -46,7 +46,7 @@ r1
 31
 !i10b 1
 !s100 TOF3e3n4=1E?0f7aG]eaK1
-IiQ6<QMTR=:^jSU<>X==ki1
+Im=UMmGg`7WiLVTc7YK^;33
 R6
 S1
 R0
@@ -73,7 +73,7 @@ r1
 31
 !i10b 1
 !s100 bgN^^JOm@gakBMbO6NHzd3
-IYMka8?O4W:bZLTl^I85CT2
+I_>iUJBNk;AEi`UH>gcWm=2
 R6
 S1
 R0
@@ -93,25 +93,25 @@ Yalu_pass_through_ifc
 R1
 R2
 R3
-Z19 DXx4 work 28 mips_core_interfaces_sv_unit 0 22 9X;]V]OPe@V06;^<fN3c11
+Z19 DXx4 work 28 mips_core_interfaces_sv_unit 0 22 @`=ib5U9j50X0X]cB7?iJ1
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 ]MzEQ0C:W`4_EiOU[dcc@1
-I2GGbA_V`lAc5XkzC:CF0b0
+IA:iYHK1jo<M8lzKfaT:5>3
 Z20 !s105 mips_core_interfaces_sv_unit
 S1
 R0
-Z21 w1590009748
-Z22 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv
-Z23 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv
+Z21 w1590095025
+Z22 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv
+Z23 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv
 L0 49
 R10
-Z24 !s108 1591597087.000000
-Z25 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv|
-Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv|
+Z24 !s108 1591650931.000000
+Z25 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_interfaces.sv|
 !i113 1
 R14
 R15
@@ -120,21 +120,21 @@ Xalu_sv_unit
 R1
 R2
 R3
-VhUC0bbmJ;QJCWc[SeDRHd0
+V46OfBE`Nc33:70WD1TJ:W2
 r1
 !s85 0
 31
 !i10b 1
 !s100 =V5eoJjQd@2RTz92LaHdW2
-IhUC0bbmJ;QJCWc[SeDRHd0
+I46OfBE`Nc33:70WD1TJ:W2
 !i103 1
 S1
 R0
 R7
 R8
 R9
-Z27 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh
-Z28 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh
+Z27 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh
+Z28 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh
 L0 4
 R10
 R11
@@ -148,53 +148,25 @@ vbranch_controller
 R1
 R2
 R3
-Z29 DXx4 work 25 branch_controller_sv_unit 0 22 Bc8B<0m1DAH<iFk4ZQZKm3
+Z29 DXx4 work 25 hazard_controller_sv_unit 0 22 998?4>32kD`YiV=d7]jdA3
 R5
 r1
 !s85 0
 31
 !i10b 1
-!s100 V9_6l2U_cd^Ki]aDf_6l30
-IgdMoQ5d:3n>AMTfN^g^^`1
-Z30 !s105 branch_controller_sv_unit
+!s100 1aBKEM_4ThQidX8??]bUS1
+I8S0TjZZW:m<e^Fo9:8T<@1
+Z30 !s105 hazard_controller_sv_unit
 S1
 R0
-Z31 w1590002541
-Z32 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv
-Z33 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv
-Z34 L0 13
+Z31 w1591645695
+Z32 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv
+Z33 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv
+Z34 L0 16
 R10
-Z35 !s108 1591597097.000000
-Z36 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv|
-Z37 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/branch_controller.sv|
-!i113 1
-R14
-R15
-R16
-Xbranch_controller_sv_unit
-R1
-R2
-R3
-VBc8B<0m1DAH<iFk4ZQZKm3
-r1
-!s85 0
-31
-!i10b 1
-!s100 PHla4Fh=n4ig_RDl85<?m2
-IBc8B<0m1DAH<iFk4ZQZKm3
-!i103 1
-S1
-R0
-Z38 w1590002542
-R32
-R33
-R27
-R28
-L0 4
-R10
-R35
-R36
-R37
+Z35 !s108 1591650932.000000
+Z36 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv|
+Z37 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv|
 !i113 1
 R14
 R15
@@ -210,7 +182,7 @@ r1
 31
 !i10b 1
 !s100 `37I7PEjSXL?k;fW7QHEB3
-IPzbizln=K9aNLFk3m?4f50
+ISigB^T4AZf>F4QzgA85C03
 R20
 S1
 R0
@@ -236,15 +208,15 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 ZfBYOWl95BIHko2<:T8Ja0
-IaZF3>Zk4AA=lbaLj6Y<DY2
+!s100 GGE8nY<[DfYHC51:U[=o=3
+I1I`DOhja2VX`05>4A?hfS2
 R30
 S1
 R0
 R31
 R32
 R33
-Z39 L0 77
+L0 80
 R10
 R35
 R36
@@ -263,15 +235,15 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 g`U8kH7hlZ8>jD]lD8l<m3
-IlSEUUBho[mWnE[g:RE3MR1
+!s100 6YN^e8_BF@4^lNb4cl6O@0
+ITT2WG4lD`J@NbbHnhBLm=3
 R30
 S1
 R0
 R31
 R32
 R33
-L0 53
+L0 56
 R10
 R35
 R36
@@ -290,15 +262,15 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 io84Ca>DI5eDQGHR4hd1`3
-I]?DiTRMg@Zh6WfHlDad770
+!s100 ^gRGdIWBGPbUc6IfI;LB51
+I]k52kLIdK^YUIV[A?i>fg3
 R30
 S1
 R0
 R31
 R32
 R33
-L0 219
+L0 222
 R10
 R35
 R36
@@ -317,15 +289,15 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 :DXa]nU2S5Q0g71Unf:^]1
-IHP2D[aZ8X3ghS5j4ai^RZ1
+!s100 UT4blM9_Iin32do>i1>^K2
+I=6C@b<>i3niO[AKfNILS02
 R30
 S1
 R0
 R31
 R32
 R33
-L0 291
+L0 294
 R10
 R35
 R36
@@ -344,15 +316,15 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 Oi71Md1Y2hWz`UkdEe27j3
-Ij=V=`oiieC^AnGYz1[6C[2
+!s100 Vga_YOYmlgDG3ceQUNYG22
+ITkofcR;klUX4iVaC4kO2L0
 R30
 S1
 R0
 R31
 R32
 R33
-L0 142
+L0 145
 R10
 R35
 R36
@@ -371,15 +343,15 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 @^G?MK^?o_1RaHL;OAe9>0
-IMYlRzif6K_X]oP4jeJeK40
+!s100 2_VOB]B1XRJ1[16`gPQhj1
+I^3]ZPP<CT4VgTFB8Cije[2
 R30
 S1
 R0
 R31
 R32
 R33
-L0 375
+L0 378
 R10
 R35
 R36
@@ -399,7 +371,7 @@ r1
 31
 !i10b 1
 !s100 HJ2W1dnLNRT27>Mn@]Qgk1
-IXDae52@de`dcF<NVX<^Z83
+I7`z2c1h5gMYRO^7AcNmC<2
 R20
 S1
 R0
@@ -417,50 +389,50 @@ R15
 R16
 vcache_bank
 R1
-Z40 !s110 1591597087
+Z38 !s110 1591650931
 !i10b 1
 !s100 9`?F`A8ASFFhMKIc1:8H33
-I<YnUAO2J`C>QbF``GZCnn0
+Iof5S3G_Gc_18c=MW9X:mX0
 R5
-Z41 !s105 cache_bank_sv_unit
+Z39 !s105 cache_bank_sv_unit
 S1
 R0
-R31
-Z42 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv
-Z43 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv
+Z40 w1587499481
+Z41 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv
+Z42 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv
 L0 17
 R10
 r1
 !s85 0
 31
 R24
-Z44 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv|
-Z45 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv|
+Z43 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv|
+Z44 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/cache_bank.sv|
 !i113 1
 R14
 R15
 R16
 vcache_bank_core
 R1
-R40
+R38
 !i10b 1
 !s100 aG;OEJMFE8649aV:=Y<f83
-IYWNQA5M9mb82OI]2]HC5J1
+I:@O6:f?F3UeQm0RM7<OiV3
 R5
-R41
+R39
 S1
 R0
-R31
+R40
+R41
 R42
-R43
 L0 50
 R10
 r1
 !s85 0
 31
 R24
+R43
 R44
-R45
 !i113 1
 R14
 R15
@@ -476,14 +448,14 @@ r1
 31
 !i10b 1
 !s100 BYPDlE[`Q2J<z4DV;<cS<2
-Ie^R4k5h==HPzH10HE^8bT1
+IhW3zRFmaa6;;TQ]RD?k690
 R20
 S1
 R0
 R21
 R22
 R23
-Z46 L0 27
+Z45 L0 27
 R10
 R24
 R25
@@ -496,25 +468,25 @@ vd_cache
 R1
 R2
 R3
-Z47 DXx4 work 15 d_cache_sv_unit 0 22 1OX7;2CCm9j2WkkO0;8U10
+Z46 DXx4 work 15 d_cache_sv_unit 0 22 =KfLgQanaW1[R7Y@CCdWd0
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 78boA;AGTR5z@[UajUSG@3
-I_z9EUG3Q8;CBE`JofmHf`2
-Z48 !s105 d_cache_sv_unit
+I2UEBPa:OeN;c6=EY092kG2
+Z47 !s105 d_cache_sv_unit
 S1
 R0
-Z49 w1591591474
-Z50 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv
-Z51 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv
+R7
+Z48 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv
+Z49 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv
 L0 39
 R10
-R35
-Z52 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv|
-Z53 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv|
+R11
+Z50 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv|
+Z51 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/d_cache.sv|
 !i113 1
 R14
 R15
@@ -523,25 +495,25 @@ Yd_cache_input_ifc
 R1
 R2
 R3
-R47
+R46
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 ]66dbb7RTFIXDZXI?8mBV2
-I:lWM:3b0zQRE1OOFa8mW;2
-R48
+I;<WZDXBcbBK3o:Zk;fD4^1
+R47
 S1
 R0
+R7
+R48
 R49
+R45
+R10
+R11
 R50
 R51
-R46
-R10
-R35
-R52
-R53
 !i113 1
 R14
 R15
@@ -557,14 +529,14 @@ r1
 31
 !i10b 1
 !s100 l[iCj4d`5OkC:SgY=oJUe0
-Ia5?C[BJR]5;4R@<kETSL]3
+Ig5A];7@VQack?_bWG>=WI1
 R20
 S1
 R0
 R21
 R22
 R23
-R39
+L0 77
 R10
 R24
 R25
@@ -577,26 +549,26 @@ Xd_cache_sv_unit
 R1
 R2
 R3
-V1OX7;2CCm9j2WkkO0;8U10
+V=KfLgQanaW1[R7Y@CCdWd0
 r1
 !s85 0
 31
 !i10b 1
 !s100 joBXM<Dd78BMzhR>J:C^42
-I1OX7;2CCm9j2WkkO0;8U10
+I=KfLgQanaW1[R7Y@CCdWd0
 !i103 1
 S1
 R0
+R7
+R48
 R49
-R50
-R51
 R27
 R28
 L0 4
 R10
-R35
-R52
-R53
+R11
+R50
+R51
 !i113 1
 R14
 R15
@@ -605,25 +577,25 @@ vdecode_stage_glue
 R1
 R2
 R3
-Z54 DXx4 work 21 glue_circuits_sv_unit 0 22 IaPkAo@9K:mKb7mG2lH1E3
+Z52 DXx4 work 21 glue_circuits_sv_unit 0 22 B_3f`?X^^_IEiNE>md0Gg3
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 DQ]]88<58HRmP0=;ZG>mE1
-Idgn]K@C1^?9h4_0I40hJF2
-Z55 !s105 glue_circuits_sv_unit
+IJR0CP5H0glM[U9AzBZOUY2
+Z53 !s105 glue_circuits_sv_unit
 S1
 R0
-Z56 w1591577815
-Z57 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv
-Z58 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv
-R34
+R7
+Z54 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv
+Z55 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv
+L0 13
 R10
-Z59 !s108 1591597099.000000
-Z60 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv|
-Z61 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv|
+R11
+Z56 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv|
+Z57 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/glue_circuits.sv|
 !i113 1
 R14
 R15
@@ -632,25 +604,25 @@ vdecoder
 R1
 R2
 R3
-DXx4 work 15 decoder_sv_unit 0 22 WJRY<<Dbf?eI@H28K1KcR2
+DXx4 work 15 decoder_sv_unit 0 22 ]kE@^jj^Fde^EzZ@J1C@b3
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 onTSMeK]ndBCWbZiTdIKD3
-IjJ8PNbe4h>b6O1FeV;7KR2
+IE6;Fjg0[chT]0g:]ciOz:2
 !s105 decoder_sv_unit
 S1
 R0
-Z62 w1590009777
-Z63 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/decoder.sv
-Z64 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/decoder.sv
-Z65 L0 16
+R21
+Z58 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/decoder.sv
+Z59 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/decoder.sv
+R34
 R10
 R35
-Z66 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/decoder.sv|
-Z67 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/decoder.sv|
+Z60 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/decoder.sv|
+Z61 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/decoder.sv|
 !i113 1
 R14
 R15
@@ -666,7 +638,7 @@ r1
 31
 !i10b 1
 !s100 E=]Qij]K2SPDWML>iOjZX1
-IGKTT6`>dbebdgGdXTo=[F0
+I98cBdZngMXIBaJ0<4^1>n2
 R20
 S1
 R0
@@ -686,26 +658,26 @@ Xdecoder_sv_unit
 R1
 R2
 R3
-VWJRY<<Dbf?eI@H28K1KcR2
+V]kE@^jj^Fde^EzZ@J1C@b3
 r1
 !s85 0
 31
 !i10b 1
 !s100 YSUb76e<KM?T:z`_VRZ_10
-IWJRY<<Dbf?eI@H28K1KcR2
+I]kE@^jj^Fde^EzZ@J1C@b3
 !i103 1
 S1
 R0
-R62
-R63
-R64
+R21
+R58
+R59
 R27
 R28
 L0 4
 R10
 R35
-R66
-R67
+R60
+R61
 !i113 1
 R14
 R15
@@ -714,25 +686,25 @@ vex_stage_glue
 R1
 R2
 R3
-R54
+R52
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 ?jE83CD<gh<Q5zi1P5I?]2
-IG_K>ihJBg5R]kHMU40HbK3
-R55
+IWngU37ZnVjQBgEXaCL@<T2
+R53
 S1
 R0
-R56
-R57
-R58
+R7
+R54
+R55
 L0 63
 R10
-R59
-R60
-R61
+R11
+R56
+R57
 !i113 1
 R14
 R15
@@ -740,7 +712,7 @@ R16
 vfast_sdram
 R1
 R2
-DXx4 work 18 fast_sdram_sv_unit 0 22 j>L<4lE<a^ma2]4aR[[Qo0
+DXx4 work 18 fast_sdram_sv_unit 0 22 9c8GQIQB1`zz>5igj<V^<1
 R5
 r1
 !s85 0
@@ -751,46 +723,46 @@ I3?PM4ULiRDk@:[bPTfhF@1
 !s105 fast_sdram_sv_unit
 S1
 R0
-Z68 w1590002540
-Z69 8../../fast_sdram.sv
-Z70 F../../fast_sdram.sv
-Z71 L0 18
+R40
+Z62 8../../fast_sdram.sv
+Z63 F../../fast_sdram.sv
+Z64 L0 18
 R10
-Z72 !s108 1591597119.000000
-Z73 !s107 ..\..\mips_cpu.svh|../../fast_sdram.sv|
-Z74 !s90 -reportprogress|300|-work|work|../../fast_sdram.sv|
+Z65 !s108 1591652230.000000
+Z66 !s107 ..\..\mips_cpu.svh|../../fast_sdram.sv|
+Z67 !s90 -reportprogress|300|-work|work|../../fast_sdram.sv|
 !i113 1
-Z75 o-work work
+Z68 o-work work
 R16
 Xfast_sdram_sv_unit
 R1
 R2
-Vj>L<4lE<a^ma2]4aR[[Qo0
+V9c8GQIQB1`zz>5igj<V^<1
 r1
 !s85 0
 31
 !i10b 1
 !s100 HZICJbCcZ]UnK2bIXi_dA1
-Ij>L<4lE<a^ma2]4aR[[Qo0
+I9c8GQIQB1`zz>5igj<V^<1
 !i103 1
 S1
 R0
-R38
-R69
-R70
-Z76 F..\..\mips_cpu.svh
+R40
+R62
+R63
+Z69 F..\..\mips_cpu.svh
 L0 4
 R10
-R72
-R73
-R74
+R65
+R66
+R67
 !i113 1
-R75
+R68
 R16
 vfast_testbench
 R1
 R2
-DXx4 work 22 fast_testbench_sv_unit 0 22 4@>5NaHb`c2QDKWal@MKT1
+DXx4 work 22 fast_testbench_sv_unit 0 22 ZC2iO;TS17gh39QXaO2[;3
 R5
 r1
 !s85 0
@@ -801,65 +773,65 @@ IJo`mW691`K4RG7?TAUOXF1
 !s105 fast_testbench_sv_unit
 S1
 R0
-R68
-Z77 8../../fast_testbench.sv
-Z78 F../../fast_testbench.sv
-R71
+R40
+Z70 8../../fast_testbench.sv
+Z71 F../../fast_testbench.sv
+R64
 R10
-Z79 !s108 1591597118.000000
-Z80 !s107 ..\..\mips_cpu.svh|../../fast_testbench.sv|
-Z81 !s90 -reportprogress|300|-work|work|../../fast_testbench.sv|
+R65
+Z72 !s107 ..\..\mips_cpu.svh|../../fast_testbench.sv|
+Z73 !s90 -reportprogress|300|-work|work|../../fast_testbench.sv|
 !i113 1
-R75
+R68
 R16
 Xfast_testbench_sv_unit
 R1
 R2
-V4@>5NaHb`c2QDKWal@MKT1
+VZC2iO;TS17gh39QXaO2[;3
 r1
 !s85 0
 31
 !i10b 1
 !s100 ca6T7TQmafTT:Dof5F>be1
-I4@>5NaHb`c2QDKWal@MKT1
+IZC2iO;TS17gh39QXaO2[;3
 !i103 1
 S1
 R0
-R38
-R77
-R78
-R76
+R40
+R70
+R71
+R69
 L0 4
 R10
-R79
-R80
-R81
+R65
+R72
+R73
 !i113 1
-R75
+R68
 R16
 vfetch_unit
 R1
 R2
 R3
-DXx4 work 18 fetch_unit_sv_unit 0 22 WkmQnoZ19Tj`33nY_4fg:1
+DXx4 work 18 fetch_unit_sv_unit 0 22 c?86J0lfl[8AV9n7D9Mm[3
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 X802Q__h7?hlE`MgilS7>2
-I;3agSM^O2dl0hRg93[PQ`0
+I@j0QHmJGGA<`m5YJdeCKQ2
 !s105 fetch_unit_sv_unit
 S1
 R0
-R31
-Z82 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv
-Z83 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv
-R71
+R40
+Z74 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv
+Z75 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv
+R64
 R10
 R35
-Z84 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv|
-Z85 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv|
+Z76 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv|
+Z77 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/fetch_unit.sv|
 !i113 1
 R14
 R15
@@ -868,26 +840,26 @@ Xfetch_unit_sv_unit
 R1
 R2
 R3
-VWkmQnoZ19Tj`33nY_4fg:1
+Vc?86J0lfl[8AV9n7D9Mm[3
 r1
 !s85 0
 31
 !i10b 1
 !s100 X0cX]HP;aEzI]m8_:j1lY1
-IWkmQnoZ19Tj`33nY_4fg:1
+Ic?86J0lfl[8AV9n7D9Mm[3
 !i103 1
 S1
 R0
-R38
-R82
-R83
+R40
+R74
+R75
 R27
 R28
 L0 4
 R10
 R35
-R84
-R85
+R76
+R77
 !i113 1
 R14
 R15
@@ -896,25 +868,25 @@ vforward_unit
 R1
 R2
 R3
-DXx4 work 20 forward_unit_sv_unit 0 22 aP[?NT:ZBbDA;DF`@o=3R3
+DXx4 work 20 forward_unit_sv_unit 0 22 bOCbhzTziO03bDFXVXFZ21
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 ]KZ:Z36Gml]COcQVjeNXQ1
-IL`1?h<OVSJeJ6mLH_^;cS3
+I=C=fk:2kaT;c25cfAT=UO2
 !s105 forward_unit_sv_unit
 S1
 R0
-Z86 w1590529122
-Z87 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv
-Z88 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv
-R65
+R7
+Z78 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv
+Z79 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv
+R34
 R10
-R59
-Z89 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv|
-Z90 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv|
+R11
+Z80 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv|
+Z81 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/forward_unit.sv|
 !i113 1
 R14
 R15
@@ -923,26 +895,26 @@ Xforward_unit_sv_unit
 R1
 R2
 R3
-VaP[?NT:ZBbDA;DF`@o=3R3
+VbOCbhzTziO03bDFXVXFZ21
 r1
 !s85 0
 31
 !i10b 1
 !s100 DcjAJmI?=WXeA[j?o0e7G2
-IaP[?NT:ZBbDA;DF`@o=3R3
+IbOCbhzTziO03bDFXVXFZ21
 !i103 1
 S1
 R0
-R86
-R87
-R88
+R7
+R78
+R79
 R27
 R28
 L0 4
 R10
-R59
-R89
-R90
+R11
+R80
+R81
 !i113 1
 R14
 R15
@@ -951,26 +923,26 @@ Xglue_circuits_sv_unit
 R1
 R2
 R3
-VIaPkAo@9K:mKb7mG2lH1E3
+VB_3f`?X^^_IEiNE>md0Gg3
 r1
 !s85 0
 31
 !i10b 1
 !s100 >=N9_Ng6I@:;U=EPzB1`n0
-IIaPkAo@9K:mKb7mG2lH1E3
+IB_3f`?X^^_IEiNE>md0Gg3
 !i103 1
 S1
 R0
-R56
-R57
-R58
+R7
+R54
+R55
 R27
 R28
 L0 4
 R10
-R59
-R60
-R61
+R11
+R56
+R57
 !i113 1
 R14
 R15
@@ -986,7 +958,7 @@ r1
 31
 !i10b 1
 !s100 2OSPn4R2>[UF]5f0jd1062
-ImL4@K^zVIR`?[jBAkGDE:2
+IKkFC0gAKzSOUk?i07V=Nd3
 R20
 S1
 R0
@@ -1006,25 +978,25 @@ vhazard_controller
 R1
 R2
 R3
-DXx4 work 25 hazard_controller_sv_unit 0 22 GJIgW>AMcE=[lQ^14K[dV2
+R29
 R5
 r1
 !s85 0
 31
 !i10b 1
-!s100 l2W=OZC4N5@_zG;eoJ04a3
-ITfFf9>=zjYInf9BQYE`4V3
-!s105 hazard_controller_sv_unit
+!s100 gH02hDm]keG`KLUN4S@P52
+IB;CKOUTa^8o^:VD[iVF6j1
+R30
 S1
 R0
-Z91 w1590634551
-Z92 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv
-Z93 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv
-R65
+R31
+R32
+R33
+L0 497
 R10
-R11
-Z94 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv|
-Z95 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/hazard_controller.sv|
+R35
+R36
+R37
 !i113 1
 R14
 R15
@@ -1033,26 +1005,26 @@ Xhazard_controller_sv_unit
 R1
 R2
 R3
-VGJIgW>AMcE=[lQ^14K[dV2
+V998?4>32kD`YiV=d7]jdA3
 r1
 !s85 0
 31
 !i10b 1
-!s100 QW3zHI;hE5cIAkEcXd44A3
-IGJIgW>AMcE=[lQ^14K[dV2
+!s100 _KK:k75BQ=g4`2SkX:kOJ0
+I998?4>32kD`YiV=d7]jdA3
 !i103 1
 S1
 R0
-R91
-R92
-R93
+R31
+R32
+R33
 R27
 R28
 L0 4
 R10
-R11
-R94
-R95
+R35
+R36
+R37
 !i113 1
 R14
 R15
@@ -1061,25 +1033,25 @@ vi_cache
 R1
 R2
 R3
-DXx4 work 15 i_cache_sv_unit 0 22 a[oiTWj4;`?loCX>KgE3U2
+DXx4 work 15 i_cache_sv_unit 0 22 n9_a3ULo3Q^g]FbY?;^Vz1
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 cI]AY9S[N6Po<l[kGizAo0
-I[EbKLWkl75aMJM9d[_gW03
+Ie1]U=gg^lgC6JLkWB0[1R1
 !s105 i_cache_sv_unit
 S1
 R0
-R31
-Z96 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv
-Z97 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv
-R46
+R40
+Z82 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv
+Z83 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv
+R45
 R10
 R35
-Z98 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv|
-Z99 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv|
+Z84 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv|
+Z85 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/i_cache.sv|
 !i113 1
 R14
 R15
@@ -1088,26 +1060,26 @@ Xi_cache_sv_unit
 R1
 R2
 R3
-Va[oiTWj4;`?loCX>KgE3U2
+Vn9_a3ULo3Q^g]FbY?;^Vz1
 r1
 !s85 0
 31
 !i10b 1
 !s100 m0OhG^[Ne23aJmk7B2giD3
-Ia[oiTWj4;`?loCX>KgE3U2
+In9_a3ULo3Q^g]FbY?;^Vz1
 !i103 1
 S1
 R0
-R38
-R96
-R97
+R40
+R82
+R83
 R27
 R28
 L0 4
 R10
 R35
-R98
-R99
+R84
+R85
 !i113 1
 R14
 R15
@@ -1116,25 +1088,25 @@ Yllsc_input_ifc
 R1
 R2
 R3
-Z100 DXx4 work 19 llsc_module_sv_unit 0 22 BQ_UaelO2]Zbf:NSOKh>53
+Z86 DXx4 work 19 llsc_module_sv_unit 0 22 lF:ZF4c>mP^NG:4SkTNWK0
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 ENWAcLlG:GRgR?E3_iiA21
-I]eO@aLF>M1Z`E:fTD=2Ud0
-Z101 !s105 llsc_module_sv_unit
+I4mITWFPO?CIX@mO=g][hB1
+Z87 !s105 llsc_module_sv_unit
 S1
 R0
-R31
-Z102 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv
-Z103 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv
-Z104 L0 11
+R40
+Z88 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv
+Z89 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv
+Z90 L0 11
 R10
 R24
-Z105 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv|
-Z106 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv|
+Z91 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv|
+Z92 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/llsc_module.sv|
 !i113 1
 R14
 R15
@@ -1143,25 +1115,25 @@ vllsc_module
 R1
 R2
 R3
-R100
+R86
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 `bUV^n4CbSneLmkZ`?_eH3
-Im]HORZ0jmZ;Yf3S]X9h^?3
-R101
+Ih2fS0D@QZ2:c1A=635[;83
+R87
 S1
 R0
-R31
-R102
-R103
+R40
+R88
+R89
 R18
 R10
 R24
-R105
-R106
+R91
+R92
 !i113 1
 R14
 R15
@@ -1170,26 +1142,26 @@ Xllsc_module_sv_unit
 R1
 R2
 R3
-VBQ_UaelO2]Zbf:NSOKh>53
+VlF:ZF4c>mP^NG:4SkTNWK0
 r1
 !s85 0
 31
 !i10b 1
 !s100 WG]^O@^CEQDU]jgi27BLe1
-IBQ_UaelO2]Zbf:NSOKh>53
+IlF:ZF4c>mP^NG:4SkTNWK0
 !i103 1
 S1
 R0
-R38
-R102
-R103
+R40
+R88
+R89
 R27
 R28
 L0 4
 R10
 R24
-R105
-R106
+R91
+R92
 !i113 1
 R14
 R15
@@ -1198,25 +1170,25 @@ Yllsc_output_ifc
 R1
 R2
 R3
-R100
+R86
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 >Y81lGYoSB8`PX5J7RGD>0
-I?KO;Yn7dFfl>b`HQ1hN3Y0
-R101
+I>XzNf]n<>3=nB254oHF5e1
+R87
 S1
 R0
-R31
-R102
-R103
-Z107 L0 21
+R40
+R88
+R89
+Z93 L0 21
 R10
 R24
-R105
-R106
+R91
+R92
 !i113 1
 R14
 R15
@@ -1232,14 +1204,14 @@ r1
 31
 !i10b 1
 !s100 J;XRHBoNHLo1UYzXi9nJK3
-IY3zE@lR:?Ha=h^HY_GnT]0
+I@gBTm1;7ITHE5<0PXZ]mJ1
 R20
 S1
 R0
 R21
 R22
 R23
-Z108 L0 12
+Z94 L0 12
 R10
 R24
 R25
@@ -1251,52 +1223,52 @@ R16
 Ymem_read_ifc
 R1
 R2
-Z109 DXx4 work 25 memory_interfaces_sv_unit 0 22 lWdh=[D[a[`Q0]3:Qn6=F3
+Z95 DXx4 work 25 memory_interfaces_sv_unit 0 22 ;kb0AN3>VOzdDj0jcZCRZ0
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 3VNG>=f@VQni42<d1=<?a1
-INX@W]<=_dO8KiA9n1l=FC3
-Z110 !s105 memory_interfaces_sv_unit
+IE@4LC0VTIH;`?cnCPei0[1
+Z96 !s105 memory_interfaces_sv_unit
 S1
 R0
-R31
-Z111 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/memory_interfaces.sv
-Z112 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/memory_interfaces.sv
+R40
+Z97 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/memory_interfaces.sv
+Z98 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/memory_interfaces.sv
 R18
 R10
-Z113 !s108 1591597096.000000
-Z114 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/memory_interfaces.sv|
-Z115 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/memory_interfaces.sv|
+R35
+Z99 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/memory_interfaces.sv|
+Z100 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/memory_interfaces.sv|
 !i113 1
 R14
-Z116 !s92 -sv -work work +incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu
+Z101 !s92 -sv -work work +incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu
 R16
 vmem_stage_glue
 R1
 R2
 R3
-R54
+R52
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 :NaZlL;WB:RoK`ziJSmiJ0
-IKCSa=h>h`fNDoVHbPj4R<2
-R55
+IUBF9nik4CRKRd3P`4Y:Qd1
+R53
 S1
 R0
-R56
-R57
-R58
+R7
+R54
+R55
 L0 104
 R10
-R59
-R60
-R61
+R11
+R56
+R57
 !i113 1
 R14
 R15
@@ -1304,78 +1276,78 @@ R16
 Ymem_write_ifc
 R1
 R2
-R109
+R95
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 ^RKNY=J>WR=dV7zD?_b]f3
-IOz2R5@??0Y:OOlG^ebEkc3
-R110
+IzSh_>TFTOHM<:0mA8=>Hj0
+R96
 S1
 R0
-R31
-R111
-R112
-R108
+R40
+R97
+R98
+R94
 R10
-R113
-R114
-R115
+R35
+R99
+R100
 !i113 1
 R14
-R116
+R101
 R16
 Xmemory_interfaces_sv_unit
 R1
 R2
-VlWdh=[D[a[`Q0]3:Qn6=F3
+V;kb0AN3>VOzdDj0jcZCRZ0
 r1
 !s85 0
 31
 !i10b 1
 !s100 ;FP0Bka2lOcYPebAn6dKi0
-IlWdh=[D[a[`Q0]3:Qn6=F3
+I;kb0AN3>VOzdDj0jcZCRZ0
 !i103 1
 S1
 R0
-R38
-R111
-R112
-Z117 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.svh
+R40
+R97
+R98
+Z102 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.svh
 L0 4
 R10
-R113
-R114
-R115
+R35
+R99
+R100
 !i113 1
 R14
-R116
+R101
 R16
 vmips_core
 R1
 R2
 R3
-DXx4 work 17 mips_core_sv_unit 0 22 ;XV^`4OO=Y9HSgaGjnJVe3
+DXx4 work 17 mips_core_sv_unit 0 22 199QeAHC]FMhY1[:_EaM82
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 Z:P5U4dC48ONNnlV`DJBA1
-Iz:=jk_5feEIF:Oa`YF=T53
+Im=AeoXG]dHl1ioCbDJcz10
 !s105 mips_core_sv_unit
 S1
 R0
-Z118 w1591576871
-Z119 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv
-Z120 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv
-R108
+R7
+Z103 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv
+Z104 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv
+R94
 R10
-R59
-Z121 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv|
-Z122 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv|
+R11
+Z105 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv|
+Z106 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.sv|
 !i113 1
 R14
 R15
@@ -1384,13 +1356,13 @@ Xmips_core_interfaces_sv_unit
 R1
 R2
 R3
-V9X;]V]OPe@V06;^<fN3c11
+V@`=ib5U9j50X0X]cB7?iJ1
 r1
 !s85 0
 31
 !i10b 1
 !s100 Ok[]]4cSHdMMObV`iYYPa1
-I9X;]V]OPe@V06;^<fN3c11
+I@`=ib5U9j50X0X]cB7?iJ1
 !i103 1
 S1
 R0
@@ -1410,24 +1382,24 @@ R15
 R16
 Xmips_core_pkg
 R1
-R40
+R38
 !i10b 1
 !s100 0`M]3W@INEEF5NCooB>Td2
-IgT?Q4]o@hLAo1@zLP2IGA3
-VgT?Q4]o@hLAo1@zLP2IGA3
+IigKCUMJLi2KDf<7U?5P6z0
+VigKCUMJLi2KDf<7U?5P6z0
 S1
 R0
-R38
-8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv
-FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv
-R104
+w1588787656
+8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv
+FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv
+R90
 R10
 r1
 !s85 0
 31
 R24
-!s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv|
+!s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core_pkg.sv|
 !i113 1
 R14
 R15
@@ -1436,26 +1408,26 @@ Xmips_core_sv_unit
 R1
 R2
 R3
-V;XV^`4OO=Y9HSgaGjnJVe3
+V199QeAHC]FMhY1[:_EaM82
 r1
 !s85 0
 31
 !i10b 1
 !s100 2XYb^822mEj89hk8?a5Gg3
-I;XV^`4OO=Y9HSgaGjnJVe3
+I199QeAHC]FMhY1[:_EaM82
 !i103 1
 S1
 R0
-R118
-R119
-R120
+R7
+R103
+R104
 R27
 R28
 L0 4
 R10
-R59
-R121
-R122
+R11
+R105
+R106
 !i113 1
 R14
 R15
@@ -1463,185 +1435,183 @@ R16
 vmips_cpu
 R1
 R2
-DXx4 work 16 mips_cpu_sv_unit 0 22 5JC5zde<VSOU]Hk^9DD5c2
+DXx4 work 16 mips_cpu_sv_unit 0 22 mW:mnb<ZE2VI]HV;i^?n12
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 h4b5BTA`LWR9LEe<RV]g70
-IU<H6h4jROD9iB?SzTHa2M2
+IcR68H=1X@^4jaWhblW:`o0
 !s105 mips_cpu_sv_unit
 S1
 R0
-R38
-Z123 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv
-Z124 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv
-R107
+R40
+Z107 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv
+Z108 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv
+R93
 R10
-R59
-Z125 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv|
-Z126 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv|
+Z109 !s108 1591650934.000000
+Z110 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv|
+Z111 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.sv|
 !i113 1
 R14
-R116
+R101
 R16
 Xmips_cpu_pkg
 R1
-R40
+R38
 !i10b 1
 !s100 _]R1nh^Y__=35?4`?VOgL3
-ILNlmcBmTX5S=L7iEF1^?12
-VLNlmcBmTX5S=L7iEF1^?12
+IS>?SPM4^U;ka[lV@FPXA@0
+VS>?SPM4^U;ka[lV@FPXA@0
 S1
 R0
-R38
-8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv
-FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv
+R40
+8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv
+FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv
 L0 9
 R10
 r1
 !s85 0
 31
 R24
-!s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv|
+!s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu_pkg.sv|
 !i113 1
 R14
-R116
+R101
 R16
 Xmips_cpu_sv_unit
 R1
 R2
-V5JC5zde<VSOU]Hk^9DD5c2
+VmW:mnb<ZE2VI]HV;i^?n12
 r1
 !s85 0
 31
 !i10b 1
 !s100 z44O>izVMAI:?dWJ[U;`R3
-I5JC5zde<VSOU]Hk^9DD5c2
+ImW:mnb<ZE2VI]HV;i^?n12
 !i103 1
 S1
 R0
-R38
-R123
-R124
-R117
+R40
+R107
+R108
+R102
 L0 4
 R10
-R59
-R125
-R126
+R109
+R110
+R111
 !i113 1
 R14
-R116
+R101
 R16
 vooo_buffer
 R1
 R2
 R3
-DXx4 work 27 out_of_order_buffer_sv_unit 0 22 UoYA9?S80@W7[3FFmMVnz1
+DXx4 work 27 out_of_order_buffer_sv_unit 0 22 mL1<DFe?>?70J2CD7iHTg3
 R5
 r1
 !s85 0
 31
 !i10b 1
-!s100 oARFYYjIBRhd5G5QCFSSj2
-IOe7OG<e:2kVnkTdng>Y]D3
+!s100 [g14RhhH7YcUXUIQZDDY`0
+I;Y@UT8ff]M^<J5dS^412K2
 !s105 out_of_order_buffer_sv_unit
 S1
 R0
-Z127 w1591596854
-Z128 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/out_of_order_buffer.sv
-Z129 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/out_of_order_buffer.sv
+Z112 w1591652164
+Z113 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/out_of_order_buffer.sv
+Z114 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/out_of_order_buffer.sv
 L0 10
 R10
-R11
-Z130 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/out_of_order_buffer.sv|
-Z131 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/out_of_order_buffer.sv|
+Z115 !s108 1591652222.000000
+Z116 !s107 C:\Users\Rachel\OneDrive\Desktop\Current_Classes\CSE148\cse_148\Baseline_v2.3\mips_cpu\mips_core\..\mips_cpu.svh|C:\Users\Rachel\OneDrive\Desktop\Current_Classes\CSE148\cse_148\Baseline_v2.3\mips_cpu\mips_core\mips_core.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/out_of_order_buffer.sv|
+Z117 !s90 -reportprogress|300|-work|work|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/out_of_order_buffer.sv|
 !i113 1
-R14
-R15
+R68
 R16
 Xout_of_order_buffer_sv_unit
 R1
 R2
 R3
-VUoYA9?S80@W7[3FFmMVnz1
+VmL1<DFe?>?70J2CD7iHTg3
 r1
 !s85 0
 31
 !i10b 1
 !s100 =9IiAc1WAb4a8C1Ol>JiD0
-IUoYA9?S80@W7[3FFmMVnz1
+ImL1<DFe?>?70J2CD7iHTg3
 !i103 1
 S1
 R0
-R127
-R128
-R129
-R27
-R28
+R112
+R113
+R114
+FC:\Users\Rachel\OneDrive\Desktop\Current_Classes\CSE148\cse_148\Baseline_v2.3\mips_cpu\mips_core\mips_core.svh
+FC:\Users\Rachel\OneDrive\Desktop\Current_Classes\CSE148\cse_148\Baseline_v2.3\mips_cpu\mips_core\..\mips_cpu.svh
 L0 4
 R10
-R11
-R130
-R131
+R115
+R116
+R117
 !i113 1
-R14
-R15
+R68
 R16
 Ypass_done_ifc
 R1
 R2
-DXx4 work 27 pass_done_interface_sv_unit 0 22 JiEKBJ:n>Qza43L5]ce8;0
+DXx4 work 27 pass_done_interface_sv_unit 0 22 ONIkeo9n0z[LA;Ml5e=I61
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 XRdj1ibK4CWkbH0d9d6WU3
-I@_BP<SJ>o6@?X?<Vl:L4]0
+Icj6bzh1gWVnIIalQbC^[]0
 !s105 pass_done_interface_sv_unit
 S1
 R0
-R38
-Z132 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/pass_done_interface.sv
-Z133 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/pass_done_interface.sv
+R40
+Z118 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/pass_done_interface.sv
+Z119 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/pass_done_interface.sv
 R17
 R10
-R113
-Z134 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/pass_done_interface.sv|
-Z135 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/pass_done_interface.sv|
+R35
+Z120 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/pass_done_interface.sv|
+Z121 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/pass_done_interface.sv|
 !i113 1
 R14
-R116
+R101
 R16
 Xpass_done_interface_sv_unit
 R1
 R2
-VJiEKBJ:n>Qza43L5]ce8;0
+VONIkeo9n0z[LA;Ml5e=I61
 r1
 !s85 0
 31
 !i10b 1
 !s100 5@C_cNnQ0WF?WdF:eB<lF3
-IJiEKBJ:n>Qza43L5]ce8;0
+IONIkeo9n0z[LA;Ml5e=I61
 !i103 1
 S1
 R0
-R38
-R132
-R133
-R117
+R40
+R118
+R119
+R102
 L0 4
 R10
-R113
-R134
-R135
+R35
+R120
+R121
 !i113 1
 R14
-R116
+R101
 R16
 Ypc_ifc
 R1
@@ -1654,7 +1624,7 @@ r1
 31
 !i10b 1
 !s100 KGOKRXJGlVVCE9bL=BzJU2
-IjQLD6`cl0?o>]:Q5Jil6z3
+I;n3dIAle;^2d3>fhUK>3^1
 R20
 S1
 R0
@@ -1674,26 +1644,26 @@ Xpipeline_registers_sv_unit
 R1
 R2
 R3
-V_bDiM>C[_631145O]n_4a3
+VZA@ib?PkCD^S6NfIzM6jB1
 r1
 !s85 0
 31
 !i10b 1
 !s100 B:J>Q7nEKomZEMa_4`@F[3
-I_bDiM>C[_631145O]n_4a3
+IZA@ib?PkCD^S6NfIzM6jB1
 !i103 1
 S1
 R0
-Z136 w1591494743
-Z137 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv
-Z138 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv
+R7
+Z122 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv
+Z123 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv
 R27
 R28
 L0 4
 R10
 R11
-Z139 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv|
-Z140 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv|
+Z124 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv|
+Z125 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/pipeline_registers.sv|
 !i113 1
 R14
 R15
@@ -1702,25 +1672,25 @@ vpr_d2e
 R1
 R2
 R3
-Z141 DXx4 work 26 pipeline_registers_sv_unit 0 22 _bDiM>C[_631145O]n_4a3
+Z126 DXx4 work 26 pipeline_registers_sv_unit 0 22 ZA@ib?PkCD^S6NfIzM6jB1
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 >_d_OY<LeH3b3n=[[Wgh<3
-I<[YSADAkJ7jm^fWa[=o5U3
-Z142 !s105 pipeline_registers_sv_unit
+I7R<M7^J`;Nk?5F:Y7]`6B2
+Z127 !s105 pipeline_registers_sv_unit
 S1
 R0
-R136
-R137
-R138
+R7
+R122
+R123
 L0 58
 R10
 R11
-R139
-R140
+R124
+R125
 !i113 1
 R14
 R15
@@ -1729,25 +1699,25 @@ vpr_e2m
 R1
 R2
 R3
-R141
+R126
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 lL6h:bgK0g[hKCY[@k@Y<1
-I>1aNANCB_14WhcPNCf8Jn1
-R142
+IQBO;VYlAWHD9SoZomh@D?3
+R127
 S1
 R0
-R136
-R137
-R138
+R7
+R122
+R123
 L0 165
 R10
 R11
-R139
-R140
+R124
+R125
 !i113 1
 R14
 R15
@@ -1756,25 +1726,25 @@ vpr_i2d
 R1
 R2
 R3
-R141
+R126
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 5iB[Q4]o3?SVM[HaVB=ZN2
-Ia4aC6A1[eV==7BIG1c2=I2
-R142
+I6?:fSEGUSY>35o5M8V4oV1
+R127
 S1
 R0
-R136
-R137
-R138
+R7
+R122
+R123
 R17
 R10
 R11
-R139
-R140
+R124
+R125
 !i113 1
 R14
 R15
@@ -1783,25 +1753,25 @@ vpr_m2w
 R1
 R2
 R3
-R141
+R126
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 jJTCdPUg:`a0ZUF6nhone0
-IQFCnXYQSITPEihVLFnM>D0
-R142
+I@YQaiG3I@XD=?mTOB<Q^D3
+R127
 S1
 R0
-R136
-R137
-R138
+R7
+R122
+R123
 L0 246
 R10
 R11
-R139
-R140
+R124
+R125
 !i113 1
 R14
 R15
@@ -1810,25 +1780,25 @@ vreg_file
 R1
 R2
 R3
-Z143 DXx4 work 16 reg_file_sv_unit 0 22 L:nU_<G=k5R_ThFBm4Cn;0
+Z128 DXx4 work 16 reg_file_sv_unit 0 22 emScYGO?OAUe7cXWEMe1R2
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 W8VVi9ITcQWaz_RSflO`[0
-I2EfGjUX>k_;A^7<D]IKTN0
-Z144 !s105 reg_file_sv_unit
+II4K1HT0SK6omTcI:Ak;lM2
+Z129 !s105 reg_file_sv_unit
 S1
 R0
-Z145 w1591565768
-Z146 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv
-Z147 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv
-R46
+R7
+Z130 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv
+Z131 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv
+R45
 R10
 R35
-Z148 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv|
-Z149 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv|
+Z132 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/../mips_cpu.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/mips_core.svh|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv|
+Z133 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/mips_core/reg_file.sv|
 !i113 1
 R14
 R15
@@ -1837,25 +1807,25 @@ Yreg_file_output_ifc
 R1
 R2
 R3
-R143
+R128
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 ]:dZcaSFYBaWbNP^_S5aK3
-IUDR87Q7no1f>eDb5LA^053
-R144
+ISFG@H<WnV3RjU74f^ac?E1
+R129
 S1
 R0
-R145
-R146
-R147
-R65
+R7
+R130
+R131
+R34
 R10
 R35
-R148
-R149
+R132
+R133
 !i113 1
 R14
 R15
@@ -1864,48 +1834,48 @@ Xreg_file_sv_unit
 R1
 R2
 R3
-VL:nU_<G=k5R_ThFBm4Cn;0
+VemScYGO?OAUe7cXWEMe1R2
 r1
 !s85 0
 31
 !i10b 1
 !s100 f@9i`^RedVdNk7zIakg8D3
-IL:nU_<G=k5R_ThFBm4Cn;0
+IemScYGO?OAUe7cXWEMe1R2
 !i103 1
 S1
 R0
-R145
-R146
-R147
+R7
+R130
+R131
 R27
 R28
 L0 4
 R10
 R35
-R148
-R149
+R132
+R133
 !i113 1
 R14
 R15
 R16
 vsdram
-R40
+R38
 !i10b 1
 !s100 ZSYW^b;2F0n?Slo8BN;hQ2
-ICb8_JblzBMa8CMaccofn:0
+Ic06BP8MB]>Ce53VUaDl7N0
 R5
 R0
-w1590002543
-8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v
-FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v
+R40
+8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v
+FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v
 L0 6
 R10
 r1
 !s85 0
 31
 R24
-!s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v|
-!s90 -reportprogress|300|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v|
+!s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v|
+!s90 -reportprogress|300|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/sdram.v|
 !i113 1
 R16
 Ywrite_back_ifc
@@ -1919,7 +1889,7 @@ r1
 31
 !i10b 1
 !s100 Sb4bIUQCN9@ZGW[G4jbMn1
-I>Zh]eAENUehSRY:Fd]X6Q2
+I412a=XHZL@X5dMnV0@oQ60
 R20
 S1
 R0
@@ -1939,25 +1909,25 @@ vwrite_buffer
 R1
 R2
 R3
-R47
+R46
 R5
 r1
 !s85 0
 31
 !i10b 1
 !s100 HJZz@6faP09d=69L4m^4j2
-ISmgGiJ:VH`]l3M:>K;O:j0
-R48
+IPCb67`[^O>dNNzR3UF5b:2
+R47
 S1
 R0
+R7
+R48
 R49
-R50
-R51
 L0 364
 R10
-R35
-R52
-R53
+R11
+R50
+R51
 !i113 1
 R14
 R15

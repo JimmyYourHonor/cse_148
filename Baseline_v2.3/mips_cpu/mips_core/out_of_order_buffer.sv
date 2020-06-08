@@ -66,7 +66,7 @@ module ooo_buffer (
 
 	logic uses_rw[8];
 	mips_core_pkg::MipsReg rw_addr[8];
-	
+
 	logic is_ll[8];
 	logic is_sc[8];
 	logic is_sw[8];
@@ -109,7 +109,7 @@ module ooo_buffer (
     task push;
         begin
 
-            if (full == 0) begin
+            if (full == 0 && decoded_insn.alu_ctl != ALUCTL_NOP) begin
 
                 $display("OOO push: id = %d, ALU_CTL = %d\n", instruction_id, decoded_insn.alu_ctl);
 
@@ -166,7 +166,10 @@ module ooo_buffer (
                     branch_entries[entry_tail] <= instruction_id;
                     entry_tail <= entry_tail + 1;
                 end
-            end 
+            end
+            // else begin
+            //     $display("push: ignoring NOP\n");
+            // end
         end
     endtask
 
@@ -218,11 +221,11 @@ module ooo_buffer (
                 entry <= 0;
                 entry_tail <= 0;
             end
-            else if (branch_entries[1] == instruction_id_branch) begin 
+            else if (branch_entries[1] == instruction_id_branch) begin
                 entry <= 1;
                 entry_tail <= 1;
             end
-            else if (branch_entries[2] == instruction_id_branch) begin 
+            else if (branch_entries[2] == instruction_id_branch) begin
                 entry <= 2;
                 entry_tail <= 2;
             end
@@ -239,10 +242,10 @@ module ooo_buffer (
             if (stores[0] > instruction_id_branch) begin
                 store_tail <= 0;
             end
-            else if (stores[1] > instruction_id_branch) begin 
+            else if (stores[1] > instruction_id_branch) begin
                 store_tail <= 1;
             end
-            else if (stores[2] > instruction_id_branch) begin 
+            else if (stores[2] > instruction_id_branch) begin
                 store_tail <= 2;
             end
             else if (stores[3] > instruction_id_branch) begin
@@ -258,7 +261,7 @@ module ooo_buffer (
     // retires instructions in order
     task retire();
         begin
-            
+
             if (mem_done && !empty) begin
                 test <= head_ptr + (instruction_id_result[2:0] - instruction_id_head[2:0]);
                 if (status_list[head_ptr + (instruction_id_result[2:0] - instruction_id_head[2:0])] == executing) begin
@@ -267,9 +270,9 @@ module ooo_buffer (
                 end
             end
 
-            if (status_list[head_ptr] == done) begin
+            if (status_list[head_ptr] == done && !empty) begin
                 $display("OOO retire: instruction_id_head = %d, instruction_id_result = %d\n", instruction_id_head, instruction_id_result);
-                instruction_id_head <= instruction_id_head + 1;
+                instruction_id_head <= ids[head_ptr] + 1;
                 retired <= 1'b1;
                 instruction_id_retired <= instruction_id_head;
                 retired_uses_rw <= uses_rw[head_ptr];
@@ -285,7 +288,7 @@ module ooo_buffer (
                 retired <= 1'b0;
                 instruction_id_retired <= 0;
                 head_ptr <= head_ptr;
-            end 
+            end
         end
     endtask
 
@@ -323,7 +326,7 @@ module ooo_buffer (
                 offset = 7;
                 found = 1;
             end
-            else 
+            else
             begin
                 offset = 0;
                 found = 0;
@@ -352,12 +355,13 @@ module ooo_buffer (
         begin
             reset <= 0;
         end
-        
+
         find(); // find next instruction to execute
 
         // hazard
         if (full || stall_load || stall_store) begin
-            $display("OOO hazard: full = %d, stall_load = %d, stall_store = %d\n", full, stall_load, stall_store);
+            $display("OOO hazard: full = %d, stall_load = %d, stall_store = %d", full, stall_load, stall_store);
+            $display("OOO hazard: head_ptr = %d, tail_ptr = %d, instruction_id_head = %d, instruction_id(_tail) = %d\n", head_ptr, tail_ptr, instruction_id_head, instruction_id);
             hazard_flag <= 1;
         end
         else begin

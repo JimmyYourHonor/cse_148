@@ -9,23 +9,23 @@ z2
 cModel Technology
 dC:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/simulation/modelsim
 vburst_read_master
-Z0 !s110 1591597086
+Z0 !s110 1591650930
 !i10b 1
 !s100 :NDi@DBZ?a3QDR8Z8JRib2
-I5P:fm^7JhKITTAQ5`CdX;0
+I[QhZ7RQ<EKYnkz:D;^ZoN1
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/simulation/modelsim
-Z3 w1590002543
-8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v
-FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v
+Z2 dC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/simulation/modelsim
+Z3 w1587499481
+8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v
+FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v
 L0 36
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1591597086.000000
-!s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v|
-!s90 -reportprogress|300|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v|-work|d_cache_read|
+Z5 !s108 1591650930.000000
+!s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v|
+!s90 -reportprogress|300|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_read_master.v|-work|d_cache_read|
 !i113 1
 Z6 o-work d_cache_read
 Z7 tCvgOpt 0
@@ -33,20 +33,20 @@ vburst_write_master
 R0
 !i10b 1
 !s100 24;VW]AahOAJ:6<AEVf^02
-In_kfbQG=UmkOQ5;<ml;nV3
+IEUmCTUDI0;QI9fQ_>mzBh2
 R1
 R2
 R3
-8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v
-FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v
+8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v
+FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v
 L0 37
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v|
-!s90 -reportprogress|300|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v|-work|d_cache_read|
+!s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v|
+!s90 -reportprogress|300|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/burst_write_master.v|-work|d_cache_read|
 !i113 1
 R6
 R7
@@ -54,62 +54,62 @@ vcustom_master
 R0
 !i10b 1
 !s100 Od=<]kl;k>20]KVRE`kGI3
-IKzG?fadIe`z6HG;ZY1zbl2
+IBoM<_NNj_zZIaKOSCA4e]0
 R1
 R2
 R3
-8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v
-FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v
+8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v
+FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v
 L0 9
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v|
-!s90 -reportprogress|300|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v|-work|d_cache_read|
+!s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v|
+!s90 -reportprogress|300|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/custom_master.v|-work|d_cache_read|
 !i113 1
 R6
 R7
 vlatency_aware_read_master
-!s110 1591597087
+Z8 !s110 1591650931
 !i10b 1
 !s100 f]ZFi1gH8Po8SUU]EYMV:0
-IQD?gcS`OLfgSSIBl7;T7F3
+Iaj`lP3ocU]G0mCYc`he262
 R1
 R2
 R3
-8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v
-FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v
-Z8 L0 45
+8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v
+FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v
+Z9 L0 45
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v|
-!s90 -reportprogress|300|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v|-work|d_cache_read|
+Z10 !s108 1591650931.000000
+!s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v|
+!s90 -reportprogress|300|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/latency_aware_read_master.v|-work|d_cache_read|
 !i113 1
 R6
 R7
 vwrite_master
-R0
+R8
 !i10b 1
 !s100 `m2E8cSkn8]bFK]2XW^lY1
-IeUKOoF]45DKT@X;?<1jTW0
+IEzj[X?173hJP=Kf`ZPEfM1
 R1
 R2
 R3
-8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v
-FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v
-R8
+8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v
+FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v
+R9
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v|
-!s90 -reportprogress|300|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v|-work|d_cache_read|
+R10
+!s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v|
+!s90 -reportprogress|300|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/write_master.v|-work|d_cache_read|
 !i113 1
 R6
 R7
