@@ -9,23 +9,23 @@ z2
 cModel Technology
 dC:/Users/jfujf/Desktop/cse_148/Baseline_v2.3/mips_cpu/simulation/modelsim
 vsdram_sdram_controller
-Z0 !s110 1588873799
+Z0 !s110 1591597086
 !i10b 1
 !s100 OCDVKPHUeD;o?<WAAAlRZ1
-I=9HMLWBVim=Jam8[=c7dE3
+IV:LAd<2A^>[VNPezmPj4@3
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/simulation/modelsim
-Z3 w1587499481
-Z4 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v
-Z5 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v
+Z2 dC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/simulation/modelsim
+Z3 w1590002543
+Z4 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v
+Z5 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v
 L0 159
 Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1588873799.000000
-Z8 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v|
-Z9 !s90 -reportprogress|300|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v|-work|sdram_controller|
+Z7 !s108 1591597085.000000
+Z8 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v|
+Z9 !s90 -reportprogress|300|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller.v|-work|sdram_controller|
 !i113 1
 Z10 o-work sdram_controller
 Z11 tCvgOpt 0
@@ -33,7 +33,7 @@ vsdram_sdram_controller_input_efifo_module
 R0
 !i10b 1
 !s100 T]gkldnAX`e8WQ6YAdKHE1
-I9CA1D?:ljgC6CD4lmJ1T>0
+Io?AAPiKZ@<I=Y<eke_MmT0
 R1
 R2
 R3
@@ -54,20 +54,20 @@ vsdram_sdram_controller_test_component
 R0
 !i10b 1
 !s100 6_e;`KcOd0R6]OJc8SRGc2
-Ibz0;<ZBbz8W6b1cAMQ3BP2
+IabWzzNkbeW10^bQdQ_2<:2
 R1
 R2
 R3
-Z13 8C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v
-Z14 FC:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v
+Z13 8C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v
+Z14 FC:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v
 L0 114
 R6
 r1
 !s85 0
 31
-R7
-Z15 !s107 C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v|
-Z16 !s90 -reportprogress|300|C:/Users/Rachel/OneDrive/Desktop/Current_Classes/CSE148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v|-work|sdram_controller|
+Z15 !s108 1591597086.000000
+Z16 !s107 C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v|
+Z17 !s90 -reportprogress|300|C:/Users/jfujf/Desktop/cse_148/cse_148/Baseline_v2.3/mips_cpu/sdram/simulation/submodules/sdram_sdram_controller_test_component.v|-work|sdram_controller|
 !i113 1
 R10
 R11
@@ -75,7 +75,7 @@ vsdram_sdram_controller_test_component_ram_module
 R0
 !i10b 1
 !s100 ^L9<51kFCF1DgSffz=0700
-I8V^BLea0=?mQZii=ndGjE1
+IiKRcKEZk=^Z`;T^@_L:m12
 R1
 R2
 R3
@@ -86,9 +86,9 @@ R6
 r1
 !s85 0
 31
-R7
 R15
 R16
+R17
 !i113 1
 R10
 R11

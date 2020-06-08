@@ -4,6 +4,14 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "LEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[1]",
+					"strict" : false
+				},
+				{
 					"name" : "DRAM_ADDR[0]",
 					"strict" : false
 				},
@@ -77,14 +85,6 @@
 				},
 				{
 					"name" : "DRAM_WE_N",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[0]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[1]",
 					"strict" : false
 				},
 				{

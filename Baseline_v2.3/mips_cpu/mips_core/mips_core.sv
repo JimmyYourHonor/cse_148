@@ -67,10 +67,6 @@ module mips_core (
 	logic mem_done;
 	write_back_ifc mem_write_back();
 
-	// write buffer
-	d_cache_input_ifc write_buffer_output();
-	
-
 	// ==== MEM to WB
 	write_back_ifc m2w_write_back();
 
@@ -95,6 +91,10 @@ module mips_core (
 	logic[19:0] instruction_id_3;
 	logic[19:0] instruction_id_4;
 	logic[19:0] instruction_id_5;
+	logic[19:0] instruction_id_6;
+	logic[19:0] instruction_id_7;
+	logic[19:0] instruction_id_8;
+	logic[19:0] instruction_id_9;
 
 	d_cache_input_ifc write_buffer_to_cache();
 
@@ -104,6 +104,8 @@ module mips_core (
 
 	logic [1:0] entry;
     logic reset;
+
+	logic mem_write;
 
 	// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 	// |||| IF Stage
@@ -178,6 +180,7 @@ module mips_core (
 		.instruction_id_branch(instruction_id_5),
 		.branch_result(ex_branch_result),
 
+		.mem_done,
 		.instruction_id_result(instruction_id_9),
 
 		.reg_ready (dec_reg_file_output),
@@ -304,6 +307,7 @@ module mips_core (
 
 		.cache_out,
 		.found(i_take_write_buffer),
+		.write(mem_write),
 		// connected to cache
 		.o_write_buffer(write_buffer_to_cache)
 	);
@@ -328,6 +332,7 @@ module mips_core (
 
 	mem_stage_glue MEM_STAGE_GLUE (
 		.i_take_write_buffer,
+		.write(mem_write),
 		.i_write_buffer_output (cache_out),
 		.i_d_cache_output      (mem_d_cache_output),
 		.i_d_cache_pass_through(e2m_d_cache_pass_through),
@@ -347,7 +352,7 @@ module mips_core (
 
 		.i_hc (m2w_hc),
 		.i_wb (mem_write_back),
-		.o_wb (m2w_write_back),
+		.o_wb (m2w_write_back)
 
 	);
 

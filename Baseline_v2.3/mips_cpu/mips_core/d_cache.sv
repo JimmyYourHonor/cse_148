@@ -158,7 +158,17 @@ module d_cache #(
 	logic last_flush_word;
 	logic last_refill_word;
 
-	assign instruction_id_out = instruction_id;
+	// Next instruction id out
+	logic [19:0] next_instruction_id_out;
+	always_ff@(posedge clk)
+	begin
+		instruction_id_out <= next_instruction_id_out;
+		if(hit) begin
+			next_instruction_id_out <= instruction_id;
+		end else begin
+			next_instruction_id_out <= next_instruction_id_out;
+		end
+	end
 
 	always_comb
 	begin
@@ -366,7 +376,8 @@ module write_buffer (
 
 	// connected to cache
     d_cache_input_ifc.out o_write_buffer,
-	output logic found
+	output logic found,
+	output logic write
 );
 
     logic[19:0] ids[8];
@@ -374,7 +385,7 @@ module write_buffer (
 	logic[`ADDR_WIDTH - 1 : 0] addr_next_list[8];
 	logic[`DATA_WIDTH - 1 : 0] data_list[8];
 
-	logic[3:0] id_to_index_matrix[8];
+	logic[2:0] id_to_index_matrix[8];
 
 	// List of addresses that doesn't have duplicates
 	logic[`ADDR_WIDTH-1 : 0] addr_to_index[8];
@@ -384,7 +395,7 @@ module write_buffer (
 	// for finding an empty spot in the matrix availibility
 	logic [2:0] found_index_addr;
 
-	logic [3:0] index_id;
+	logic [2:0] index_id;
 	// a matrix of index
 	logic[2:0] index_matrix[8][8];
 	// index into the lists
@@ -396,16 +407,40 @@ module write_buffer (
 	logic availibility_ids[8][8] = '{'{0,0,0,0,0,0,0,0}, '{0,0,0,0,0,0,0,0}, '{0,0,0,0,0,0,0,0}, '{0,0,0,0,0,0,0,0}, '{0,0,0,0,0,0,0,0}, '{0,0,0,0,0,0,0,0}, '{0,0,0,0,0,0,0,0}, '{0,0,0,0,0,0,0,0}};
 	// empty spot
 
-	logic[2:0] id_head_ptr;
+	logic[2:0] id_head_ptr = 0;
 
 	always_comb
 	begin
 		// for store
-		index_addr = (addr_to_index[0] == i_write_buffer.addr) ? 0 : (addr_to_index[1] == i_write_buffer.addr) ? 1 : 
-				(addr_to_index[2] == i_write_buffer.addr) ? 2 : (addr_to_index[3] == i_write_buffer.addr) ? 3 :
-				(addr_to_index[4] == i_write_buffer.addr) ? 4 : (addr_to_index[5] == i_write_buffer.addr) ? 5 :
-				(addr_to_index[6] == i_write_buffer.addr) ? 6 : (addr_to_index[7] == i_write_buffer.addr) ? 7 : 8;
-		index_id = instruction_id % 8;
+		if(addr_to_index[0] == i_write_buffer.addr) begin
+			index_addr = 0;
+		end
+		else if (addr_to_index[1] == i_write_buffer.addr) begin
+			index_addr = 1;
+		end
+		else if (addr_to_index[2] == i_write_buffer.addr) begin
+			index_addr = 2;
+		end
+		else if (addr_to_index[3] == i_write_buffer.addr) begin
+			index_addr = 3;
+		end
+		else if (addr_to_index[4] == i_write_buffer.addr) begin
+			index_addr = 4;
+		end
+		else if (addr_to_index[5] == i_write_buffer.addr) begin
+			index_addr = 5;
+		end
+		else if (addr_to_index[6] == i_write_buffer.addr) begin
+			index_addr = 6;
+		end
+		else if (addr_to_index[7] == i_write_buffer.addr) begin
+			index_addr = 7;
+		end
+		else begin
+			index_addr = 8;
+		end
+		
+		index_id = instruction_id[2:0];
 
 		if (index_addr == 8) begin
 			if (matrix_availibility[0] == 0) begin
@@ -429,7 +464,7 @@ module write_buffer (
 			else if (matrix_availibility[6] == 0) begin
 				found_index_addr = 6;
 			end
-			else if (matrix_availibility[7] == 0) begin
+			else begin
 				found_index_addr = 7;
 			end 
 		end
@@ -445,23 +480,43 @@ module write_buffer (
     always_ff @(posedge clk) begin
 
 		// load
-        if (i_write_buffer.mem_action == READ) begin
+        if (i_write_buffer.mem_action == READ && i_write_buffer.valid == 1) begin
+
+			$display("Write buffer: load, id = %d, address = %x, in buffer = %s", instruction_id, i_write_buffer.data, index_addr < 8 ? "true" : "false");
 
 			if (index_addr < 8) begin
+				$display("\tData found in buffer\n", instruction_id, i_write_buffer.data, index_addr < 8 ? "true" : "false");
+
 				cache_out.valid <= 1;
 				cache_out.data <= data_list[index];
+
+				o_write_buffer.valid <= 0;
+				o_write_buffer.data <= 0;
+				o_write_buffer.addr <= 0;
+				o_write_buffer.addr_next <= 0;
+
+				found <= 1;
 			end
 			else begin
+				$display("\tSending request to cache\n", instruction_id, i_write_buffer.data, index_addr < 8 ? "true" : "false");
+
+				o_write_buffer.valid <= i_write_buffer.valid;
 				o_write_buffer.data <= i_write_buffer.data;
 				o_write_buffer.addr <= i_write_buffer.addr;
 				o_write_buffer.addr_next <= i_write_buffer.addr_next;
 				o_write_buffer.mem_action <= READ;
+
 				cache_out.valid <= 0;
+				found <= 0;
 			end
+
+			write <= 0;
 		end
 
 		// store
-		else begin
+		else if (i_write_buffer.mem_action == WRITE && i_write_buffer.valid == 1) begin
+
+			$display("Write buffer: store, id = %d, address = %x, found_index_addr = %d, index_id = %d\n", instruction_id, i_write_buffer.addr, found_index_addr, index_id);
 			
 			ids[index_id] <= instruction_id;
 			addr_list[index_id] <= i_write_buffer.addr;
@@ -514,6 +569,23 @@ module write_buffer (
 
 			id_to_index_matrix[index_id] <= found_index_addr;
 
+			cache_out.valid <= 0;
+			found <= 0;
+			write <= 1;
+			o_write_buffer.valid <= 0;
+			o_write_buffer.data <= 0;
+			o_write_buffer.addr <= 0;
+			o_write_buffer.addr_next <= 0;
+		end
+
+		else begin
+			cache_out.valid <= 0;
+			found <= 0;
+			write <= 1;
+			o_write_buffer.valid <= 0;
+			o_write_buffer.data <= 0;
+			o_write_buffer.addr <= 0;
+			o_write_buffer.addr_next <= 0;
 		end
 
 		if (retired) begin
@@ -524,6 +596,7 @@ module write_buffer (
 				o_write_buffer.data <= data_list[id_head_ptr];
 				o_write_buffer.addr <= addr_list[id_head_ptr];
 				o_write_buffer.addr_next <= addr_next_list[id_head_ptr];
+				o_write_buffer.valid <= 1;
 				o_write_buffer.mem_action <= WRITE;
 				
 				availibility_ids[id_to_index_matrix[id_head_ptr]][id_head_ptr] <= 0;

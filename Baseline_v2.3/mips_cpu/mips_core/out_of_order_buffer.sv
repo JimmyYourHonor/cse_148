@@ -22,6 +22,7 @@ module ooo_buffer (
     branch_result_ifc.in branch_result,
 
     // for retiring instructions
+    input logic mem_done,
     input logic[19:0] instruction_id_result,
 
     // outputs
@@ -41,6 +42,8 @@ module ooo_buffer (
 
     // issue queue (pending instructions)
     // ------------------------------------------------------------
+
+    logic [19:0] ids[8];
 
     logic valid[8];
 	mips_core_pkg::AluCtl alu_ctl[8];
@@ -71,6 +74,9 @@ module ooo_buffer (
     // -------------------------------------------------------------
 
     logic [19:0] instruction_id = 0;
+    logic [19:0] instruction_id_head = 0;
+
+    logic [2:0] test;
 
     logic [19:0] stores [8];
     logic [2:0] store_head = 0;
@@ -84,20 +90,20 @@ module ooo_buffer (
     logic found = 0;
     logic [2:0] offset;
 
-    status status_list[8] = '{not_ready, not_ready, not_ready, not_ready, not_ready, not_ready, not_ready, not_ready};
+    status status_list[8];
 
     logic [5:0] reg_rs_addr[7:0];
 	logic [5:0] reg_rt_addr[7:0];
 	logic [5:0] reg_rw_addr[7:0];
 
     // stall when a store before a load is not finished
-    logic stall_load;
-    logic stall_store;
+    logic stall_load = 0;
+    logic stall_store = 0;
 
     // Save all the branch entries
     logic [19:0] branch_entries[4];
-    logic [1:0] entry_tail;
-    logic [1:0] entry_head;
+    logic [1:0] entry_tail = 0;
+    logic [1:0] entry_head = 0;
 
     // task for queues: push, pop, and clear
     task push;
@@ -105,7 +111,13 @@ module ooo_buffer (
 
             if (full == 0) begin
 
+                $display("OOO push: id = %d, ALU_CTL = %d\n", instruction_id, decoded_insn.alu_ctl);
+
+                empty <= 0;
+
                 instruction_id <= instruction_id + 1;
+
+                ids[tail_ptr] <= instruction_id;
 
                 valid[tail_ptr] <= decoded_insn.valid;
                 alu_ctl[tail_ptr] <= decoded_insn.alu_ctl;
@@ -133,11 +145,11 @@ module ooo_buffer (
                 reg_rt_addr[tail_ptr] <= reg_ready.rt_addr;
                 reg_rw_addr[tail_ptr] <= reg_ready.rw_addr;
 
-                status_list[7] <= free_list[reg_rs_addr[tail_ptr]] & free_list[reg_rt_addr[tail_ptr]] ? ready : not_ready;
+                status_list[tail_ptr] <= not_ready;
 
+                if (head_ptr == tail_ptr + 1 || (head_ptr == 0 && tail_ptr == 7)) full <= 1;
                 tail_ptr <= tail_ptr + 1;
-                if (head_ptr == tail_ptr - 1) full <= 1;
-                
+
                 // check for memory access
                 if(decoded_insn.is_mem_access)
                 begin
@@ -187,7 +199,7 @@ module ooo_buffer (
                 out.is_sc <= is_sc[head_ptr + offset];
                 out.is_sw <= is_sw[head_ptr + offset];
 
-                instruction_id_out <= instruction_id - (tail_ptr - head_ptr) + offset;
+                instruction_id_out <= instruction_id_head + offset;
             end
             else begin
                 out.alu_ctl <= ALUCTL_NOP;
@@ -201,7 +213,7 @@ module ooo_buffer (
         begin
             tail_ptr <= index;
             full <= 0;
-            if (tail_ptr == head_ptr) empty <= 1;
+            if (head_ptr == index) empty <= 1;
             if (branch_entries[0] == instruction_id_branch) begin
                 entry <= 0;
                 entry_tail <= 0;
@@ -221,7 +233,7 @@ module ooo_buffer (
             else begin
                 entry <= 0;
                 entry_tail <= 0;
-                // not suppose to happen
+                // not supposed to happen
             end
 
             if (stores[0] > instruction_id_branch) begin
@@ -238,7 +250,7 @@ module ooo_buffer (
             end
             else begin
                 store_tail <= store_tail;
-                // not suppose to happen
+                // not supposed to happen
             end
         end
     endtask
@@ -246,16 +258,27 @@ module ooo_buffer (
     // retires instructions in order
     task retire();
         begin
-            status_list[tail_ptr - (instruction_id - instruction_id_result)] <= done;
+            
+            if (mem_done && !empty) begin
+                test <= head_ptr + (instruction_id_result[2:0] - instruction_id_head[2:0]);
+                if (status_list[head_ptr + (instruction_id_result[2:0] - instruction_id_head[2:0])] == executing) begin
+                    status_list[head_ptr + (instruction_id_result[2:0] - instruction_id_head[2:0])] <= done;
+                    $display("OOO set done: head_ptr = %d, instruction_id_head = %d (%d), instruction_id_result = %d, (%d), difference = %d, status list index = %d, old = (%d)\n", head_ptr, instruction_id_head, instruction_id_head[2:0], instruction_id_result, instruction_id_result[2:0], (instruction_id_result[2:0] - instruction_id_head[2:0]), head_ptr + (instruction_id_result[2:0] - instruction_id_head[2:0]), tail_ptr - (instruction_id_result[2:0] - instruction_id_head[2:0]));
+                end
+            end
 
             if (status_list[head_ptr] == done) begin
+                $display("OOO retire: instruction_id_head = %d, instruction_id_result = %d\n", instruction_id_head, instruction_id_result);
+                instruction_id_head <= instruction_id_head + 1;
                 retired <= 1'b1;
-                instruction_id_retired <= instruction_id_result;
+                instruction_id_retired <= instruction_id_head;
                 retired_uses_rw <= uses_rw[head_ptr];
                 retired_rw <= rw_addr[head_ptr];
                 head_ptr <= head_ptr + 1;
+                full <= 0;
+                if (head_ptr + 1 == tail_ptr || (head_ptr == 7 && tail_ptr == 0)) empty <= 1;
 
-                if (instruction_id_result == branch_entries[entry_head]) entry_head <= entry_head + 1;
+                if (instruction_id_head == branch_entries[entry_head]) entry_head <= entry_head + 1;
             end
             else
             begin
@@ -321,8 +344,9 @@ module ooo_buffer (
 
         // branch mispredicts
         if (branch_result.valid && branch_result.prediction != branch_result.outcome) begin
-            clear(head_ptr - (instruction_id - instruction_id_branch));
+            clear(tail_ptr - (instruction_id - instruction_id_branch));
             reset <= 1;
+            $display("OOO: Branch mispredict\n");
         end
         else
         begin
@@ -333,6 +357,7 @@ module ooo_buffer (
 
         // hazard
         if (full || stall_load || stall_store) begin
+            $display("OOO hazard: full = %d, stall_load = %d, stall_store = %d\n", full, stall_load, stall_store);
             hazard_flag <= 1;
         end
         else begin
@@ -341,50 +366,45 @@ module ooo_buffer (
 
         retire();
 
-        if (empty == 0) begin
-
-            if (status_list[head_ptr] == not_ready) begin
-                if (free_list[reg_rs_addr[head_ptr]] == 1 & free_list[reg_rt_addr[head_ptr]] == 1) begin
-                    status_list[head_ptr] <= ready;
-                end
-            end
-            else if (status_list[head_ptr + 1] == not_ready) begin
-                if (free_list[reg_rs_addr[head_ptr + 1]] == 1 & free_list[reg_rt_addr[head_ptr + 1]] == 1) begin
-                    status_list[head_ptr + 1] <= ready;
-                end
-            end
-            else if (status_list[head_ptr + 2] == not_ready) begin
-                if (free_list[reg_rs_addr[head_ptr + 2]] == 1 & free_list[reg_rt_addr[head_ptr + 2]] == 1) begin
-                    status_list[head_ptr + 2] <= ready;
-                end
-            end
-            else if (status_list[head_ptr + 3] == not_ready) begin
-                if (free_list[reg_rs_addr[head_ptr + 3]] == 1 & free_list[reg_rt_addr[head_ptr + 3]] == 1) begin
-                    status_list[head_ptr + 3] <= ready;
-                end
-            end
-            else if (status_list[head_ptr + 4] == not_ready) begin
-                if (free_list[reg_rs_addr[head_ptr + 4]] == 1 & free_list[reg_rt_addr[head_ptr + 4]] == 1) begin
-                    status_list[head_ptr + 4] <= ready;
-                end
-            end
-            else if (status_list[head_ptr + 5] == not_ready) begin
-                if (free_list[reg_rs_addr[head_ptr + 5]] == 1 & free_list[reg_rt_addr[head_ptr + 5]] == 1) begin
-                    status_list[head_ptr + 5] <= ready;
-                end
-            end
-            else if (status_list[head_ptr + 6] == not_ready) begin
-                if (free_list[reg_rs_addr[head_ptr + 6]] == 1 & free_list[reg_rt_addr[head_ptr + 6]] == 1) begin
-                    status_list[head_ptr + 6] <= ready;
-                end
-            end
-            else if (status_list[head_ptr + 7] == not_ready) begin
-                if (free_list[reg_rs_addr[head_ptr + 7]] == 1 & free_list[reg_rt_addr[head_ptr + 7]] == 1) begin
-                    status_list[head_ptr + 7] <= ready;
-                end
+        if (status_list[head_ptr] == not_ready) begin
+            if ((free_list[reg_rs_addr[head_ptr]] == 1 || uses_rs[head_ptr] == 0) && (free_list[reg_rt_addr[head_ptr]] == 1 || uses_rt[head_ptr] == 0)) begin
+                status_list[head_ptr] <= ready;
             end
         end
-
+        if (status_list[head_ptr + 1] == not_ready) begin
+            if ((free_list[reg_rs_addr[head_ptr + 1]] == 1 || uses_rs[head_ptr + 1] == 0) && (free_list[reg_rt_addr[head_ptr + 1]] == 1 || uses_rt[head_ptr + 1] == 0)) begin
+                status_list[head_ptr + 1] <= ready;
+            end
+        end
+        if (status_list[head_ptr + 2] == not_ready) begin
+            if ((free_list[reg_rs_addr[head_ptr + 2]] == 1 || uses_rs[head_ptr + 2] == 0) && (free_list[reg_rt_addr[head_ptr + 2]] == 1 || uses_rt[head_ptr + 2] == 0)) begin
+                status_list[head_ptr + 2] <= ready;
+            end
+        end
+        if (status_list[head_ptr + 3] == not_ready) begin
+            if ((free_list[reg_rs_addr[head_ptr + 3]] == 1 || uses_rs[head_ptr + 3] == 0) && (free_list[reg_rt_addr[head_ptr + 3]] == 1 || uses_rt[head_ptr + 3] == 0)) begin
+                status_list[head_ptr + 3] <= ready;
+            end
+        end
+        if (status_list[head_ptr + 4] == not_ready) begin
+            if ((free_list[reg_rs_addr[head_ptr + 4]] == 1 || uses_rs[head_ptr + 4] == 0) && (free_list[reg_rt_addr[head_ptr + 4]] == 1 || uses_rt[head_ptr + 4] == 0)) begin
+                status_list[head_ptr + 4] <= ready;
+            end
+        end
+        if (status_list[head_ptr + 5] == not_ready) begin
+            if ((free_list[reg_rs_addr[head_ptr + 5]] == 1 || uses_rs[head_ptr + 5] == 0) && (free_list[reg_rt_addr[head_ptr + 5]] == 1 || uses_rt[head_ptr + 5] == 0)) begin
+                status_list[head_ptr + 5] <= ready;
+            end
+        end
+        if (status_list[head_ptr + 6] == not_ready) begin
+            if ((free_list[reg_rs_addr[head_ptr + 6]] == 1 || uses_rs[head_ptr + 6] == 0) && (free_list[reg_rt_addr[head_ptr + 6]] == 1 || uses_rt[head_ptr + 6] == 0)) begin
+                status_list[head_ptr + 6] <= ready;
+            end
+        end
+        if (status_list[head_ptr + 7] == not_ready) begin
+            if ((free_list[reg_rs_addr[head_ptr + 7]] == 1 || uses_rs[head_ptr + 7] == 0) && (free_list[reg_rt_addr[head_ptr + 7]] == 1 || uses_rt[head_ptr + 7] == 0)) begin
+                status_list[head_ptr + 7] <= ready;
+            end
+        end
     end
-
 endmodule

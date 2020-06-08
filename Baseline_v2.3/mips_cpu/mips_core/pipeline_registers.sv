@@ -76,9 +76,10 @@ module pr_d2e (
 
 	always_ff @(posedge clk or negedge rst_n)
 	begin
-		instruction_id_out <= instruction_id;
+		
 		if(~rst_n)
 		begin
+			instruction_id_out <= instruction_id;
 			o_pc.pc <= '0;
 
 			o_alu_input.valid <= '0;
@@ -108,6 +109,7 @@ module pr_d2e (
 			begin
 				if (i_hc.flush)
 				begin
+					instruction_id_out <= '0;
 					o_pc.pc <= '0;
 
 					o_alu_input.valid <= '0;
@@ -133,8 +135,8 @@ module pr_d2e (
 				end
 				else
 				begin
+					instruction_id_out <= instruction_id;
 					o_pc.pc <= i_pc.pc;
-
 					o_alu_input.valid <= i_alu_input.valid;
 					o_alu_input.alu_ctl <= i_alu_input.alu_ctl;
 					o_alu_input.op1 <= i_alu_input.op1;
@@ -180,7 +182,6 @@ module pr_e2m (
 	// Does not register addr_next. See d_cache for details.
 	always_comb
 	begin
-		instruction_id_out = instruction_id;
 		if (i_hc.stall)
 			o_d_cache_input.addr_next = o_d_cache_input.addr;
 		else
@@ -189,9 +190,10 @@ module pr_e2m (
 
 	always_ff @(posedge clk or negedge rst_n)
 	begin
-		if(~rst_n)
-		begin
+
+		if(~rst_n) begin
 			o_pc.pc <= '0;
+			instruction_id_out <= instruction_id;
 
 			o_d_cache_input.valid <= 1'b0;
 			o_d_cache_input.mem_action <= READ;
@@ -203,12 +205,12 @@ module pr_e2m (
 			o_d_cache_pass_through.uses_rw <= 1'b0;
 			o_d_cache_pass_through.rw_addr <= zero;
 		end
-		else
-		begin
+		else begin
 			if (!i_hc.stall)
 			begin
 				if (i_hc.flush)
 				begin
+					instruction_id_out <= 0;
 					o_pc.pc <= '0;
 
 					o_d_cache_input.valid <= 1'b0;
@@ -223,6 +225,7 @@ module pr_e2m (
 				end
 				else
 				begin
+					instruction_id_out <= instruction_id;
 					o_pc.pc <= i_pc.pc;
 
 					o_d_cache_input.valid <= i_d_cache_input.valid;

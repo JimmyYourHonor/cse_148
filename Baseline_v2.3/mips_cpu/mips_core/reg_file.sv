@@ -42,7 +42,7 @@ module reg_file (
 	// Output data
 	reg_file_output_ifc.out out,
 	output logic free_list [64],
-	output hazard
+	output logic hazard
 );
 
 	logic availability [64] = '{'0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0, '0,
@@ -157,7 +157,7 @@ module reg_file (
 			if (index < 64) begin
 				availability[index] <= 1'b1;
 				map[i_wb.rw_addr] <= index;
-				regs[map[i_wb.rw_addr]] <= i_wb.rw_data;
+				regs[index] <= i_wb.rw_data;
 				hazard <= 0;
 			end
 			else begin

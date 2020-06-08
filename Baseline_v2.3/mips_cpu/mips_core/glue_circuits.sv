@@ -106,14 +106,19 @@ module mem_stage_glue (
 	cache_output_ifc.in i_write_buffer_output,
 	cache_output_ifc.in i_d_cache_output,
 	d_cache_pass_through_ifc.in i_d_cache_pass_through,
-	
+	input logic [19:0] instruction_id_write_buffer,
+	input logic [19:0] instruction_id_dcache,
+	input logic write,
+
 	output logic o_done,
-	write_back_ifc.out o_write_back
+	write_back_ifc.out o_write_back,
+	output logic [19:0] instruction_id_out
+
 );
 
 	always_comb
 	begin
-		o_done = i_d_cache_pass_through.is_mem_access
+		o_done = (i_d_cache_pass_through.is_mem_access && !write)
 			? (i_take_write_buffer ? i_write_buffer_output.valid : i_d_cache_output.valid)
 			: 1'b1;
 		o_write_back.uses_rw = i_d_cache_pass_through.uses_rw;
@@ -121,5 +126,8 @@ module mem_stage_glue (
 		o_write_back.rw_data = i_d_cache_pass_through.is_mem_access
 			? (i_take_write_buffer ? i_write_buffer_output.data : i_d_cache_output.data)
 			: i_d_cache_pass_through.alu_result;
+		instruction_id_out =  i_d_cache_pass_through.is_mem_access
+			? (i_take_write_buffer ? instruction_id_write_buffer : instruction_id_dcache)
+			: instruction_id_write_buffer;
 	end
 endmodule
