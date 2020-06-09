@@ -37,13 +37,11 @@ module decode_stage_glue (
 		o_alu_input.is_ll =   i_decoded.is_ll;
 		o_alu_input.is_sc =   i_decoded.is_sc;
 		o_alu_input.is_sw =   i_decoded.is_sw;
-		
+
 
 		branch_decoded.valid =   i_decoded.is_branch_jump;
 		branch_decoded.is_jump = i_decoded.is_jump;
-		branch_decoded.target =  i_decoded.is_jump_reg
-			? i_reg_data.rs_data[`ADDR_WIDTH - 1 : 0]
-			: i_decoded.branch_target;
+		branch_decoded.target =  i_decoded.is_jump_reg ? i_reg_data.rs_data[`ADDR_WIDTH - 1 : 0] : i_decoded.branch_target;
 
 
 		o_alu_pass_through.is_branch =     i_decoded.is_branch_jump & ~i_decoded.is_jump;
@@ -65,7 +63,7 @@ module ex_stage_glue (
 	input logic [19:0] instruction_id_in,
 	alu_output_ifc.in i_alu_output,
 	alu_pass_through_ifc.in i_alu_pass_through,
-	
+
 	// output instruction id
 	output logic [19:0] instruction_id_out,
 	llsc_input_ifc.out o_llsc_input,
@@ -81,7 +79,7 @@ module ex_stage_glue (
 		o_llsc_input.lladdr_wr = i_alu_output.is_ll;
 		o_llsc_input.is_sc = i_alu_output.is_sc;
 		o_llsc_input.wr_reg_val = {6'b0,i_alu_output.result[`ADDR_WIDTH - 1 : 0]};
-		
+
 		o_branch_result.valid = i_alu_output.valid
 			& i_alu_pass_through.is_branch;
 		o_branch_result.prediction = i_alu_pass_through.prediction;

@@ -38,7 +38,7 @@ module reg_file (
 
 	input logic[1:0] entry,
     input logic reset,
-	
+
 	// Output data
 	reg_file_output_ifc.out out,
 	output logic free_list [64],
@@ -139,11 +139,10 @@ module reg_file (
 		else index = 64;
 	end
 	always_ff @(posedge clk) begin
-	//always_comb begin
 		// recycle the old spot TODO - change to recycle only after instruction is done
 		if(retired_uses_rw)
 			availability[map[retired_rw]] <= 1'b0;
-		
+
 		if (i_wb.uses_rw)
 		begin
 
@@ -163,7 +162,7 @@ module reg_file (
 			else begin
 				hazard <= 1;
 			end
-			
+
 		end
 
 		// saves reg & map for branch mispredicts

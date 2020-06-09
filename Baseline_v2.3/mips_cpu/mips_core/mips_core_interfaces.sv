@@ -126,7 +126,7 @@ interface decoder_output_ifc ();
 
 	logic uses_rw;
 	mips_core_pkg::MipsReg rw_addr;
-	
+
 	logic is_ll;
 	logic is_sc;
 	logic is_sw;

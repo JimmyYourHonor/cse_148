@@ -14,8 +14,11 @@ module ooo_buffer (
 
     // inputs - from decoder stage
     reg_file_output_ifc.in reg_ready,
+    // reg_file_output_ifc.out o_reg_ready,
+
     decoder_output_ifc.in decoded_insn,
     pc_ifc.in i_pc,
+    pc_ifc.out o_pc,
 
     // from execution glue stage
     input logic[19:0] instruction_id_branch,
@@ -44,6 +47,8 @@ module ooo_buffer (
     // ------------------------------------------------------------
 
     logic [19:0] ids[8];
+
+    logic [`ADDR_WIDTH - 1 : 0] pcs[8];
 
     logic valid[8];
 	mips_core_pkg::AluCtl alu_ctl[8];
@@ -95,6 +100,8 @@ module ooo_buffer (
     logic [5:0] reg_rs_addr[7:0];
 	logic [5:0] reg_rt_addr[7:0];
 	logic [5:0] reg_rw_addr[7:0];
+    logic [`DATA_WIDTH - 1 : 0] rs_data[7:0];
+	logic [`DATA_WIDTH - 1 : 0] rt_data[7:0];
 
     // stall when a store before a load is not finished
     logic stall_load = 0;
@@ -109,7 +116,7 @@ module ooo_buffer (
     task push;
         begin
 
-            if (full == 0 && decoded_insn.alu_ctl != ALUCTL_NOP) begin
+            if (full == 0 && decoded_insn.valid) begin
 
                 $display("OOO push: id = %d, ALU_CTL = %d\n", instruction_id, decoded_insn.alu_ctl);
 
@@ -118,6 +125,7 @@ module ooo_buffer (
                 instruction_id <= instruction_id + 1;
 
                 ids[tail_ptr] <= instruction_id;
+                pcs[tail_ptr] <= i_pc.pc;
 
                 valid[tail_ptr] <= decoded_insn.valid;
                 alu_ctl[tail_ptr] <= decoded_insn.alu_ctl;
@@ -144,6 +152,8 @@ module ooo_buffer (
                 reg_rs_addr[tail_ptr] <= reg_ready.rs_addr;
                 reg_rt_addr[tail_ptr] <= reg_ready.rt_addr;
                 reg_rw_addr[tail_ptr] <= reg_ready.rw_addr;
+                // rs_data[tail_ptr] <= reg_ready.rs_data;
+                // rt_data[tail_ptr] <= reg_ready.rt_data;
 
                 status_list[tail_ptr] <= not_ready;
 
@@ -177,6 +187,8 @@ module ooo_buffer (
         begin
             if (found == 1) begin
 
+                $display("Found: instruction_id = %d, index = %d, ids[index] = %d, pc = %d\n", instruction_id_head + offset, head_ptr + offset, ids[head_ptr + offset], pcs[head_ptr + offset]);
+
                 status_list[head_ptr + offset] <= executing;
 
                 out.valid           <= valid[head_ptr + offset];
@@ -202,11 +214,20 @@ module ooo_buffer (
                 out.is_sc <= is_sc[head_ptr + offset];
                 out.is_sw <= is_sw[head_ptr + offset];
 
+                // o_reg_ready.rs_addr <= reg_rs_addr[head_ptr + offset];
+                // o_reg_ready.rt_addr <= reg_rt_addr[head_ptr + offset];
+                // o_reg_ready.rw_addr <= reg_rw_addr[head_ptr + offset];
+                // o_reg_ready.rs_data <= rs_data[head_ptr + offset];
+                // o_reg_ready.rt_data <= rt_data[head_ptr + offset];
+
                 instruction_id_out <= instruction_id_head + offset;
+
+                o_pc.pc <= pcs[head_ptr + offset];
             end
             else begin
                 out.alu_ctl <= ALUCTL_NOP;
                 out.valid <= 1;
+                o_pc.pc <= '0;
             end
         end
     endtask
@@ -373,6 +394,7 @@ module ooo_buffer (
         if (status_list[head_ptr] == not_ready) begin
             if ((free_list[reg_rs_addr[head_ptr]] == 1 || uses_rs[head_ptr] == 0) && (free_list[reg_rt_addr[head_ptr]] == 1 || uses_rt[head_ptr] == 0)) begin
                 status_list[head_ptr] <= ready;
+
             end
         end
         if (status_list[head_ptr + 1] == not_ready) begin
@@ -383,6 +405,7 @@ module ooo_buffer (
         if (status_list[head_ptr + 2] == not_ready) begin
             if ((free_list[reg_rs_addr[head_ptr + 2]] == 1 || uses_rs[head_ptr + 2] == 0) && (free_list[reg_rt_addr[head_ptr + 2]] == 1 || uses_rt[head_ptr + 2] == 0)) begin
                 status_list[head_ptr + 2] <= ready;
+
             end
         end
         if (status_list[head_ptr + 3] == not_ready) begin

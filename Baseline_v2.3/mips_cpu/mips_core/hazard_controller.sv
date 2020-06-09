@@ -546,9 +546,7 @@ module hazard_controller (
 	begin
 		ic_miss = ~if_i_cache_output.valid;
 		ds_miss = ic_miss & dec_branch_decoded.valid;
-		dec_overload = dec_branch_decoded.valid
-			& (dec_branch_decoded.is_jump
-				| (dec_branch_decoded.prediction == TAKEN));
+		dec_overload = dec_branch_decoded.valid & (dec_branch_decoded.is_jump | (dec_branch_decoded.prediction == TAKEN));
 		ex_overload = ex_branch_result.valid
 			& (ex_branch_result.prediction != ex_branch_result.outcome);
 		// lw_hazard is determined by forward unit.

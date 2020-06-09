@@ -58,6 +58,7 @@ module mips_core (
 
 	// ==== EX to MEM
 	pc_ifc e2m_pc();
+	pc_ifc ooo_pc();
 	llsc_output_ifc llsc_mem_output();
 	d_cache_input_ifc e2m_d_cache_input();
 	d_cache_pass_through_ifc e2m_d_cache_pass_through();
@@ -156,23 +157,6 @@ module mips_core (
 		.out(dec_decoder_output)
 	);
 
-	reg_file REG_FILE(
-		.clk,
-
-		.i_decoded(dec_decoder_output),
-		.i_wb(m2w_write_back), // WB stage
-		.retired_uses_rw,
-		.retired_rw,
-
-		.entry,
-		.reset,
-
-		.out(dec_reg_file_output),
-
-		.free_list,
-		.hazard(reg_hazard)
-	);
-
 	ooo_buffer OOO_BUFFER (
 		.clk,
 
@@ -184,8 +168,10 @@ module mips_core (
 		.instruction_id_result(instruction_id_9),
 
 		.reg_ready (dec_reg_file_output),
+		// .o_reg_ready (dec_reg_file_output),
 		.decoded_insn (dec_decoder_output),
 		.i_pc (i2d_pc),
+		.o_pc (ooo_pc),
 
 		.out(ooo_output),
 		.hazard_flag(ooo_hazard),
@@ -198,6 +184,23 @@ module mips_core (
 
 		.entry,
 		.reset
+	);
+
+	reg_file REG_FILE(
+		.clk,
+
+		.i_decoded(ooo_output),
+		.i_wb(m2w_write_back), // WB stage
+		.retired_uses_rw,
+		.retired_rw,
+
+		.entry,
+		.reset,
+
+		.out(dec_reg_file_output),
+
+		.free_list,
+		.hazard(reg_hazard)
 	);
 
 	forward_unit FORWARD_UNIT(
@@ -217,7 +220,7 @@ module mips_core (
 
 	decode_stage_glue DEC_STAGE_GLUE(
 		.instruction_id		(instruction_id_1),
-		.i_decoded          (dec_decoder_output),
+		.i_decoded          (ooo_output),
 		.i_reg_data         (dec_forward_unit_output),
 
 		.branch_decoded     (dec_branch_decoded),
@@ -235,7 +238,7 @@ module mips_core (
 		.clk, .rst_n,
 		.i_hc(d2e_hc),
 
-		.i_pc(i2d_pc), .o_pc(d2e_pc),
+		.i_pc(ooo_pc), .o_pc(d2e_pc),
 
 		.i_alu_input        (dec_alu_input),
 		.o_alu_input        (d2e_alu_input),
